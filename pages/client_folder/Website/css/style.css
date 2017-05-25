@@ -1,0 +1,55 @@
+html
+{
+    font-size: 10px;
+    height: 100%;
+    background-color: purple;
+	color: white;
+}
+ * 
+ {
+    box-sizing: border-box;  
+ }
+
+
+/* social media colors */
+.color-facebook { color: rgb(59,89,152); }
+.color-twitter { color: rgb(0,182,241); }
+.color-googleplus { color: rgb(223,74,50); }
+.color-youtube { color: rgb(179,18,23); }
+.color-linkedin { color: rgb(0,123,182); }
+.color-github { color: black; }
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* Sass mixin: @include media-breakpoint-down(xs) { ... } */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+/* Sass mixin: @include media-breakpoint-down(sm) { ... } */
+@media (min-width: 576px) { 
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+/* Sass mixin: @include media-breakpoint-down(md) { ... } */
+@media (min-width: 768px) { 
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+/* Sass mixin: @include media-breakpoint-down(lg) { ... } */
+@media (min-width: 992px) { 
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* Sass mixin: @include media-breakpoint-down(xl) { ... } */
+@media (min-width: 1200px) { 
+
+ }
+
+
+
+
+
+

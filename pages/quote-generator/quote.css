@@ -1,0 +1,120 @@
+
+@import url(https://fonts.googleapis.com/css?family=Michroma|Oswald);
+
+/* start of desktop styles */
+* {	
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+  font-weight:400;
+}
+
+div {
+  position: relative;
+  z-index: 2;
+}
+
+body {
+  background-color: black;
+  color: #1414ff;
+  font-family: 'Michroma', sans-serif;
+}
+
+.header {
+  text-align: center;
+  display: block;
+  margin: 15px auto 30px auto;
+  color: #fff;
+}
+
+
+.footer {
+  text-align: center;
+  display: block;
+  margin: 15px auto 30px auto;
+  font-size: 1.25em;
+  color: #fff;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.quote-box {
+  border-radius: 3px;
+  position: relative;
+  margin: 8% auto auto auto;
+  padding: 40px 40px;
+  display: table;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.quote-box .quote-text {
+  text-align: left;
+  height: auto;
+  clear: both;
+  font-size: 1.75em;
+}
+.quote-box .quote-text i {
+  font-size: 1.0em;
+  margin-right: 0.4em;
+}
+.quote-box .quote-author {
+  height: auto;
+  clear: both;
+  padding-top: 20px;
+  font-size: 1.5em;
+  text-align: right;
+  font-family: 'Oswald', sans-serif;
+}
+.quote-box .buttons {
+  margin: auto;
+  display: block;
+}
+.quote-box .buttons .button {
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: rgba(16, 16, 205, 0.75);
+  outline: none;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 30px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.quote-box .buttons .button:hover {
+  background-color: #1414ff;
+}
+.quote-box .buttons .button#tweet-quote {
+  float: right;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  font-size: 1.5em;
+  height: 40px;
+  width: 40px;
+}
+.quote-box .buttons .button#new-quote {
+  float: right;
+  padding: 0px 8px 0px 8px;
+  text-align: center;
+  font-size: 1.2em;
+  height: 40px;
+}
+
+
+
+@media screen and (max-width: 991px) {
+     /* start of large tablet styles */
+
+}
+
+@media screen and (max-width: 767px) {
+     /* start of medium tablet styles */
+
+}
+
+@media screen and (max-width: 479px) {
+     /* start of phone styles */
+
+}
