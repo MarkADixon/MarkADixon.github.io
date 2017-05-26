@@ -1,23 +1,32 @@
-/* YOUR CUSTOM STYLES */
 
-html,
-body,
-.view {
-    height: 100%;
-    background-color: black;
-	color: white;
+*, html, body {
+  box-sizing: border-box; 
+  padding: 0;
+  margin: 0;
 }
 
-* {
-  box-sizing: border-box;
+html { font-size: 62.5%; }
+.viewport {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
 }
+
+
+body {  font-size: 1.6rem; }
+.headline-title { font-size:3.2rem;	}
+.skill-title { font-size: 2.0rem; }
+.skill-badge { font-size: 1.4rem; }
 
 .card {
 	background-color: rgb(25,25,25);
 	border-color: white;
 }
 
-
+/*
 .view {
     width: 100%;
     background: url("../img/background.jpg")no-repeat center center fixed;
@@ -26,12 +35,7 @@ body,
     -o-background-size: cover;
     background-size: cover;
 }
-
-.fixed-left {
-    position: fixed;
-    height:100%; 
-    z-index: 1;
-}
+*/
 
 .color-white { color: white; }
 .color-facebook { color: rgb(59,89,152); }
@@ -41,13 +45,10 @@ body,
 .color-linkedin { color: rgb(0,123,182); }
 .color-github { color: black; }
 
-html { font-size: 62.5%; }
-body {  font-size: 1.6rem; }
-.headline-title { font-size:3.2rem;	}
-.skill-title { font-size: 2.0rem; }
-.skill-badge { font-size: 1.4rem; }
 
 
+
+/*
 .navbar { background-color: transparent; }
 .top-menu-container, .bottom-menu-container, .left-menu-container {
     background-color: transparent;
@@ -61,10 +62,7 @@ body {  font-size: 1.6rem; }
     height:120px; 
     background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,1) 50%, rgba(0,0,0,0.5) 75%, rgba(0,0,0,0));
 }
-.left-menu-container {
-    width:120px;
-    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,1) 50%, rgba(0,0,0,0.5) 75%, rgba(0,0,0,0));
-}
+*/
 
 
 
@@ -84,7 +82,7 @@ body {  font-size: 1.6rem; }
     height:80px;
     width:80px;
     line-height:80px; 
-    padding: 0;
+    padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
 }
 
@@ -92,7 +90,7 @@ body {  font-size: 1.6rem; }
 html, 
 .fa-stack, .menu-base, .menu-box, .menu-icon, .menu-label
 { 
-    transition: all 0.3s ease 0s;
+    transition: all 0.2s ease 0s;
 }
 a:hover .menu-base, a:focus .menu-base, a:active .menu-base { color:blue; transform: scale(1.15,1.15); }
 a:hover .menu-box, a:focus .menu-box, a:active .menu-box { color : white; }
@@ -103,8 +101,8 @@ a:hover .social-menu-item, a:focus .social-menu-item, a:active .social-menu-item
 
 /* single screen for all content */
 section { transition: opacity 0.3s ease-in-out 0s; }
-#home, #about, #work, #contact { opacity:0; pointer-events:none; }
-#home:target, #about:target, #work:target, #contact:target { opacity:1; pointer-events:auto; }
+#home, #about, #work, #contact, #settings { opacity:0; pointer-events:none; }
+#home:target, #about:target, #work:target, #contact:target, #settings:target { opacity:1; pointer-events:auto; }
 
 
 .menu-base,
