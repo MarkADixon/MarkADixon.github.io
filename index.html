@@ -57,171 +57,82 @@
 
 <body>
 <div class="viewport">
-    <!--Navbar-->
-    <nav class="navbar fixed-bottom bottom-menu-container hidden-md-up">
-        <div class="container d-inline-flex justify-content-center mt-auto">   
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <a href="#home">
-                        <span class="fa-stack fa-2x menu-item">
-                            <span class="fa fa-square fa-stack-2x menu-base glow"></span>     
-                            <span class="fa fa-square fa-stack-2x menu-box"></span>
-                            <span class="fa fa-home fa-stack-2x menu-icon"></span>
-                            <span class="fa-stack-2x menu-label">HOME</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#about">
-                        <span class="fa-stack fa-2x menu-item">
-                            <span class="fa fa-square fa-stack-2x menu-base glow"></span>     
-                            <span class="fa fa-square fa-stack-2x menu-box"></span>
-                            <span class="fa fa-info-circle fa-stack-2x menu-icon"></span>
-                            <span class="fa-stack-2x menu-label">ABOUT</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#work">
-                        <span class="fa-stack fa-2x menu-item">
-                            <span class="fa fa-square fa-stack-2x menu-base glow"></span>     
-                            <span class="fa fa-square fa-stack-2x menu-box"></span>
-                            <span class="fa fa-folder-open fa-stack-2x menu-icon"></span>
-                            <span class="fa-stack-2x menu-label">WORKS</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#contact">
-                        <span class="fa-stack fa-2x menu-item">
-                            <span class="fa fa-square fa-stack-2x menu-base glow"></span>     
-                            <span class="fa fa-square fa-stack-2x menu-box"></span>
-                            <span class="fa fa-envelope fa-stack-2x menu-icon"></span>
-                            <span class="fa-stack-2x menu-label">CONTACT</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#contact">
-                        <span class="fa-stack fa-2x menu-item">
-                            <span class="fa fa-square fa-stack-2x menu-base glow"></span>     
-                            <span class="fa fa-square fa-stack-2x menu-box"></span>
-                            <span class="fa fa-gears fa-stack-2x menu-icon"></span>
-                            <span class="fa-stack-2x menu-label">SETTINGS</span>
-                        </span>
-                    </a>
-                </li>
-            </ul>    
+
+    <!--mobile bottom menu-->
+    <div class="fixed-bottom hidden-md-up mobile-nav">
+        <div class="row primary-color z-depth-2 mobile-nav__row">
+            <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#home">
+                <span class="fa fa-home mobile-nav__icon"></span><br>
+                <span class="mobile-nav__text">HOME</span>
+            </a>
+            <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#about">
+                <span class="fa fa-info-circle mobile-nav__icon"></span><br>
+                <span class="mobile-nav__text">ABOUT</span>
+            </a>
+            <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#work">
+                <span class="fa fa-folder mobile-nav__icon"></span><br>
+                <span class="mobile-nav__text">PROJECTS</span>
+            </a>
+            <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#contact">
+                <span class="fa fa-envelope mobile-nav__icon"></span><br>
+                <span class="mobile-nav__text">CONTACT</span>
+            </a>
         </div>
-    </nav>
-    <!--mobile size navbar-->
-    <nav class="navbar fixed-top top-menu-container hidden-sm-down">
-        <div class="container d-inline-flex justify-content-center mt-auto">   
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <a href="#home">
-                        <span class="fa-stack fa-2x menu-item">
-                            <span class="fa fa-square fa-stack-2x menu-base glow"></span>     
-                            <span class="fa fa-square fa-stack-2x menu-box"></span>
-                            <span class="fa fa-home fa-stack-2x menu-icon"></span>
-                            <span class="fa-stack-2x menu-label">HOME</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#about">
-                        <span class="fa-stack fa-2x menu-item">
-                            <span class="fa fa-square fa-stack-2x menu-base glow"></span>     
-                            <span class="fa fa-square fa-stack-2x menu-box"></span>
-                            <span class="fa fa-info-circle fa-stack-2x menu-icon"></span>
-                            <span class="fa-stack-2x menu-label">ABOUT</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#work">
-                        <span class="fa-stack fa-2x menu-item">
-                            <span class="fa fa-square fa-stack-2x menu-base glow"></span>     
-                            <span class="fa fa-square fa-stack-2x menu-box"></span>
-                            <span class="fa fa-folder-open fa-stack-2x menu-icon"></span>
-                            <span class="fa-stack-2x menu-label">WORKS</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#contact">
-                        <span class="fa-stack fa-2x menu-item">
-                            <span class="fa fa-square fa-stack-2x menu-base glow"></span>     
-                            <span class="fa fa-square fa-stack-2x menu-box"></span>
-                            <span class="fa fa-envelope fa-stack-2x menu-icon"></span>
-                            <span class="fa-stack-2x menu-label">CONTACT</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#contact">
-                        <span class="fa-stack fa-2x menu-item">
-                            <span class="fa fa-square fa-stack-2x menu-base glow"></span>     
-                            <span class="fa fa-square fa-stack-2x menu-box"></span>
-                            <span class="fa fa-gears fa-stack-2x menu-icon"></span>
-                            <span class="fa-stack-2x menu-label">SETTINGS</span>
-                        </span>
-                    </a>
-                </li>
-            </ul>    
+    </div>
+
+    <!--full screen menu-->
+    <div class="hidden-sm-down landscape-nav">
+        <div class="row flex-column landscape-nav__column">
+            <div class="primary-color z-depth-2 landscape-nav__box">
+                <div class="landscape-nav__fname">MARK</div> 
+                <div class="landscape-nav__lname"><strong>DIXON</strong></div>
+                <div class="landscape-nav__img">
+                    <img class="img-fluid" src="img/GigaMark.png" alt="Cartoon Self Portrait" >    
+                </div>  
+                <div class="landscape-nav__tagline1">Software Engineer</div>
+                <div class="landscape-nav__tagline2">Web Developer</div>
+                <div class="landscape-nav__tagline3">Statistician</div>
+            </div>
+            <div class="primary-color z-depth-2 landscape-nav__buttons">
+                <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#home">
+                    <span class="fa fa-home landscape-nav__icon"></span>
+                    <span class="landscape-nav__text">HOME</span>
+                </a>
+                <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#about">
+                    <span class="fa fa-info-circle landscape-nav__icon"></span>
+                    <span class="landscape-nav__text">ABOUT</span>
+                </a>
+                <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#work">
+                    <span class="fa fa-folder landscape-nav__icon"></span>
+                    <span class="landscape-nav__text">PROJECTS</span>
+                </a>
+                <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#contact">
+                    <span class="fa fa-envelope landscape-nav__icon"></span>
+                    <span class="landscape-nav__text">CONTACT</span>
+                </a>
+            </div>
         </div>
-    </nav>
-    <!--Navbar-->
-    <section id="home" class="full-bg-img">
-        <div class="flex-column content-container">     
+    </div>
+
+    <section id="home">
+        <div class="content-container">     
             <div class="divider-new">
-                <h2 class="h2-responsive">Home</h2>
-            </div>      
-            <ul>
-                <li>
-                    <h1 class="h1-responsive headline-title"><b>COLT BAUER LABS</b></h1>
-                </li>
-                <li>
-					<h2 class="h2-responsive color-white"><b>Web / App Development and Data Science</b></h2> 
-				</li>
-                <li>
-                    <span class="badge indigo skill-title">Front End Developer</span>
-                </li>
-                <li>
-                    <span class="badge indigo skill-badge">HTML5</span>
-                    <span class="badge indigo skill-badge">CSS/SASS</span>
-                    <span class="badge indigo skill-badge">Bootstrap</span>
-                    <span class="badge indigo skill-badge">JavaScript</span>
-                    <span class="badge indigo skill-badge">JQuery</span>
-                    <span class="badge indigo skill-badge">Material Design</span>
-                    <span class="badge indigo skill-badge">Angular</span>
-                </li>
-                <li>
-                    <span class="badge blue skill-title">Software Engineer</span>
-                </li>
-                <li>
-                    <span class="badge blue skill-badge">C++</span>
-                    <span class="badge blue skill-badge">C#</span>
-                    <span class="badge blue skill-badge">.NET</span>
-                    <span class="badge blue skill-badge">GitHub</span>
-                    <span class="badge blue skill-badge">Unity</span>
-                    <span class="badge blue skill-badge">Unreal</span>
-                    <span class="badge blue skill-badge">Java</span>
-                </li>
-                <li>
-                    <span class="badge green skill-title">Data Scientist</span>
-                </li>
-                <li>
-                    <span class="badge green skill-badge">Python</span>
-                    <span class="badge green skill-badge">IDL</span>
-                    <span class="badge green skill-badge">SQL</span>
-                    <span class="badge green skill-badge">R</span>
-                    <span class="badge green skill-badge">MATLAB</span>
-                    <span class="badge green skill-badge">AI</span>
-                    <span class="badge green skill-badge">Machine Learning</span>
-                    <span class="badge green skill-badge">Deep Learning</span>
-                </li>          
-            </ul>
+                <h1><b>HOME</b></h1>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="img/speaker.jpg" class="img-fluid rounded-circle home__portrait" alt="picture of Mr. Dixon speaking">      
+                <h2 class="home__secondaryheadline">Hi! I'm Mark.</h2>
+                <p class="home__text">
+                   I started my professional career as an Economist for the U.S. Government.
+                   I left civil service return to university to pursue an advanced degree in computational physics.
+                   During my time in grad school, I also become an entrepreneur and started an independent game studio called Gigaloth.
+                   My first product as a self-made software engineer was the "National Games Winner" at Microsoft's U.S. Imagine Cup.<br><br>
+                   Eventually, my interest turned to web development as a more practical way to earn a living doing what I loved, coding. 
+                   I have obtained my front end developer certification through freeCodeCamp and continue to pursue the full stack certification.
+                   My long term goals are to combine expertise in data/statistics with coding and enter the field of AI and Data Science.<br><br>
+                   Thanks for reading. Please contact me with any questions and never stop learning!
+                </p> 
+            </div>
         </div>
     </section>
     
@@ -231,7 +142,34 @@
         <div class="divider-new">
             <h2 class="h2-responsive">About</h2>
         </div>
-        <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="madix"><a class="LI-simple-link" href='https://www.linkedin.com/in/madix?trk=profile-badge'>Mark A. Dixon</a></div>
+        <span class="badge indigo skill-title">Front End Developer</span>
+        <span class="badge indigo skill-badge">HTML5</span>
+        <span class="badge indigo skill-badge">CSS/SASS</span>
+        <span class="badge indigo skill-badge">Bootstrap</span>
+        <span class="badge indigo skill-badge">JavaScript</span>
+        <span class="badge indigo skill-badge">JQuery</span>
+        <span class="badge indigo skill-badge">Material Design</span>
+        <span class="badge indigo skill-badge">Angular</span>
+        
+        <span class="badge blue skill-title">Software Engineer</span>
+        <span class="badge blue skill-badge">C++</span>
+        <span class="badge blue skill-badge">C#</span>
+        <span class="badge blue skill-badge">.NET</span>
+        <span class="badge blue skill-badge">GitHub</span>
+        <span class="badge blue skill-badge">Unity</span>
+        <span class="badge blue skill-badge">Unreal</span>
+        <span class="badge blue skill-badge">Java</span>
+    
+        <span class="badge green skill-title">Data Scientist</span>
+        <span class="badge green skill-badge">Python</span>
+        <span class="badge green skill-badge">IDL</span>
+        <span class="badge green skill-badge">SQL</span>
+        <span class="badge green skill-badge">R</span>
+        <span class="badge green skill-badge">MATLAB</span>
+        <span class="badge green skill-badge">AI</span>
+        <span class="badge green skill-badge">Machine Learning</span>
+        <span class="badge green skill-badge">Deep Learning</span>
+     
 	</div>	
 	</section>
     <!--Section: About-->
@@ -321,9 +259,15 @@
             <div class="row">           
                 <!--First column-->
                 <div class="col-sm-4">
-                    <div class="self-portrait">
-                        <img class="img-fluid" src="img/GigaMark.png" alt="Cartoon Self Portrait" >
-                    </div>  
+                    <div class="LI-profile-badge"  
+                         data-version="v1" 
+                         data-size="large" 
+                         data-locale="en_US" 
+                         data-type="horizontal" 
+                         data-theme="dark" 
+                         data-vanity="madix">
+                         <a class="LI-simple-link" href='https://www.linkedin.com/in/madix?trk=profile-badge'>Mark A. Dixon</a>
+                    </div>
                 </div>
                 <!--/First column-->
 
@@ -430,19 +374,6 @@
 
 <script>
 
-
-//scale menu icons to prevent wrap on very small screens
-function ScaleIcons(){
-    var width = window.innerWidth;
-    var percent = (Math.min(Math.max(parseInt(width), 290), 490) - 290)/200.0;
-    var scale = ( percent * 0.334) + 0.666;
-    var margin = -12 +( percent * 24 );
-    var items = $(".menu-item");
-    items.css("transform","scale("+scale+","+scale+")");
-    items.css("margin","0 "+margin+"px 0 "+margin+"px");
-    return;
-}
-
 //size buttons
 $("button").on("click", function(e) {
     $("html").css("font-size", $(this).attr("setting-font-size") + "%");        
@@ -451,12 +382,10 @@ $("button").on("click", function(e) {
 //show window size
 document.getElementById("width_px").innerHTML = window.innerWidth;
 document.getElementById("width_ems").innerHTML = window.innerWidth / parseFloat($("body").css("font-size"));
-ScaleIcons();
 
 window.onresize = function() {
     document.getElementById("width_px").innerHTML = window.innerWidth;
     document.getElementById("width_ems").innerHTML = window.innerWidth / parseFloat($("body").css("font-size"));
-    ScaleIcons();
 };
 
 
