@@ -56,111 +56,121 @@
 </head>
 
 <body>
-<div class="viewport">
 
-    <!--mobile bottom menu-->
-    <div class="fixed-bottom hidden-md-up mobile-nav">
-        <div class="row primary-color z-depth-2 mobile-nav__row">
-            <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#home">
-                <span class="fa fa-home mobile-nav__icon"></span><br>
-                <span class="mobile-nav__text">HOME</span>
+<!--mobile bottom menu-->
+<div class="fixed-bottom hidden-md-up mobile-nav">
+    <div class="row primary-color z-depth-2 mobile-nav__row">
+        <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#home">
+            <span class="fa fa-home mobile-nav__icon"></span><br>
+            <span class="mobile-nav__text">HOME</span>
+        </a>
+        <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#about">
+            <span class="fa fa-info-circle mobile-nav__icon"></span><br>
+            <span class="mobile-nav__text">ABOUT</span>
+        </a>
+        <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#work">
+            <span class="fa fa-folder mobile-nav__icon"></span><br>
+            <span class="mobile-nav__text">PROJECTS</span>
+        </a>
+        <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#contact">
+            <span class="fa fa-envelope mobile-nav__icon"></span><br>
+            <span class="mobile-nav__text">CONTACT</span>
+        </a>
+    </div>
+</div>
+
+<!--full screen menu-->
+<div class="hidden-sm-down landscape-nav">
+    <div class="row flex-column landscape-nav__column">
+        <div class="primary-color z-depth-2 landscape-nav__box">
+            <div class="landscape-nav__fname">MARK</div> 
+            <div class="landscape-nav__lname"><strong>DIXON</strong></div>
+            <div class="landscape-nav__img">
+                <img class="img-fluid" src="img/GigaMark.png" alt="Cartoon Self Portrait" >    
+            </div>  
+            <div class="landscape-nav__tagline1"><strong>An Experienced...</strong></div>
+            <div class="landscape-nav__tagline2">Software Engineer</div>
+            <div class="landscape-nav__tagline3">Web Developer</div>
+            <div class="landscape-nav__tagline4">Statistician</div>
+        </div>
+        <div class="primary-color z-depth-2 landscape-nav__buttons">
+            <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#home">
+                <span class="fa fa-home landscape-nav__icon"></span>
+                <span class="landscape-nav__text">HOME</span>
             </a>
-            <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#about">
-                <span class="fa fa-info-circle mobile-nav__icon"></span><br>
-                <span class="mobile-nav__text">ABOUT</span>
+            <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#about">
+                <span class="fa fa-info-circle landscape-nav__icon"></span>
+                <span class="landscape-nav__text">ABOUT</span>
             </a>
-            <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#work">
-                <span class="fa fa-folder mobile-nav__icon"></span><br>
-                <span class="mobile-nav__text">PROJECTS</span>
+            <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#work">
+                <span class="fa fa-folder landscape-nav__icon"></span>
+                <span class="landscape-nav__text">PROJECTS</span>
             </a>
-            <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#contact">
-                <span class="fa fa-envelope mobile-nav__icon"></span><br>
-                <span class="mobile-nav__text">CONTACT</span>
+            <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#contact">
+                <span class="fa fa-envelope landscape-nav__icon"></span>
+                <span class="landscape-nav__text">CONTACT</span>
             </a>
         </div>
     </div>
+</div>
 
-    <!--full screen menu-->
-    <div class="fixed-left hidden-sm-down landscape-nav">
-        <div class="row flex-column landscape-nav__column">
-            <div class="primary-color z-depth-2 landscape-nav__box">
-                <div class="landscape-nav__fname">MARK</div> 
-                <div class="landscape-nav__lname"><strong>DIXON</strong></div>
-                <div class="landscape-nav__img">
-                    <img class="img-fluid" src="img/GigaMark.png" alt="Cartoon Self Portrait" >    
-                </div>  
-                <div class="landscape-nav__tagline1">Software Engineer</div>
-                <div class="landscape-nav__tagline2">Web Developer</div>
-                <div class="landscape-nav__tagline3">Statistician</div>
-            </div>
-            <div class="primary-color z-depth-2 landscape-nav__buttons">
-                <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#home">
-                    <span class="fa fa-home landscape-nav__icon"></span>
-                    <span class="landscape-nav__text">HOME</span>
-                </a>
-                <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#about">
-                    <span class="fa fa-info-circle landscape-nav__icon"></span>
-                    <span class="landscape-nav__text">ABOUT</span>
-                </a>
-                <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#work">
-                    <span class="fa fa-folder landscape-nav__icon"></span>
-                    <span class="landscape-nav__text">PROJECTS</span>
-                </a>
-                <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#contact">
-                    <span class="fa fa-envelope landscape-nav__icon"></span>
-                    <span class="landscape-nav__text">CONTACT</span>
-                </a>
-            </div>
-        </div>
+<section id="home" class="content-container">
+    <div class="divider-new">
+        <h1><b>HOME</b></h1>
     </div>
+    <div class="d-flex flex-column align-items-center">
+        <img src="img/speaker.jpg" class="img-fluid rounded-circle home__portrait" alt="picture of Mr. Dixon speaking">      
+        <h2 class="home__secondaryheadline">Hi. I'm Mark. Let's&nbspbuild&nbspgreatness&nbsptogether.</h2>
+        <ul class="list-group home__list">
+            <li class="list-group-item justify-content-between home__text">
+                Software Engineer and Web/App Developer<br>
+                with published award winning products
+                <span class="badge badge-default badge-pill">5+ years</span>
+            </li>
+            <li class="list-group-item justify-content-between home__text">
+                Data, Statistical, and Analytical expertise<br>
+                as Economist for U.S. Dept. of Labor
+                <span class="badge badge-default badge-pill">4+ years</span>
+            </li>
+            <li class="list-group-item justify-content-between home__text">
+                Entrepreneurial and Business Management skills<br>
+                from involvement in start-ups
+                <span class="badge badge-default badge-pill">7+ years</span>
+            </li>
+            <li class="list-group-item justify-content-between home__text">
+                Graduate studies in Computational Physics and<br>
+                undergrad studies in Computer Science + Economics
+                <span class="badge badge-default badge-pill">6+ years</span>
+            </li>
+        </ul> 
+    </div>
+</section>
 
-    <section id="home">
-        <div class="content-container">     
-            <div class="divider-new">
-                <h1><b>HOME</b></h1>
-            </div>
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <img src="img/speaker.jpg" class="img-fluid rounded-circle home__portrait" alt="picture of Mr. Dixon speaking">      
-                <h2 class="home__secondaryheadline">Hi! I'm Mark.</h2>
-                <p class="home__text">
-                   I started my professional career as an Economist for the U.S. Government.
-                   I left civil service return to university to pursue an advanced degree in computational physics.
-                   During my time in grad school, I also become an entrepreneur and started an independent game studio called Gigaloth.
-                   My first product as a self-made software engineer was the "National Games Winner" at Microsoft's U.S. Imagine Cup.<br><br>
-                   Eventually, my interest turned to web development as a more practical way to earn a living doing what I loved, coding. 
-                   I have obtained my front end developer certification through freeCodeCamp and continue to pursue the full stack certification.
-                   My long term goals are to combine expertise in data/statistics with coding and enter the field of AI and Data Science.<br><br>
-                   Thanks for reading. Please contact me with any questions and never stop learning!
-                </p> 
-            </div>
-        </div>
-    </section>
-    
-    <!--About-->
-    <section id="about" class="full-bg-img">
-    <div class="flex-column content-container">
-        <div class="divider-new">
-            <h2 class="h2-responsive">About</h2>
-        </div>
-        <span class="badge indigo skill-title">Front End Developer</span>
+<section id="about" class="content-container">
+    <div class="divider-new">
+        <h1><b>ABOUT</b></h1>
+    </div>
+    <div class="d-flex flex-column align-items-center">
+        <h2><b>Skills</b></h2>
+        <span class="badge indigo skill-title">Front End Developer</span><br>
         <span class="badge indigo skill-badge">HTML5</span>
         <span class="badge indigo skill-badge">CSS/SASS</span>
         <span class="badge indigo skill-badge">Bootstrap</span>
         <span class="badge indigo skill-badge">JavaScript</span>
         <span class="badge indigo skill-badge">JQuery</span>
         <span class="badge indigo skill-badge">Material Design</span>
-        <span class="badge indigo skill-badge">Angular</span>
+        <span class="badge indigo skill-badge">Angular</span><br><br>
         
-        <span class="badge blue skill-title">Software Engineer</span>
+        <span class="badge blue skill-title">Software Engineer</span><br>
         <span class="badge blue skill-badge">C++</span>
         <span class="badge blue skill-badge">C#</span>
         <span class="badge blue skill-badge">.NET</span>
         <span class="badge blue skill-badge">GitHub</span>
         <span class="badge blue skill-badge">Unity</span>
         <span class="badge blue skill-badge">Unreal</span>
-        <span class="badge blue skill-badge">Java</span>
-    
-        <span class="badge green skill-title">Data Scientist</span>
+        <span class="badge blue skill-badge">Java</span><br><br>
+
+        <span class="badge green skill-title">Data Scientist</span><br>
         <span class="badge green skill-badge">Python</span>
         <span class="badge green skill-badge">IDL</span>
         <span class="badge green skill-badge">SQL</span>
@@ -168,19 +178,15 @@
         <span class="badge green skill-badge">MATLAB</span>
         <span class="badge green skill-badge">AI</span>
         <span class="badge green skill-badge">Machine Learning</span>
-        <span class="badge green skill-badge">Deep Learning</span>
-     
-	</div>	
-	</section>
-    <!--Section: About-->
-	
+        <span class="badge green skill-badge">Deep Learning</span><br><br>
+    </div>
+</section>
 
-    <!--Section: Work-->
-    <section id="work" class="full-bg-img">
-    <div class="flex-column content-container"> 
-        <div class="divider-new">
-            <h2 class="h2-responsive">Projects</h2>
-        </div>
+<section id="work" class="content-container">
+    <div class="divider-new">
+        <h1><b>PROJECTS</b></h1>
+    </div>
+    <div class="d-flex flex-column align-items-center">
         <div class="row">
             <div class="col-md-3">
                 <!--Card-->
@@ -247,79 +253,77 @@
             </div>
         </div>
     </div>
-    </section>
-    <!--/Section: Projects-->
-    
-    <!--Section: Contact-->
-    <section id="contact" class="full-bg-img">
-        <div class="flex-column content-container">
-            <div class="divider-new">
-                <h2 class="h2-responsive">Contact</h2>
-            </div>
-            <div class="row">           
-                <!--First column-->
-                <div class="col-sm-4">
-                    <div class="LI-profile-badge"  
-                         data-version="v1" 
-                         data-size="large" 
-                         data-locale="en_US" 
-                         data-type="horizontal" 
-                         data-theme="dark" 
-                         data-vanity="madix">
-                         <a class="LI-simple-link" href='https://www.linkedin.com/in/madix?trk=profile-badge'>Mark A. Dixon</a>
-                    </div>
-                </div>
-                <!--/First column-->
+</section>
 
-                <!--Second column-->
-                <div class="col-sm-8">
-                    <ul class="list-inline" 
-                        style="margin:0px 0px 0px 0px;">
-                        <li class="list-inline-item">
-                            <a href="http://www.linkedin.com/in/colt-bauer"
-                            target="_blank">
-                                <span class="fa-stack fa-2x social-menu-item">
-                                    <span class="fa fa-square fa-stack-2x color-white glow"></span>
-                                    <span class="fa fa-linkedin-square fa-stack-2x color-linkedin"></span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="http://www.github.com/coltbauer/" target="_blank">
-                                <span class="fa-stack fa-2x social-menu-item">
-                                    <span class="fa fa-square fa-stack-2x color-white glow" ></span>
-                                    <span class="fa fa-github-square fa-stack-2x color-github"></span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="http://www.facebook.com/bauercolt" target="_blank">
-                                <span class="fa-stack fa-2x social-menu-item">
-                                    <span class="fa fa-square fa-stack-2x color-white glow"></span>           
-                                    <span class="fa fa-facebook-official fa-stack-2x color-facebook"></span>
-                                </span>
-                            </a>            
-                        </li>
-                    </ul>
-                    <div class="contact-form">
-                    <form action="http://formspree.io/bauercolt@gmail.com" method="POST">
-                        <h4><strong>Say Hello!</strong></h4>    
-                       <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-                        <input name="_replyto" type="email" class="form-control" placeholder="Your Email Address" required>
-                        <h4><strong>Your Message:</strong></h4>
-                        <textarea name="body" class="form-control" rows="5" id="comment" placeholder="I love your work and am interested in hiring you!" required></textarea>
-                        <button type="submit" class="btn btn-danger pull-right">
-                            <span><i class="fa fa-paper-plane" ></i></span> <strong>SEND</strong>
-                        </button>
-                
-                    </form>
-                    </div>
+<section id="contact" class="content-container">
+    <div class="divider-new">
+        <h1><b>CONTACT</b></h1>
+    </div>
+    <div class="d-flex flex-column align-items-center">
+        <div class="row">           
+            <!--First column-->
+            <div class="col-sm-4">
+                <div class="LI-profile-badge"  
+                        data-version="v1" 
+                        data-size="large" 
+                        data-locale="en_US" 
+                        data-type="horizontal" 
+                        data-theme="dark" 
+                        data-vanity="madix">
+                        <a class="LI-simple-link" href='https://www.linkedin.com/in/madix?trk=profile-badge'>Mark A. Dixon</a>
+                </div>
+            </div>
+            <!--/First column-->
+
+            <!--Second column-->
+            <div class="col-sm-8">
+                <ul class="list-inline" 
+                    style="margin:0px 0px 0px 0px;">
+                    <li class="list-inline-item">
+                        <a href="http://www.linkedin.com/in/colt-bauer"
+                        target="_blank">
+                            <span class="fa-stack fa-2x social-menu-item">
+                                <span class="fa fa-square fa-stack-2x color-white glow"></span>
+                                <span class="fa fa-linkedin-square fa-stack-2x color-linkedin"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="http://www.github.com/coltbauer/" target="_blank">
+                            <span class="fa-stack fa-2x social-menu-item">
+                                <span class="fa fa-square fa-stack-2x color-white glow" ></span>
+                                <span class="fa fa-github-square fa-stack-2x color-github"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="http://www.facebook.com/bauercolt" target="_blank">
+                            <span class="fa-stack fa-2x social-menu-item">
+                                <span class="fa fa-square fa-stack-2x color-white glow"></span>           
+                                <span class="fa fa-facebook-official fa-stack-2x color-facebook"></span>
+                            </span>
+                        </a>            
+                    </li>
+                </ul>
+                <div class="contact-form">
+                <form action="http://formspree.io/bauercolt@gmail.com" method="POST">
+                    <h4><strong>Say Hello!</strong></h4>    
+                    <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                    <input name="_replyto" type="email" class="form-control" placeholder="Your Email Address" required>
+                    <h4><strong>Your Message:</strong></h4>
+                    <textarea name="body" class="form-control" rows="5" id="comment" placeholder="I love your work and am interested in hiring you!" required></textarea>
+                    <button type="submit" class="btn btn-danger pull-right">
+                        <span><i class="fa fa-paper-plane" ></i></span> <strong>SEND</strong>
+                    </button>
+            
+                </form>
                 </div>
             </div>
         </div>
-    </section><!--Section: Contact-->
+    </div>
+</section>
 
-    <!--Settings-->
+<!--Settings 
     <section id="settings" class="full-bg-img">
     <div class="flex-column content-container">
         <div class="divider-new">
@@ -343,9 +347,7 @@
         </div>
 	</div>	
 	</section>
-    <!--Section:Settings-->
-
-</div> <!--/viewport-->
+-->
 
  <!-- SCRIPTS -->
 
