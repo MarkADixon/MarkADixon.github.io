@@ -60,22 +60,22 @@
 <!--mobile bottom menu-->
 <div class="fixed-bottom hidden-md-up mobile-nav">
     <div class="row primary-color z-depth-2 mobile-nav__row">
-        <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#home">
+        <button class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button button__home">
             <span class="fa fa-home mobile-nav__icon"></span><br>
             <span class="mobile-nav__text">HOME</span>
-        </a>
-        <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#about">
+        </button>
+        <button class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button button__about">
             <span class="fa fa-info-circle mobile-nav__icon"></span><br>
             <span class="mobile-nav__text">ABOUT</span>
-        </a>
-        <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#work">
+        </button>
+        <button class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button button__projects">
             <span class="fa fa-folder mobile-nav__icon"></span><br>
             <span class="mobile-nav__text">PROJECTS</span>
-        </a>
-        <a class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button" href="#contact">
+        </button>
+        <button class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button button__contact">
             <span class="fa fa-envelope mobile-nav__icon"></span><br>
             <span class="mobile-nav__text">CONTACT</span>
-        </a>
+        </button>
     </div>
 </div>
 
@@ -94,33 +94,33 @@
             <div class="landscape-nav__tagline4">Statistician</div>
         </div>
         <div class="primary-color z-depth-2 landscape-nav__buttons">
-            <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#home">
+            <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__home">
                 <span class="fa fa-home landscape-nav__icon"></span>
                 <span class="landscape-nav__text">HOME</span>
-            </a>
-            <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#about">
+            </button>
+            <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__about">
                 <span class="fa fa-info-circle landscape-nav__icon"></span>
                 <span class="landscape-nav__text">ABOUT</span>
-            </a>
-            <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#work">
+            </button>
+            <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__projects">
                 <span class="fa fa-folder landscape-nav__icon"></span>
                 <span class="landscape-nav__text">PROJECTS</span>
-            </a>
-            <a class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button" href="#contact">
+            </button>
+            <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__contact">
                 <span class="fa fa-envelope landscape-nav__icon"></span>
                 <span class="landscape-nav__text">CONTACT</span>
-            </a>
+            </button>
         </div>
     </div>
 </div>
 
-<section id="home" class="content-container">
+<section id="home" class="content-container section--show">
     <div class="divider-new">
         <h1><b>HOME</b></h1>
     </div>
     <div class="d-flex flex-column align-items-center">
         <img src="img/speaker.jpg" class="img-fluid rounded-circle home__portrait" alt="picture of Mr. Dixon speaking">      
-        <h2 class="home__secondaryheadline">Hi. I'm Mark. Let's&nbspbuild&nbspgreatness&nbsptogether.</h2>
+        <h2>Hi. I'm Mark. Let's&nbspbuild&nbspgreatness&nbsptogether.</h2>
         <ul class="list-group home__list">
             <li class="list-group-item justify-content-between home__text">
                 Software Engineer and Web/App Developer<br>
@@ -129,7 +129,7 @@
             </li>
             <li class="list-group-item justify-content-between home__text">
                 Data, Statistical, and Analytical expertise<br>
-                as Economist for U.S. Dept. of Labor
+                as Economist for U.S. Government
                 <span class="badge badge-default badge-pill">4+ years</span>
             </li>
             <li class="list-group-item justify-content-between home__text">
@@ -151,38 +151,75 @@
         <h1><b>ABOUT</b></h1>
     </div>
     <div class="d-flex flex-column align-items-center">
-        <h2><b>Skills</b></h2>
-        <span class="badge indigo skill-title">Front End Developer</span><br>
-        <span class="badge indigo skill-badge">HTML5</span>
-        <span class="badge indigo skill-badge">CSS/SASS</span>
-        <span class="badge indigo skill-badge">Bootstrap</span>
-        <span class="badge indigo skill-badge">JavaScript</span>
-        <span class="badge indigo skill-badge">JQuery</span>
-        <span class="badge indigo skill-badge">Material Design</span>
-        <span class="badge indigo skill-badge">Angular</span><br><br>
-        
-        <span class="badge blue skill-title">Software Engineer</span><br>
-        <span class="badge blue skill-badge">C++</span>
-        <span class="badge blue skill-badge">C#</span>
-        <span class="badge blue skill-badge">.NET</span>
-        <span class="badge blue skill-badge">GitHub</span>
-        <span class="badge blue skill-badge">Unity</span>
-        <span class="badge blue skill-badge">Unreal</span>
-        <span class="badge blue skill-badge">Java</span><br><br>
-
-        <span class="badge green skill-title">Data Scientist</span><br>
-        <span class="badge green skill-badge">Python</span>
-        <span class="badge green skill-badge">IDL</span>
-        <span class="badge green skill-badge">SQL</span>
-        <span class="badge green skill-badge">R</span>
-        <span class="badge green skill-badge">MATLAB</span>
-        <span class="badge green skill-badge">AI</span>
-        <span class="badge green skill-badge">Machine Learning</span>
-        <span class="badge green skill-badge">Deep Learning</span><br><br>
+        <h2>Technical Skills</h2>
+        <span class="badge indigo skill-title">Languages</span>
+        <div class="d-flex justify-content-center align-items-center flex-wrap"> 
+            <span class="badge indigo skill-badge">HTML5</span>
+            <span class="badge indigo skill-badge">CSS3/SASS/LESS</span>
+            <span class="badge indigo skill-badge">JavaScript/ES6</span>
+            <span class="badge indigo skill-badge">C++</span>
+            <span class="badge indigo skill-badge">C#</span>
+            <span class="badge indigo skill-badge">Python</span>
+            <span class="badge indigo skill-badge">R</span>
+            <span class="badge indigo skill-badge">Java</span>
+            <span class="badge indigo skill-badge">SQL</span>
+            <span class="badge indigo skill-badge">IDL</span>
+        </div>
+        <span class="badge blue skill-title">Frameworks/Technologies</span>
+        <div class="d-flex justify-content-center align-items-center flex-wrap"> 
+            <span class="badge blue skill-badge">Bootstrap</span>
+            <span class="badge blue skill-badge">Jquery</span>
+            <span class="badge blue skill-badge">.NET</span>
+            <span class="badge blue skill-badge">XNA</span>
+            <span class="badge blue skill-badge">Git/Version Control</span>
+            <span class="badge blue skill-badge">Visual Studio</span>
+            <span class="badge blue skill-badge">VS Code</span>
+            <span class="badge blue skill-badge">Unity</span>
+            <span class="badge blue skill-badge">Unreal</span>
+        </div>
+        <span class="badge green skill-title">Learning</span>
+        <div class="d-flex justify-content-center align-items-center flex-wrap"> 
+            <span class="badge green skill-badge">Node.js</span>
+            <span class="badge green skill-badge">Express.js</span>
+            <span class="badge green skill-badge">MongoDB</span>
+            <span class="badge green skill-badge">Angular 1 + 2</span>
+            <span class="badge green skill-badge">Typesctipd</span>
+            <span class="badge green skill-badge">React</span>
+            <span class="badge green skill-badge">Redux</span>
+            <span class="badge green skill-badge">PHP</span><br>
+        </div>
+        <h2><br>Featured Experince</h2>
+        <ul class="list-group home__list">
+            <li class="list-group-item justify-content-between home__text">
+                freeCodeCamp<br>
+                Back End Development Certification (in progress)
+                <span class="badge badge-default badge-pill">05.2017 to Current</span>
+            </li>
+            <li class="list-group-item justify-content-between home__text">
+                freeCodeCamp<br>
+                Front End Development Certification (completed) 
+                <span class="badge badge-default badge-pill">01.2017 to 05.2017</span>
+            </li>
+            <li class="list-group-item justify-content-between home__text">
+                University of Colorado Boulder<br>
+                Graduate Student of Computational Physics
+                <span class="badge badge-default badge-pill">01.2013 to 12.2015</span>
+            </li>
+            <li class="list-group-item justify-content-between home__text">
+                Gigaloth (An independent game development studio)<br>
+                Co-Founder, General Manager, C# Software Developer
+                <span class="badge badge-default badge-pill">09.2011 to 02.2016</span>
+            </li>
+            <li class="list-group-item justify-content-between home__text">
+                United States Government, Bureau of Labor Statistics<br>
+                Senior Economist 
+                <span class="badge badge-default badge-pill">02.2007 to 06.2011</span>
+            </li>
+        </ul> 
     </div>
 </section>
 
-<section id="work" class="content-container">
+<section id="projects" class="content-container">
     <div class="divider-new">
         <h1><b>PROJECTS</b></h1>
     </div>
@@ -369,28 +406,51 @@
 <!-- Linkedin Badge-->
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
-<!-- Size settings -->
-<script>
-
-</script>
 
 <script>
+$(document).ready( function (){
+    var navButton_Home = $(".button__home"); 
+    var navButton_About = $(".button__about"); 
+    var navButton_Projects = $(".button__projects"); 
+    var navButton_Contact = $(".button__contact"); 
+    var section_Home = $("#home");
+    var section_About = $("#about");
+    var section_Projects = $("#projects");
+    var section_Contact = $("#contact");
 
-//size buttons
-$("button").on("click", function(e) {
-    $("html").css("font-size", $(this).attr("setting-font-size") + "%");        
-})
-
-//show window size
-document.getElementById("width_px").innerHTML = window.innerWidth;
-document.getElementById("width_ems").innerHTML = window.innerWidth / parseFloat($("body").css("font-size"));
-
-window.onresize = function() {
-    document.getElementById("width_px").innerHTML = window.innerWidth;
-    document.getElementById("width_ems").innerHTML = window.innerWidth / parseFloat($("body").css("font-size"));
-};
-
-
+    navButton_Home.click( function (event){ 
+        if (!section_Home.hasClass("section--show")) {
+            section_Home.addClass("section--show");
+            section_About.removeClass("section--show");
+            section_Projects.removeClass("section--show");
+            section_Contact.removeClass("section--show");
+        }
+    });
+    navButton_About.click( function (event){ 
+        if (!section_About.hasClass("section--show")) {
+            section_Home.removeClass("section--show");
+            section_About.addClass("section--show");
+            section_Projects.removeClass("section--show");
+            section_Contact.removeClass("section--show");
+        }
+    });
+    navButton_Projects.click( function (event){ 
+        if (!section_Projects.hasClass("section--show")) {
+            section_Home.removeClass("section--show");
+            section_About.removeClass("section--show");
+            section_Projects.addClass("section--show");
+            section_Contact.removeClass("section--show");
+        }
+    });
+    navButton_Contact.click( function (event){ 
+        if (!section_Contact.hasClass("section--show")) {
+            section_Home.removeClass("section--show");
+            section_About.removeClass("section--show");
+            section_Projects.removeClass("section--show");
+            section_Contact.addClass("section--show");
+        }
+    });
+});
 </script>
 
 </body>

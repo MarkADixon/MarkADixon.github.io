@@ -7,10 +7,9 @@
 html { font-size: 62.5%; }
 body { 
   text-align: center;
-  font-size: 1.6rem;  
   background-color: lightgray;
 }
-h1 { font-size: 4.0rem; }
+
 
 
 
@@ -117,23 +116,37 @@ h1 { font-size: 4.0rem; }
 .home__text { padding: 1%; margin: 0 0 1% 0; }
 .home__text .badge { background-color:darkred; padding: 1%;  margin: 1%; }
 
+.skill-title {
+    padding: 1%; margin-top: 2%;
+    text-shadow: 1px 1px 2px black;
+}
+.skill-badge { 
+    padding: 1%; margin: 1%;
+    text-shadow: 1px 1px 2px black;
+}
+
 /* dynamic sizing in media queries */
 /*landscape window - dynamic size to vh*/
 @media (min-aspect-ratio: 1/1)  {
-    .home__secondaryheadline{ font-size: 4vh; }
-    .home__text{ font-size: 2.6vh; }
+    h1 { font-size: 6vh; }
+    h2 { font-size: 5vh; }
+    .home__text { font-size: 2.6vh; }
+    .skill-title { font-size: 3vh; }
+    .skill-badge, .badge-pill { font-size: 2vh; }
 }
 
 /*portrait window - dynamic size to vw*/
 @media (max-aspect-ratio: 1/1) { 
-    .home__secondaryheadline{ font-size: 4vw; }
-    .home__text{ font-size: 2.6vw; }
+    h1 { font-size: 6vw; }
+    h2 { font-size: 5vw; }
+    .home__text { font-size: 2.6vw; }
+    .skill-title { font-size: 3vw; }
+    .skill-badge, .badge-pill { font-size: 2vw; }
 }
 
 
 
-.skill-title { font-size: 2.0rem; }
-.skill-badge { font-size: 1.4rem; }
+
 
 .card {
 	background-color: rgb(25,25,25);
@@ -169,13 +182,10 @@ h1 { font-size: 4.0rem; }
 
 
 /* single screen for all content */
-section { transition: opacity 0.3s ease-in-out 0s; }
-#home, #about, #work, #contact, #settings { opacity:0; pointer-events:none; height: 1px;}
-#home:target, #about:target, #work:target, #contact:target, #settings:target { opacity:1; pointer-events:auto; height: auto; }
+section { transition: opacity 0.3s ease-in-out 0s; opacity:0; pointer-events:none; overflow:hidden; height: 1px; }
+.section--show { opacity:1; pointer-events:auto; height: auto; }
 
 
-.skill-title { text-shadow: 0 0 0.2rem black; }
-.skill-badge { text-shadow: 0 0 0.2rem black; }
 
 .content-container { 
     position: absolute;
