@@ -55,24 +55,24 @@
 
 </head>
 
-<body>
+<body class="backcolor-home">
 
 <!--mobile bottom menu-->
 <div class="fixed-bottom hidden-md-up mobile-nav">
-    <div class="row primary-color z-depth-2 mobile-nav__row">
-        <button class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button button__home">
+    <div class="row z-depth-2 mobile-nav__row">
+        <button class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button button__home nav-color menucolor-home">
             <span class="fa fa-home mobile-nav__icon"></span><br>
             <span class="mobile-nav__text">HOME</span>
         </button>
-        <button class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button button__about">
+        <button class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button button__about nav-color menucolor-home">
             <span class="fa fa-info-circle mobile-nav__icon"></span><br>
             <span class="mobile-nav__text">ABOUT</span>
         </button>
-        <button class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button button__projects">
+        <button class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button button__projects nav-color menucolor-home">
             <span class="fa fa-folder mobile-nav__icon"></span><br>
             <span class="mobile-nav__text">PROJECTS</span>
         </button>
-        <button class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button button__contact">
+        <button class="col-3 btn btn-primary waves-effect hoverable mobile-nav__button button__contact nav-color menucolor-home">
             <span class="fa fa-envelope mobile-nav__icon"></span><br>
             <span class="mobile-nav__text">CONTACT</span>
         </button>
@@ -82,7 +82,7 @@
 <!--full screen menu-->
 <div class="hidden-sm-down landscape-nav">
     <div class="row flex-column landscape-nav__column">
-        <div class="primary-color z-depth-2 landscape-nav__box">
+        <div class="z-depth-2 landscape-nav__box nav-color menucolor-home">
             <div class="landscape-nav__fname">MARK</div> 
             <div class="landscape-nav__lname"><strong>DIXON</strong></div>
             <div class="landscape-nav__img">
@@ -93,20 +93,20 @@
             <div class="landscape-nav__tagline3">Web Developer</div>
             <div class="landscape-nav__tagline4">Statistician</div>
         </div>
-        <div class="primary-color z-depth-2 landscape-nav__buttons">
-            <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__home">
+        <div class="z-depth-2 landscape-nav__buttons">
+            <button class="col-12 btn waves-effect hoverable landscape-nav__button button__home nav-color menucolor-home">
                 <span class="fa fa-home landscape-nav__icon"></span>
                 <span class="landscape-nav__text">HOME</span>
             </button>
-            <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__about">
+            <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__about nav-color menucolor-home">
                 <span class="fa fa-info-circle landscape-nav__icon"></span>
                 <span class="landscape-nav__text">ABOUT</span>
             </button>
-            <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__projects">
+            <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__projects nav-color menucolor-home">
                 <span class="fa fa-folder landscape-nav__icon"></span>
                 <span class="landscape-nav__text">PROJECTS</span>
             </button>
-            <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__contact">
+            <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__contact nav-color menucolor-home">
                 <span class="fa fa-envelope landscape-nav__icon"></span>
                 <span class="landscape-nav__text">CONTACT</span>
             </button>
@@ -409,6 +409,8 @@
 
 <script>
 $(document).ready( function (){
+    var body = $("body");
+    var navmenus = $(".nav-color"); 
     var navButton_Home = $(".button__home"); 
     var navButton_About = $(".button__about"); 
     var navButton_Projects = $(".button__projects"); 
@@ -424,6 +426,10 @@ $(document).ready( function (){
             section_About.removeClass("section--show");
             section_Projects.removeClass("section--show");
             section_Contact.removeClass("section--show");
+            body.removeClass(); //removes all/any other color classes
+            body.addClass("backcolor-home");
+            navmenus.removeClass("menucolor-about menucolor-projects menucolor-contact");
+            navmenus.addClass("menucolor-home");
         }
     });
     navButton_About.click( function (event){ 
@@ -432,6 +438,10 @@ $(document).ready( function (){
             section_About.addClass("section--show");
             section_Projects.removeClass("section--show");
             section_Contact.removeClass("section--show");
+            body.removeClass(); //removes all/any other color classes
+            body.addClass("backcolor-about");
+            navmenus.removeClass("menucolor-home menucolor-projects menucolor-contact");
+            navmenus.addClass("menucolor-about");
         }
     });
     navButton_Projects.click( function (event){ 
@@ -440,6 +450,10 @@ $(document).ready( function (){
             section_About.removeClass("section--show");
             section_Projects.addClass("section--show");
             section_Contact.removeClass("section--show");
+            body.removeClass(); //removes all/any other color classes
+            body.addClass("backcolor-projects");
+            navmenus.removeClass("menucolor-home menucolor-about menucolor-contact");
+            navmenus.addClass("menucolor-projects");
         }
     });
     navButton_Contact.click( function (event){ 
@@ -448,6 +462,10 @@ $(document).ready( function (){
             section_About.removeClass("section--show");
             section_Projects.removeClass("section--show");
             section_Contact.addClass("section--show");
+            body.removeClass(); //removes all/any other color classes
+            body.addClass("backcolor-contact");
+            navmenus.removeClass("menucolor-home menucolor-about menucolor-projects");
+            navmenus.addClass("menucolor-contact");
         }
     });
 });

@@ -5,12 +5,29 @@
 }
 
 html { font-size: 62.5%; }
-body { 
+body {   
   text-align: center;
-  background-color: lightgray;
+  color: rgb(50,50,50);
 }
-
-
+body, .nav-color { transition: background-color 1s ease-in-out 0s; }
+.list-group-item { background-color:rgb(233,233,233); }
+.backcolor-home { background-color: hsl(210,100%,90%); }
+.backcolor-about { background-color: hsl(180,100%,90%); }
+.backcolor-projects { background-color: hsl(150,100%,90%); }
+.backcolor-contact { background-color: hsl(120,100%,90%); }
+.menucolor-home { background-color:hsl(210,100%,40%); }
+.menucolor-about { background-color:hsl(180,100%,40%);}
+.menucolor-projects { background-color:hsl(150,100%,40%);}
+.menucolor-contact { background-color:hsl(120,100%,40%);}
+/*
+.color-white { color: white; }
+.color-facebook { color: rgb(59,89,152); }
+.color-twitter { color: rgb(0,182,241); }
+.color-googleplus { color: rgb(223,74,50); }
+.color-youtube { color: rgb(179,18,23); }
+.color-linkedin { color: rgb(0,123,182); }
+.color-github { color: black; }
+*/
 
 
 .mobile-nav {
@@ -34,7 +51,6 @@ body {
 
 
 .landscape-nav {
-  background-color: transparent;
   z-index: 99;
 }
 .landscape-nav__box {
@@ -113,17 +129,11 @@ body {
   min-height: 200px; min-width: auto;
 }
 .home__list { text-align: left; color: rgb(50,50,50); width: 85%;}
-.home__text { padding: 1%; margin: 0 0 1% 0; }
-.home__text .badge { background-color:darkred; padding: 1%;  margin: 1%; }
+.home__text { padding: 1%; }
+.home__text .badge { background-color: salmon; padding: 1%;  margin: 1%; }
 
-.skill-title {
-    padding: 1%; margin-top: 2%;
-    text-shadow: 1px 1px 2px black;
-}
-.skill-badge { 
-    padding: 1%; margin: 1%;
-    text-shadow: 1px 1px 2px black;
-}
+.skill-title { padding: 1%; margin-top: 2%;}
+.skill-badge { padding: 1%; margin: 1%;}
 
 /* dynamic sizing in media queries */
 /*landscape window - dynamic size to vh*/
@@ -155,15 +165,7 @@ body {
 
 
 
-/*
-.color-white { color: white; }
-.color-facebook { color: rgb(59,89,152); }
-.color-twitter { color: rgb(0,182,241); }
-.color-googleplus { color: rgb(223,74,50); }
-.color-youtube { color: rgb(179,18,23); }
-.color-linkedin { color: rgb(0,123,182); }
-.color-github { color: black; }
-*/
+
 
 
 .glow {
