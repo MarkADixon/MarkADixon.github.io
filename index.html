@@ -41,8 +41,6 @@
     -->
     
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -50,8 +48,11 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
     <!-- Template styles -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
 </head>
 
@@ -80,38 +81,40 @@
 </div>
 
 <!--full screen menu-->
-<div class="hidden-sm-down landscape-nav">
-    <div class="row flex-column landscape-nav__column">
-        <div class="z-depth-2 landscape-nav__box nav-color menucolor-home">
-            <div class="landscape-nav__fname">MARK</div> 
-            <div class="landscape-nav__lname"><strong>DIXON</strong></div>
-            <div class="landscape-nav__img">
-                <img class="img-fluid" src="img/GigaMark.png" alt="Cartoon Self Portrait" >    
-            </div>  
-            <div class="landscape-nav__tagline1"><strong>An Experienced...</strong></div>
-            <div class="landscape-nav__tagline2">Software Engineer</div>
-            <div class="landscape-nav__tagline3">Web Developer</div>
-            <div class="landscape-nav__tagline4">Statistician</div>
-        </div>
-        <div class="z-depth-2 landscape-nav__buttons">
-            <button class="col-12 btn waves-effect hoverable landscape-nav__button button__home nav-color menucolor-home">
-                <span class="fa fa-home landscape-nav__icon"></span>
-                <span class="landscape-nav__text">HOME</span>
-            </button>
-            <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__about nav-color menucolor-home">
-                <span class="fa fa-info-circle landscape-nav__icon"></span>
-                <span class="landscape-nav__text">ABOUT</span>
-            </button>
-            <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__projects nav-color menucolor-home">
-                <span class="fa fa-folder landscape-nav__icon"></span>
-                <span class="landscape-nav__text">PROJECTS</span>
-            </button>
-            <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__contact nav-color menucolor-home">
-                <span class="fa fa-envelope landscape-nav__icon"></span>
-                <span class="landscape-nav__text">CONTACT</span>
-            </button>
-        </div>
+<div class="row flex-column hidden-sm-down landscape-nav color__menu">
+  <div class="landscape-nav__head">
+    <div class="landscape-nav__fname">MARK</div> 
+    <div class="landscape-nav__lname"><strong>DIXON</strong></div>
+    <div class="landscape-nav__speechbubble"> <img class="img-fluid" src="img/speechbubble.png" alt="A Winning Formula!" ></div>  
+    <div class="landscape-nav__img"> <img class="img-fluid" src="img/GigaMark.png" alt="Cartoon Self Portrait" ></div>  
+    <div class="landscape-nav__tagline1"><strong>( App + Web Developer )</strong></div>
+    <div class="landscape-nav__tagline2"><strong>x ( Data + Stats Pro )</strong></div>
+    <div class="landscape-nav__horizontalline color__menu--selected"></div>
+    <div class="landscape-nav__tagline3"><strong>= Great Hire</strong></div>
+  </div>
+  <div class="z-depth-1 landscape-nav__buttons">
+      <button class="col-12 btn waves-effect hoverable landscape-nav__button button__home color__menu--selected">
+        <span class="fa fa-home landscape-nav__icon"></span>
+        <span class="landscape-nav__text">HOME</span>
+      </button>
+      <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__about color__menu">
+        <span class="fa fa-info-circle landscape-nav__icon"></span>
+        <span class="landscape-nav__text">ABOUT</span>
+      </button>
+      <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__projects color__menu">
+        <span class="fa fa-folder landscape-nav__icon"></span>
+        <span class="landscape-nav__text">PROJECTS</span>
+      </button>
+      <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__contact color__menu">
+        <span class="fa fa-envelope landscape-nav__icon"></span>
+        <span class="landscape-nav__text">CONTACT</span>
+      </button>
+      <button class="col-12 btn btn-primary waves-effect hoverable landscape-nav__button button__contact color__menu">
+            <span class="fa fa-envelope landscape-nav__icon"></span>
+            <span class="landscape-nav__text">CONTACT</span>
+        </button>
     </div>
+    <div class="landscape-nav__foot nav-color menucolor-home"></div>
 </div>
 
 <section id="home" class="content-container section--show">
