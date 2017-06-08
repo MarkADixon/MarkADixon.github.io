@@ -56,8 +56,8 @@ var quotes = [
   
 ];
 
-var currentQuote = quotes[0][0];
-var currentAuthor = quotes[0][1];
+var currentQuote = "";
+var currentAuthor = "";
 
 
 function getQuote() {
