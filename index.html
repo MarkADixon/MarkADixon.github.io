@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
   <meta charset="UTF-8">
   <!-- If IE use the latest rendering engine -->
@@ -44,31 +43,126 @@
   <!-- basic favicon 
   <link rel="shortcut icon" href="image url">
   -->
-        
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="color-primary">
-
-<header></header>
-<nav></nav>
-<main>
-  <section id="home">
-    <div class="home__container d-flex flex-column justify-content-center align-items-center">
-      <div><span class="home__fname">&nbspMARK</span><span class="home__symbol">&imof;</span><span class="home__lname"><b>DIXON</b></span></div>
-      <h2 class="home__description">&nbsp&nbspAPP/WEB DEV <b>+</b> DATA/STATS PRO</h2>
-      <h2 class="home__temp"><br><br>Coming_Soon &lt;PORTFOLIO PROJECTS&gt;</h2>
+<body>
+<div class="app__container color-primary">
+  <header></header>
+  
+  <nav>
+    <!--portrait view bottom menu-->
+    <div class="nav-bottom d-flex flex-row justify-content-around align-items-center flex-nowrap">
+      <div class="nav-bottom__linkline" ></div>
+      <button class="nav-bottom__button button__home color-button--invert">
+        <br>
+        <span class="fa-stack fa-lg nav-bottom__icon">
+          <i class="fa fa-circle fa-stack-2x color-button"></i>
+          <i class="fa fa-circle-thin fa-stack-2x color-button"></i>
+          <i class="fa fa-home fa-stack-1x"></i>
+        </span><br>
+        <span class="nav-bottom__text color-button">HOME</span>
+      </button>
+      <button class="nav-bottom__button button__about color-button">
+        <br>
+        <span class="fa-stack fa-lg nav-bottom__icon">
+          <i class="fa fa-circle fa-stack-2x color-button--invert"></i>
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-info-circle fa-stack-1x"></i>
+        </span><br>
+        <span class="nav-bottom__text">ABOUT</span>
+      </button>
+      <button class="nav-bottom__button button__projects color-button">
+        <br>
+        <span class="fa-stack fa-lg nav-bottom__icon">
+          <i class="fa fa-circle fa-stack-2x color-button--invert"></i>
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-folder fa-stack-1x"></i>
+        </span><br>
+        <span class="nav-bottom__text">PROJECTS</span>
+      </button>
+      <button class="nav-bottom__button button__contact color-button">
+        <br>
+        <span class="fa-stack fa-lg nav-bottom__icon">
+          <i class="fa fa-circle fa-stack-2x color-button--invert"></i>
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-envelope fa-stack-1x"></i>
+        </span><br>
+        <span class="nav-bottom__text">CONTACT</span>
+      </button>
+      <button class="nav-bottom__button button__hire color-button">
+        <span class="fa-stack fa-lg nav-bottom__icon">
+          <i class="fa fa-square fa-stack-2x color-cta nav-bottom__icon-sqaure-fill"></i>
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-comments fa-stack-1x"></i>
+        </span><br>
+        <span class="nav-bottom__text">HIRE</span>
+      </button>
     </div>
-  </section>
-  <!--Article/Section/Div for sub sections of main page -->
-  <section></section>
-  <!--Aside to make sidebar area-->
-  <aside></aside>
-</main>
-<footer></footer>
+
+    <!--full screen menu-->
+    <div class="nav-side d-flex flex-column justify-content-around align-items-start flex-nowrap" style="min-height:100%;">
+      <div class="nav-side__linkline" ></div>
+      <button class="nav-side__button button__home color-button--invert">
+        <br>
+        <span class="fa-stack fa-lg nav-side__icon">
+          <i class="fa fa-circle fa-stack-2x color-button"></i>
+          <i class="fa fa-circle-thin fa-stack-2x color-button"></i>
+          <i class="fa fa-home fa-stack-1x"></i>
+        </span><br>
+      </button>
+      <button class="nav-side__button button__about color-button">
+        <br>
+        <span class="fa-stack fa-lg nav-side__icon">
+          <i class="fa fa-circle fa-stack-2x color-button--invert"></i>
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-info-circle fa-stack-1x"></i>
+        </span><br>
+      </button>
+      <button class="nav-side__button button__projects color-button">
+        <br>
+        <span class="fa-stack fa-lg nav-side__icon">
+          <i class="fa fa-circle fa-stack-2x color-button--invert"></i>
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-folder fa-stack-1x"></i>
+        </span><br>
+      </button>
+      <button class="nav-side__button button__contact color-button">
+        <br>
+        <span class="fa-stack fa-lg nav-side__icon">
+          <i class="fa fa-circle fa-stack-2x color-button--invert"></i>
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-envelope fa-stack-1x"></i>
+        </span><br>
+      </button>
+      <button class="nav-side__button button__hire color-button">       
+        <span class="fa-stack fa-lg nav-side__icon">
+          <i class="fa fa-square fa-stack-2x color-cta nav-side__icon-sqaure-fill"></i>
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-comments fa-stack-1x"></i>
+        </span><br>
+        <span class="nav-side__text">HIRE</span><br>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="d-flex flex-column justify-content-center align-items-center" style="min-height:100%;" >
+      <div class="home__container">
+        <div><span class="home__fname">&nbspMARK</span><span class="home__symbol">&imof;</span><span class="home__lname"><b>DIXON</b></span></div>
+        <h2 class="home__description">&nbsp&nbspAPP/WEB DEV <b>+</b> DATA/STATS PRO</h2>
+        <h2 class="home__temp"><br><br>Coming_Soon &lt;PORTFOLIO PROJECTS&gt;</h2>
+      </div>
+    </section>
+    <!--Article/Section/Div for sub sections of main page -->
+    <section></section>
+    <!--Aside to make sidebar area-->
+    <aside></aside>
+  </main>
+  <footer></footer>
+</div> <!-- close app-containter -->
 
 <!-- SCRIPTS -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

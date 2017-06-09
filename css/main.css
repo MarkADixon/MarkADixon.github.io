@@ -1,23 +1,22 @@
-/* RESET (not needed in BS4)
-*, html, body {
-  box-sizing: border-box; 
-  padding: 0; margin: 0;
-}
+/* RESET (not needed in Bootstrap)
+  *, html, body {
+    box-sizing: border-box; 
+    padding: 0; margin: 0;
+  }
 */
 
 /* FONTS */
-@import url('https://fonts.googleapis.com/css?family=Lato|Limelight|Poiret+One|Voltaire');
-/* 
-    font-family: 'Lato', sans-serif;
-    font-family: 'Limelight', cursive;
-    font-family: 'Poiret One', cursive;
-    font-family: 'Voltaire', sans-serif;
-*/
-body { font-family: 'Lato', sans-serif; }
-
+  @import url('https://fonts.googleapis.com/css?family=Lato|Limelight|Poiret+One|Voltaire');
+  /* 
+  font-family: 'Lato', sans-serif;
+  font-family: 'Limelight', cursive;
+  font-family: 'Poiret One', cursive;
+  font-family: 'Voltaire', sans-serif;
+  */
+  body { font-family: 'Lato', sans-serif; text-align: center; }
 
 /* COLORS */
-/*
+  /*
   .color-white { color: white; }
   .color-facebook { color: rgb(59,89,152); }
   .color-twitter { color: rgb(0,182,241); }
@@ -25,44 +24,58 @@ body { font-family: 'Lato', sans-serif; }
   .color-youtube { color: rgb(179,18,23); }
   .color-linkedin { color: rgb(0,123,182); }
   .color-github { color: black; }
-*/
-.color-primary { background-color: rgb(30,30,60); color: rgb(190,190,190); }
-.color-primary--invert { background-color: rgb(190,190,190); color: rgb(30,30,60); }
+  */
+  .color-primary { background-color: rgb(30,30,60); color: rgb(190,190,190); }
+  .color-primary--invert { background-color: rgb(190,190,190); color: rgb(30,30,60); }
+  .color-button { background-color: transparent; color: rgb(190,190,190); }
+  .color-button--invert { background-color: transparent; color: rgb(30,30,60); }
+  .color-cta { background-color: transparent; color: rgb(190,50,50);  }
 
-/* TEXT PROPS */
-#home { text-align: center; }
-
-/* SIZING */
-#home { width: 100%; height: 100%; }
-.home__container { width: auto; height: 100%; }
-
-/*TRANSITIONS*/
-
+/* CONTAINERS */
+  .app__container { position: fixed; top: 0; left: 0; width: 100% ; height: 100%; }
 
 /* RESPONSIVE SIZING */
-/*landscape window - dynamic size to vh*/
-@media (min-aspect-ratio: 1/1)  {
-  /*shared elements*/
-  main { margin-left: 10vh; width: calc(100vw - 10vh); height: 100vh; }
-  .home__fname, .home__lname, .home__symbol { font-size: 7vh; letter-spacing: 3vh; }
-  .home__description, .home__temp { font-size: 2.5vh; letter-spacing: 1vh; }
+  /* portrait window (default design) - dynamic size to vw*/
+  html { 
+    font-size: 1%; /* fallback value : test me */
+    font-size: 1vw;
+  }
+  main { width: 100vw; height: calc(100vh - 18vw); }
+  nav { position: fixed; top: calc(100vh - 18vw); left: 0; width: 100vw; height: 18vw; }
+  .nav-bottom { opacity:1; pointer-events:auto; height: auto; }
+  .nav-side { opacity:0; pointer-events:none; overflow:hidden; height: 1px; }
+  
 
-  /*only visible in landscape*/
-  .landscape-nav__tagline1, .landscape-nav__tagline2 { font-size: 1.8vh; }
-  .landscape-nav__tagline3 { font-size: 2.0vh; }
-  .landscape-nav__fname { font-size: 4.5vh; }
-  .landscape-nav__lname { font-size: 6vh; }
-  .landscape-nav__icon { font-size: 3vh !important; }
-  .landscape-nav__text { font-size: 2.5vh; }
-}
+  /*landscape window - dynamic size to vh*/
+  @media (min-aspect-ratio: 1/1) { 
+    html { 
+      font-size: 1%; /* fallback value : test me*/
+      font-size: 1vh; 
+    } 
+    main { width: calc(100vw - 18vh); height: 100vh; }
+    nav { position: fixed; top: 0; left: calc(100vw - 18vh); width: 18vh; height: 100vh; }
+    .nav-bottom { opacity:0; pointer-events:none; overflow:hidden; height: 1px; }
+    .nav-side { opacity:1; pointer-events:auto; height: auto; }
+  }
 
-/*portrait window - dynamic size to vw*/
-@media (max-aspect-ratio: 1/1) { 
-  /*shared elements*/
-  main { width: 100vw; height: calc(100vh - 10vw); }
-  .home__fname, .home__lname, .home__symbol { font-size: 7vw; letter-spacing: 3vw; }
-  .home__description, .home__temp { font-size: 2.5vw; letter-spacing: 1vw; }
+/* FONT SIZING */
+  .home__fname, .home__lname, .home__symbol { font-size: 7rem; letter-spacing: 2.8rem; }
+  .home__description, .home__temp { font-size: 2.5rem; letter-spacing: 0.78rem; }
+  .nav-bottom__icon { font-size: 5rem !important; }
+  .nav-side__icon { font-size: 5rem !important; }
+  .nav-bottom__text, .nav-side__text { font-size: 2.5rem; font-weight: bold; }
+  .nav-bottom__icon-sqaure-fill { font-size: 8.5rem !important; margin-top: 0.4rem; }
+  .nav-side__icon-sqaure-fill { font-size: 8.5rem !important; margin-top: 0.4rem; }
 
-  /*only visible in portrait*/
-}
-
+/* OTHER RULES */
+  .nav-bottom__button, .nav-side__button { border: none; }
+  .nav-bottom__linkline { 
+    position: absolute; top:32%; left: 10%; 
+    height: 1rem; width: 80rem;
+    background-color: rgb(190,190,190);
+  }
+  .nav-side__linkline { 
+    position: absolute; top:10%; left: 32%; 
+    height: 80rem; width: 1rem;
+    background-color: rgb(190,190,190);
+  }
