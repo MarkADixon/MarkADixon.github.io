@@ -25,11 +25,11 @@
   .color-linkedin { color: rgb(0,123,182); }
   .color-github { color: black; }
   */
-  .color-primary { background-color: rgb(30,30,60); color: rgb(190,190,190); }
-  .color-primary--invert { background-color: rgb(190,190,190); color: rgb(30,30,60); }
+  .color-page { background-color: rgb(30,30,60); color: rgb(190,190,190); }
+  .color-page--invert { background-color: rgb(190,190,190); color: rgb(30,30,60); }
   .color-button { background-color: transparent; color: rgb(190,190,190); }
   .color-button--invert { background-color: transparent; color: rgb(30,30,60); }
-  .color-cta { background-color: transparent; color: rgb(190,50,50);  }
+  .color-cta { background-color: transparent; color: rgb(10,140,10);  }
 
 /* CONTAINERS */
   .app__container { position: fixed; top: 0; left: 0; width: 100% ; height: 100%; }
@@ -42,8 +42,8 @@
   }
   main { width: 100vw; height: calc(100vh - 18vw); }
   nav { position: fixed; top: calc(100vh - 18vw); left: 0; width: 100vw; height: 18vw; }
-  .nav-bottom { opacity:1; pointer-events:auto; height: auto; }
-  .nav-side { opacity:0; pointer-events:none; overflow:hidden; height: 1px; }
+  .nav-mobile { opacity:1; pointer-events:auto; height: auto; }
+  .nav-main { opacity:0; pointer-events:none; overflow:hidden; height: 1px; }
   
 
   /*landscape window - dynamic size to vh*/
@@ -52,30 +52,56 @@
       font-size: 1%; /* fallback value : test me*/
       font-size: 1vh; 
     } 
-    main { width: calc(100vw - 18vh); height: 100vh; }
-    nav { position: fixed; top: 0; left: calc(100vw - 18vh); width: 18vh; height: 100vh; }
-    .nav-bottom { opacity:0; pointer-events:none; overflow:hidden; height: 1px; }
-    .nav-side { opacity:1; pointer-events:auto; height: auto; }
+    main { width: 100vw; height: 82vh; }
+    nav { position: fixed; top: 82vh; left: calc(50vw - 50vh) ; width: 100vh; height: 18vh; }
+    .nav-mobile { opacity:0; pointer-events:none; overflow:hidden; height: 1px; }
+    .nav-main { opacity:1; pointer-events:auto; height: auto; }
   }
 
 /* FONT SIZING */
   .home__fname, .home__lname, .home__symbol { font-size: 7rem; letter-spacing: 2.8rem; }
   .home__description, .home__temp { font-size: 2.5rem; letter-spacing: 0.78rem; }
-  .nav-bottom__icon { font-size: 5rem !important; }
-  .nav-side__icon { font-size: 5rem !important; }
-  .nav-bottom__text, .nav-side__text { font-size: 2.5rem; font-weight: bold; }
-  .nav-bottom__icon-sqaure-fill { font-size: 8.5rem !important; margin-top: 0.4rem; }
-  .nav-side__icon-sqaure-fill { font-size: 8.5rem !important; margin-top: 0.4rem; }
+  
+  .nav-main__icon-base, .nav-mobile__icon-base { font-size: 7rem !important; }
+  .nav-main__icon-middle, .nav-mobile__icon-middle { font-size: 7.2rem !important; }
+  .nav-main__icon-top, .nav-mobile__icon-top { font-size: 3rem !important; margin-top: 0.5rem; margin-left: 0.1rem; }
+  .nav-main__icon-text, .nav-mobile__icon-text { font-size: 2.0rem; font-weight: bold; }
+  
+  /* TRANSITIONS */
+  .nav-main__button, .nav-mobile__button, .nav-main__button *, .nav-mobile__button * { 
+    -webkit-transition: -webkit-transform 0.5s ease-in-out 0s,
+                color 0.5s ease-in-out 0s, 
+                background-color 0.5s ease-in-out 0s;
+    transition: transform 0.5s ease-in-out 0s,
+                color 0.5s ease-in-out 0s, 
+                background-color 0.5s ease-in-out 0s;
+  }
+  .nav-main__button--selected, .nav-mobile__button--selected { 
+    margin-top: 0.5rem; 
+    -webkit-transform: scale(1.25); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: scale(1.25); /* IE 9 */
+    transform: scale(1.25); /* IE 10, Fx 16+, Op 12.1+ */
+  }
+  .nav-main__icon-top--selected, .nav-mobile__icon-top--selected { 
+    -webkit-transform: scale(1.4); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: scale(1.4); /* IE 9 */
+    transform: scale(1.4); /* IE 10, Fx 16+, Op 12.1+ */
+  }
+  .spin {
+    -webkit-transform: rotatey(360deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotatey(360deg); /* IE 9 */
+    transform: rotatey(360deg); /* IE 10, Fx 16+, Op 12.1+ */
+  } 
 
-/* OTHER RULES */
-  .nav-bottom__button, .nav-side__button { border: none; }
-  .nav-bottom__linkline { 
-    position: absolute; top:32%; left: 10%; 
-    height: 1rem; width: 80rem;
+  /* OTHER RULES */
+  .nav-main__button, .nav-mobile__button  { border: none; }
+  .nav-main__linkline { 
+    position: absolute; top:40%; left: 10%; 
+    height: 0.5rem; width: 80rem;
     background-color: rgb(190,190,190);
   }
-  .nav-side__linkline { 
-    position: absolute; top:10%; left: 32%; 
-    height: 80rem; width: 1rem;
+  .nav-mobile__linkline { 
+    position: absolute; top:20%; left: 10%; 
+    height: 0.5rem; width: 80rem;
     background-color: rgb(190,190,190);
   }

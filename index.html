@@ -49,107 +49,110 @@
 </head>
 
 <body>
-<div class="app__container color-primary">
+<div class="app__container color-page">
   <header></header>
   
   <nav>
     <!--portrait view bottom menu-->
-    <div class="nav-bottom d-flex flex-row justify-content-around align-items-center flex-nowrap">
-      <div class="nav-bottom__linkline" ></div>
-      <button class="nav-bottom__button button__home color-button--invert">
-        <br>
-        <span class="fa-stack fa-lg nav-bottom__icon">
-          <i class="fa fa-circle fa-stack-2x color-button"></i>
-          <i class="fa fa-circle-thin fa-stack-2x color-button"></i>
-          <i class="fa fa-home fa-stack-1x"></i>
-        </span><br>
-        <span class="nav-bottom__text color-button">HOME</span>
+    <div class="nav-mobile d-flex flex-row justify-content-around align-items-start flex-nowrap">
+      <div class="nav-mobile__linkline" ></div>
+      <button class="nav-mobile__button color-button button__home nav-mobile__button--selected">
+        <span class="fa-stack fa-3x nav-mobile__icon">
+          <i class="fa fa-circle fa-stack-2x nav-mobile__icon-base color-button"></i>
+          <i class="fa fa-circle-thin fa-stack-2x nav-mobile__icon-middle color-button"></i>
+          <i class="fa fa-home fa-stack-1x nav-mobile__icon-top color-button--invert nav-mobile__icon-top--selected"></i>
+        </span><br><br>
+        <span class="nav-mobile__icon-text color-button">HOME</span>
       </button>
-      <button class="nav-bottom__button button__about color-button">
-        <br>
-        <span class="fa-stack fa-lg nav-bottom__icon">
-          <i class="fa fa-circle fa-stack-2x color-button--invert"></i>
-          <i class="fa fa-circle-thin fa-stack-2x"></i>
-          <i class="fa fa-info-circle fa-stack-1x"></i>
-        </span><br>
-        <span class="nav-bottom__text">ABOUT</span>
+      <button class="nav-mobile__button color-button button__about">
+        <span class="fa-stack fa-3x nav-mobile__icon">
+          <i class="fa fa-circle fa-stack-2x nav-mobile__icon-base color-button--invert"></i>
+          <i class="fa fa-circle-thin fa-stack-2x nav-mobile__icon-middle color-button"></i>
+          <i class="fa fa-coffee fa-stack-1x nav-mobile__icon-top color-button"></i>
+        </span><br><br>
+        <span class="nav-mobile__icon-text color-button">ABOUT ME</span>
       </button>
-      <button class="nav-bottom__button button__projects color-button">
-        <br>
-        <span class="fa-stack fa-lg nav-bottom__icon">
-          <i class="fa fa-circle fa-stack-2x color-button--invert"></i>
-          <i class="fa fa-circle-thin fa-stack-2x"></i>
-          <i class="fa fa-folder fa-stack-1x"></i>
-        </span><br>
-        <span class="nav-bottom__text">PROJECTS</span>
+      <button class="nav-mobile__button color-button button__resume">
+        <span class="fa-stack fa-3x nav-mobile__icon">
+          <i class="fa fa-circle fa-stack-2x nav-mobile__icon-base color-button--invert"></i>
+          <i class="fa fa-circle-thin fa-stack-2x nav-mobile__icon-middle color-button"></i>
+          <i class="fa fa-file-text fa-stack-1x nav-mobile__icon-top color-button"></i>
+        </span><br><br>
+        <span class="nav-mobile__icon-text color-button">RESUME</span>
       </button>
-      <button class="nav-bottom__button button__contact color-button">
-        <br>
-        <span class="fa-stack fa-lg nav-bottom__icon">
-          <i class="fa fa-circle fa-stack-2x color-button--invert"></i>
-          <i class="fa fa-circle-thin fa-stack-2x"></i>
-          <i class="fa fa-envelope fa-stack-1x"></i>
-        </span><br>
-        <span class="nav-bottom__text">CONTACT</span>
+      <button class="nav-mobile__button color-button button__portfolio">
+        <span class="fa-stack fa-3x nav-mobile__icon">
+          <i class="fa fa-circle fa-stack-2x nav-mobile__icon-base color-button--invert"></i>
+          <i class="fa fa-circle-thin fa-stack-2x nav-mobile__icon-middle color-button"></i>
+          <i class="fa fa-briefcase fa-stack-1x nav-mobile__icon-top color-button"></i>
+        </span><br><br>
+        <span class="nav-mobile__icon-text color-button">PORTFOLIO</span>
       </button>
-      <button class="nav-bottom__button button__hire color-button">
-        <span class="fa-stack fa-lg nav-bottom__icon">
-          <i class="fa fa-square fa-stack-2x color-cta nav-bottom__icon-sqaure-fill"></i>
-          <i class="fa fa-square-o fa-stack-2x"></i>
-          <i class="fa fa-comments fa-stack-1x"></i>
-        </span><br>
-        <span class="nav-bottom__text">HIRE</span>
+      <button class="nav-mobile__button color-button button__hire">       
+        <span class="fa-stack fa-3x nav-mobile__icon">
+          <i class="fa fa-circle fa-stack-2x nav-mobile__icon-base color-cta"></i>
+          <i class="fa fa-circle-thin fa-stack-2x nav-mobile__icon-middle color-button"></i>
+          <i class="fa fa-comments fa-stack-1x nav-mobile__icon-top color-button"></i>
+        </span><br><br>
+        <span class="nav-mobile__icon-text">HIRE</span><br>
       </button>
     </div>
 
-    <!--full screen menu-->
-    <div class="nav-side d-flex flex-column justify-content-around align-items-start flex-nowrap" style="min-height:100%;">
-      <div class="nav-side__linkline" ></div>
-      <button class="nav-side__button button__home color-button--invert">
-        <br>
-        <span class="fa-stack fa-lg nav-side__icon">
-          <i class="fa fa-circle fa-stack-2x color-button"></i>
-          <i class="fa fa-circle-thin fa-stack-2x color-button"></i>
-          <i class="fa fa-home fa-stack-1x"></i>
-        </span><br>
+    <!--main (landscape) nav menu-->
+    <div class="nav-main d-flex flex-row justify-content-around align-items-center flex-nowrap" style="min-height:100%;">
+      <div class="nav-main__linkline"></div>
+      <button class="nav-main__button color-button button__home nav-main__button--selected">
+        <span class="fa-stack fa-3x nav-main__icon">
+          <i class="fa fa-circle fa-stack-2x nav-main__icon-base color-button"></i>
+          <i class="fa fa-circle-thin fa-stack-2x nav-main__icon-middle color-button"></i>
+          <i class="fa fa-home fa-stack-1x nav-main__icon-top color-button--invert nav-main__icon-top--selected"></i>
+        </span><br><br>
+        <span class="nav-main__icon-text color-button">HOME</span>
       </button>
-      <button class="nav-side__button button__about color-button">
-        <br>
-        <span class="fa-stack fa-lg nav-side__icon">
-          <i class="fa fa-circle fa-stack-2x color-button--invert"></i>
-          <i class="fa fa-circle-thin fa-stack-2x"></i>
-          <i class="fa fa-info-circle fa-stack-1x"></i>
-        </span><br>
+      <button class="nav-main__button color-button button__about">
+        <span class="fa-stack fa-3x nav-main__icon">
+          <i class="fa fa-circle fa-stack-2x nav-main__icon-base color-button--invert"></i>
+          <i class="fa fa-circle-thin fa-stack-2x nav-main__icon-middle color-button"></i>
+          <i class="fa fa-coffee fa-stack-1x nav-main__icon-top color-button"></i>
+        </span><br><br>
+        <span class="nav-main__icon-text color-button">ABOUT ME</span>
       </button>
-      <button class="nav-side__button button__projects color-button">
-        <br>
-        <span class="fa-stack fa-lg nav-side__icon">
-          <i class="fa fa-circle fa-stack-2x color-button--invert"></i>
-          <i class="fa fa-circle-thin fa-stack-2x"></i>
-          <i class="fa fa-folder fa-stack-1x"></i>
-        </span><br>
+      <button class="nav-main__button color-button button__resume">
+        <span class="fa-stack fa-3x nav-main__icon">
+          <i class="fa fa-circle fa-stack-2x nav-main__icon-base color-button--invert"></i>
+          <i class="fa fa-circle-thin fa-stack-2x nav-main__icon-middle color-button"></i>
+          <i class="fa fa-file-text fa-stack-1x nav-main__icon-top color-button"></i>
+        </span><br><br>
+        <span class="nav-main__icon-text color-button">RESUME</span>
       </button>
-      <button class="nav-side__button button__contact color-button">
-        <br>
-        <span class="fa-stack fa-lg nav-side__icon">
-          <i class="fa fa-circle fa-stack-2x color-button--invert"></i>
-          <i class="fa fa-circle-thin fa-stack-2x"></i>
-          <i class="fa fa-envelope fa-stack-1x"></i>
-        </span><br>
+      <button class="nav-main__button color-button button__portfolio">
+        <span class="fa-stack fa-3x nav-main__icon">
+          <i class="fa fa-circle fa-stack-2x nav-main__icon-base color-button--invert"></i>
+          <i class="fa fa-circle-thin fa-stack-2x nav-main__icon-middle color-button"></i>
+          <i class="fa fa-briefcase fa-stack-1x nav-main__icon-top color-button"></i>
+        </span><br><br>
+        <span class="nav-main__icon-text color-button">PORTFOLIO</span>
       </button>
-      <button class="nav-side__button button__hire color-button">       
-        <span class="fa-stack fa-lg nav-side__icon">
-          <i class="fa fa-square fa-stack-2x color-cta nav-side__icon-sqaure-fill"></i>
-          <i class="fa fa-square-o fa-stack-2x"></i>
-          <i class="fa fa-comments fa-stack-1x"></i>
-        </span><br>
-        <span class="nav-side__text">HIRE</span><br>
+      <button class="nav-main__button color-button button__hire">       
+        <span class="fa-stack fa-3x nav-main__icon">
+          <i class="fa fa-circle fa-stack-2x nav-main__icon-base color-cta"></i>
+          <i class="fa fa-circle-thin fa-stack-2x nav-main__icon-middle color-button"></i>
+          <i class="fa fa-comments fa-stack-1x nav-main__icon-top color-button"></i>
+        </span><br><br>
+        <span class="nav-main__icon-text">HIRE</span><br>
       </button>
     </div>
   </nav>
 
   <main>
     <section id="home" class="d-flex flex-column justify-content-center align-items-center" style="min-height:100%;" >
+      <div class="home__container">
+        <div><span class="home__fname">&nbspMARK</span><span class="home__symbol">&imof;</span><span class="home__lname"><b>DIXON</b></span></div>
+        <h2 class="home__description">&nbsp&nbspAPP/WEB DEV <b>+</b> DATA/STATS PRO</h2>
+        <h2 class="home__temp"><br><br>Coming_Soon &lt;PORTFOLIO PROJECTS&gt;</h2>
+      </div>
+    </section>
+    <section id="about" class="d-flex flex-column justify-content-center align-items-center" style="min-height:100%;" >
       <div class="home__container">
         <div><span class="home__fname">&nbspMARK</span><span class="home__symbol">&imof;</span><span class="home__lname"><b>DIXON</b></span></div>
         <h2 class="home__description">&nbsp&nbspAPP/WEB DEV <b>+</b> DATA/STATS PRO</h2>
