@@ -11,7 +11,7 @@
   font-family: 'Lato', sans-serif;
   font-family: 'Voltaire', sans-serif;
   */
-  * { font-family: 'Lato', sans-serif; text-align: center; }
+  * { font-family: 'Voltaire', sans-serif; text-align: center; }
 
 /* COLORS */
   /*
@@ -76,6 +76,8 @@
   .nav-main__icon-text, .nav-mobile__icon-text { font-size: 2.5rem; letter-spacing: 0.1rem; } 
   .home__fname, .home__lname, .home__symbol { font-size: 7rem; letter-spacing: 2.8rem; }
   .home__description, .home__temp { font-size: 2.5rem; letter-spacing: 0.78rem; }
+  .home__contact { font-size: 2em; }
+  .home__hire { font-size: 2.5rem; letter-spacing: 0.1rem; } 
   .card-title { font-size: 4rem; }
   .card-text { font-size: 2.5rem; }
   
@@ -109,14 +111,23 @@
   .nav-main__button, .nav-mobile__button  { border: none; }
   .nav-main__linkline { 
     position: absolute; top:25%; left: 10%; 
-    height: 0.4rem; width: 80rem;
+    height: 0.5rem; width: 80rem;
     background-color: rgb(190,190,190);
   }
   .nav-mobile__linkline { 
     position: absolute; top:25%; left: 10%; 
-    height: 0.4rem; width: 77rem;
+    height: 0.5rem; width: 77rem;
     background-color: rgb(190,190,190);
   }
+  .home__divider {  
+    position: relative; left: 5rem; 
+    margin: 2rem 0;
+    height: 0.2rem; width: 60rem;
+    background-color: rgb(190,190,190);
+  }
+  .home__contact { position: relative; left: -2rem;}
+  .home__hire { padding: 0; height: 75%; margin: 1rem 0 0 0; border: 0.25rem solid rgb(190,190,190); border-radius: 1rem; }
+  .home__link { color: rgb(190,190,190); text-decoration: none; margin: 1rem 0 }
   .about__container { margin: 5rem 5rem 25rem 5rem; }
   .about__card { 
     padding: 1rem; margin: 2.5rem;
