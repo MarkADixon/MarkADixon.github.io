@@ -145,10 +145,12 @@
   </nav>
 
   <main>
-    <section id="home" class="d-flex flex-column justify-content-center align-items-center section--show" style="min-height:100%;" >
+    <section id="home" class="color-page section--show">
       <div class="home__container color-page">
-        <div><span class="home__fname">&nbspMARK</span><span class="home__symbol">&imof;</span><span class="home__lname"><b>DIXON</b></span></div>
-        <h2 class="home__description">&nbsp&nbspAPP/WEB DEV <b>+</b> DATA/STATS PRO</h2>
+        <div class="home__title">
+          <span class="home__fname">MARK</span><span class="home__symbol">&imof;</span><span class="home__lname"><b>DIXON</b></span><br>
+          <span class="home__description">APP/WEB DEV <b>+</b> DATA/STATS PRO</span>
+        </div>
         <div class="home__divider"></div>
         <div class="row home__contact">
           <div class="col text-right">
@@ -166,7 +168,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> <!--Section: Home-->
 
     <section id="about" class="color-page">
       <div class="about__container color-page">
@@ -244,18 +246,134 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> <!--Section: About me-->
 
-    <section id="resume">
+    <section id="resume" class="color-page">
+      <div class="resume__container color-page">
+        <div class="resume__title">
+          <h1>RESUME</h1>
+        </div>
+        <div class="resume__download">
+          <span>Download/View Resume</span><a>as PDF</a><a>as DOC</a>
+        </div>
+        <div class="resume__summary">
+          <h2>Summary</h2>
+          <div class="row">
+            <div class="col-2">
+              <i class="fa fa-linkedin"></i>
+            </div>
+            <div class="col-10">
+              <p>lorem</p>
+              <p>dorem</p>
+              <p>decum</p>
+            </div>
+          </div>
+        </div>
+        <div class="resume__skills">
+          <h2>Skills</h2>
+          <div class="row">
+            <div class="col-2">
+              <i class="fa fa-linkedin"></i>
+            </div>
+            <div class="col-10">
+              <p>lorem</p>
+              <p>dorem</p>
+              <p>decum</p>
+            </div>
+          </div>
+        </div>
+        <div class="resume__experience">
+          <h2>Experience</h2>
+          <div class="row">
+            <div class="col-2">
+              <i class="fa fa-linkedin"></i>
+            </div>
+            <div class="col-10">
+              <p>lorem</p>
+              <p>dorem</p>
+              <p>decum</p>
+            </div>
+          </div>
+        </div>
+        <div class="resume__education">
+          <h2>Education</h2>
+          <div class="row">
+            <div class="col-2">
+              <i class="fa fa-linkedin"></i>
+            </div>
+            <div class="col-10">
+              <p>lorem</p>
+              <p>dorem</p>
+              <p>decum</p>
+            </div>
+          </div>
+        </div>
+        <div class="resume__awards">
+          <h2>Awards</h2>
+          <div class="row">
+            <div class="col-2">
+              <i class="fa fa-linkedin"></i>
+            </div>
+            <div class="col-10">
+              <p>lorem</p>
+              <p>dorem</p>
+              <p>decum</p>
+            </div>
+          </div>
+        </div>
+    </section> <!--Section: Resume-->
 
-    </section>
+    <section id="portfolio" class="color-page">
+      <div class="portfolio__container color-page">
+        <div class="portfolio__title">
+          <h1>PORTFOLIO</h1>
+        </div>
+        <div class="portfolio__subtitle">
+          <h2>Professional Work Samples</h2>
+        </div>
+        <div class="portfolio__professional row">
+          <div class="portfolio__item col-4">projectum</div>
+          <div class="portfolio__item col-4">projectum</div>
+          <div class="portfolio__item col-4">projectum</div>
+        </div>
+        <div class="portfolio__subtitle">
+          <h2>Personal Project Samples</h2>
+        </div>
+        <div class="portfolio__personal row">
+          <div class="portfolio__item col-4">projectum</div>
+          <div class="portfolio__item col-4">projectum</div>
+          <div class="portfolio__item col-4">projectum</div>
+        </div>
+      </div>
+    </section> <!--Section: Portfolio-->
 
-    <!--Article/Section/Div for sub sections of main page -->
-    <section></section>
-    <!--Aside to make sidebar area-->
-    <aside></aside>
+
+    <section id="hire" class="color-page">
+      <div class="hire__container color-page">
+        <div class="hire__title">
+          <h1>HIRE / CONTACT</h1>
+        </div>
+        <div class="row">           
+          <div class="hire_cartoon col-sm-4">
+            <img class="img-fluid" src="img/GigaMark.png" alt="Cartoon Self Portrait" > 
+          </div>
+          <div class="hire_form col-sm-8">
+            <form action="http://formspree.io/markdixondev@gmail.com" method="POST">
+              <h4><strong>Say Hello!</strong></h4>    
+              <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+              <input name="_replyto" type="email" class="form-control" placeholder="Your Email Address" required>
+              <h4><strong>Your Message:</strong></h4>
+              <textarea name="body" class="form-control" rows="5" id="comment" placeholder="I love your work and am interested in hiring you!" required></textarea>
+              <button type="submit" class="btn btn-danger pull-right">
+                  <span><i class="fa fa-paper-plane" ></i></span> <strong>SEND</strong>
+              </button>  
+            </form>
+          </div>
+        </div>
+      </div>
+    </section><!--Section: Hire-->
+
   </main>
-  <footer></footer>
 </div> <!-- close app-containter -->
 
 <!-- SCRIPTS -->
