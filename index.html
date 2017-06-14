@@ -52,11 +52,11 @@
 <div class="app__container color-page">
   <header></header>
   
-  <nav>
+  <nav class="color-page">
     <!--portrait view bottom menu-->
-    <div class="nav-mobile d-flex flex-row justify-content-around align-items-start flex-nowrap">
+    <div class="nav-mobile d-flex flex-row justify-content-around align-items-start flex-nowrap" role="navigation">
       <div class="nav-mobile__linkline" ></div>
-      <button class="nav-mobile__button color-button button__home nav-mobile__button--selected">
+      <button class="col nav-mobile__button color-button button__home nav__button nav-mobile__button--selected" data-linkto="home">
         <span class="fa-stack fa-3x nav-mobile__icon">
           <i class="fa fa-circle fa-stack-2x nav-mobile__icon-base color-button"></i>
           <i class="fa fa-circle-thin fa-stack-2x nav-mobile__icon-middle color-button"></i>
@@ -64,15 +64,15 @@
         </span><br><br>
         <span class="nav-mobile__icon-text color-button">HOME</span>
       </button>
-      <button class="nav-mobile__button color-button button__about">
+      <button class="col nav-mobile__button color-button button__about nav__button" data-linkto="about">
         <span class="fa-stack fa-3x nav-mobile__icon">
           <i class="fa fa-circle fa-stack-2x nav-mobile__icon-base color-button--invert"></i>
           <i class="fa fa-circle-thin fa-stack-2x nav-mobile__icon-middle color-button"></i>
           <i class="fa fa-coffee fa-stack-1x nav-mobile__icon-top color-button"></i>
         </span><br><br>
-        <span class="nav-mobile__icon-text color-button">ABOUT ME</span>
+        <span class="nav-mobile__icon-text color-button">ABOUT&nbspME</span>
       </button>
-      <button class="nav-mobile__button color-button button__resume">
+      <button class="col nav-mobile__button color-button button__resume nav__button" data-linkto="resume">
         <span class="fa-stack fa-3x nav-mobile__icon">
           <i class="fa fa-circle fa-stack-2x nav-mobile__icon-base color-button--invert"></i>
           <i class="fa fa-circle-thin fa-stack-2x nav-mobile__icon-middle color-button"></i>
@@ -80,7 +80,7 @@
         </span><br><br>
         <span class="nav-mobile__icon-text color-button">RESUME</span>
       </button>
-      <button class="nav-mobile__button color-button button__portfolio">
+      <button class="col nav-mobile__button color-button button__portfolio nav__button" data-linkto="portfolio">
         <span class="fa-stack fa-3x nav-mobile__icon">
           <i class="fa fa-circle fa-stack-2x nav-mobile__icon-base color-button--invert"></i>
           <i class="fa fa-circle-thin fa-stack-2x nav-mobile__icon-middle color-button"></i>
@@ -88,7 +88,7 @@
         </span><br><br>
         <span class="nav-mobile__icon-text color-button">PORTFOLIO</span>
       </button>
-      <button class="nav-mobile__button color-button button__hire">       
+      <button class="col nav-mobile__button color-button button__hire nav__button" data-linkto="hire">       
         <span class="fa-stack fa-3x nav-mobile__icon">
           <i class="fa fa-circle fa-stack-2x nav-mobile__icon-base color-cta"></i>
           <i class="fa fa-circle-thin fa-stack-2x nav-mobile__icon-middle color-button"></i>
@@ -99,66 +99,143 @@
     </div>
 
     <!--main (landscape) nav menu-->
-    <div class="nav-main d-flex flex-row justify-content-around align-items-center flex-nowrap" style="min-height:100%;">
+    <div class="nav-main d-flex flex-row justify-content-center align-items-start flex-nowrap" role="navigation">
       <div class="nav-main__linkline"></div>
-      <button class="nav-main__button color-button button__home nav-main__button--selected">
+      <button class="col nav-main__button color-button button__home nav-main__button--selected nav__button" data-linkto="home">
         <span class="fa-stack fa-3x nav-main__icon">
           <i class="fa fa-circle fa-stack-2x nav-main__icon-base color-button"></i>
           <i class="fa fa-circle-thin fa-stack-2x nav-main__icon-middle color-button"></i>
           <i class="fa fa-home fa-stack-1x nav-main__icon-top color-button--invert nav-main__icon-top--selected"></i>
         </span><br><br>
-        <span class="nav-main__icon-text color-button">HOME</span>
+        <span class="nav-main__icon-text color-button">Home</span>
       </button>
-      <button class="nav-main__button color-button button__about">
+      <button class="col nav-main__button color-button button__about nav__button" data-linkto="about">
         <span class="fa-stack fa-3x nav-main__icon">
           <i class="fa fa-circle fa-stack-2x nav-main__icon-base color-button--invert"></i>
           <i class="fa fa-circle-thin fa-stack-2x nav-main__icon-middle color-button"></i>
           <i class="fa fa-coffee fa-stack-1x nav-main__icon-top color-button"></i>
         </span><br><br>
-        <span class="nav-main__icon-text color-button">ABOUT ME</span>
+        <span class="nav-main__icon-text color-button">About Me</span>
       </button>
-      <button class="nav-main__button color-button button__resume">
+      <button class="col nav-main__button color-button button__resume nav__button" data-linkto="resume">
         <span class="fa-stack fa-3x nav-main__icon">
           <i class="fa fa-circle fa-stack-2x nav-main__icon-base color-button--invert"></i>
           <i class="fa fa-circle-thin fa-stack-2x nav-main__icon-middle color-button"></i>
           <i class="fa fa-file-text fa-stack-1x nav-main__icon-top color-button"></i>
         </span><br><br>
-        <span class="nav-main__icon-text color-button">RESUME</span>
+        <span class="nav-main__icon-text color-button">Resume</span>
       </button>
-      <button class="nav-main__button color-button button__portfolio">
+      <button class="col nav-main__button color-button button__portfolio nav__button" data-linkto="portfolio">
         <span class="fa-stack fa-3x nav-main__icon">
           <i class="fa fa-circle fa-stack-2x nav-main__icon-base color-button--invert"></i>
           <i class="fa fa-circle-thin fa-stack-2x nav-main__icon-middle color-button"></i>
           <i class="fa fa-briefcase fa-stack-1x nav-main__icon-top color-button"></i>
         </span><br><br>
-        <span class="nav-main__icon-text color-button">PORTFOLIO</span>
+        <span class="nav-main__icon-text color-button">Portfolio</span>
       </button>
-      <button class="nav-main__button color-button button__hire">       
+      <button class="col nav-main__button color-button button__hire nav__button" data-linkto="hire">       
         <span class="fa-stack fa-3x nav-main__icon">
           <i class="fa fa-circle fa-stack-2x nav-main__icon-base color-cta"></i>
           <i class="fa fa-circle-thin fa-stack-2x nav-main__icon-middle color-button"></i>
           <i class="fa fa-comments fa-stack-1x nav-main__icon-top color-button"></i>
         </span><br><br>
-        <span class="nav-main__icon-text">HIRE</span><br>
+        <span class="nav-main__icon-text">Hire</span><br>
       </button>
     </div>
   </nav>
 
   <main>
-    <section id="home" class="d-flex flex-column justify-content-center align-items-center" style="min-height:100%;" >
-      <div class="home__container">
+    <section id="home" class="d-flex flex-column justify-content-center align-items-center section--show" style="min-height:100%;" >
+      <div class="home__container color-page">
         <div><span class="home__fname">&nbspMARK</span><span class="home__symbol">&imof;</span><span class="home__lname"><b>DIXON</b></span></div>
         <h2 class="home__description">&nbsp&nbspAPP/WEB DEV <b>+</b> DATA/STATS PRO</h2>
+        <p class="card-text">(970)980-3015 mark.dixon.dev@gmail.com</p>
         <h2 class="home__temp"><br><br>Coming_Soon &lt;PORTFOLIO PROJECTS&gt;</h2>
       </div>
     </section>
-    <section id="about" class="d-flex flex-column justify-content-center align-items-center" style="min-height:100%;" >
-      <div class="home__container">
-        <div><span class="home__fname">&nbspMARK</span><span class="home__symbol">&imof;</span><span class="home__lname"><b>DIXON</b></span></div>
-        <h2 class="home__description">&nbsp&nbspAPP/WEB DEV <b>+</b> DATA/STATS PRO</h2>
-        <h2 class="home__temp"><br><br>Coming_Soon &lt;PORTFOLIO PROJECTS&gt;</h2>
+
+    <section id="about" class="color-page">
+      <div class="about__container color-page">
+        <div class="d-flex flex-row flex-wrap justify-content-center align-items-center">
+          <div class="col-xs-12 col-md-8 card about__card flex-row color-page">
+            <div class="col-5">
+              <img class="card-img-top img-fluid about__mainimage" src="img/about_pic_512.jpg" alt="Card image cap">
+              <p class="card-text">(970)980-3015</p>
+              <p class="card-text">MarkDixonDev@gmail.com</p>
+              <button class="card-text nav__button color-cta-reg" data-linkto="hire"><span>Hire Me Now</span></button>
+            </div>
+            <div class="col-7 card-block">
+              <h2 class="card-title">Hi. I'm Mark.</h2>
+              <p class="card-text">I enjoy building webpages and apps.
+                I also enjoy working with data sets and statistics. 
+                My first career was as an Economist for the U.S. Dept. of Labor.
+                Following that great experience, I returned to graduate school to study Computer Science and Physics.
+                I also had great expieriences starting my own businesses and programming an award winning physics-based Xbox game.
+                I love coding and am currently looking for new professional opportunities as a developer. 
+                I am currently based in northern New Jersey near NYC,
+                but willing to move for a job opportunity.</p>
+            </div>
+          </div>
+          <div class="card about__card nav__button color-cta-reg" data-linkto="resume">
+            <div class="card-block">
+              <p class="card-text">View my professional qualifications now.</p>
+            </div>
+          </div>
+          <div class="card about__card">
+            <img class="card-img-top img-fluid" src="..." alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-row flex-wrap justify-content-center align-items-center">
+          <div class="card card-inverse card-primary p-3 text-center about__card">
+            <blockquote class="card-blockquote">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+              <footer>
+                <small>
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="card about__card text-center">
+            <div class="card-block">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card about__card">
+            <img class="card-img img-fluid" src="..." alt="Card image">
+          </div>
+          <div class="card about__card p-3 text-right">
+            <blockquote class="card-blockquote">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer>
+                <small class="text-muted">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="card about__card">
+            <div class="card-block">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <section id="resume">
+
+    </section>
+
     <!--Article/Section/Div for sub sections of main page -->
     <section></section>
     <!--Aside to make sidebar area-->

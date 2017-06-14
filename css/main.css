@@ -9,11 +9,9 @@
   @import url('https://fonts.googleapis.com/css?family=Lato|Limelight|Poiret+One|Voltaire');
   /* 
   font-family: 'Lato', sans-serif;
-  font-family: 'Limelight', cursive;
-  font-family: 'Poiret One', cursive;
   font-family: 'Voltaire', sans-serif;
   */
-  body { font-family: 'Lato', sans-serif; text-align: center; }
+  * { font-family: 'Lato', sans-serif; text-align: center; }
 
 /* COLORS */
   /*
@@ -30,9 +28,7 @@
   .color-button { background-color: transparent; color: rgb(190,190,190); }
   .color-button--invert { background-color: transparent; color: rgb(30,30,60); }
   .color-cta { background-color: transparent; color: rgb(10,140,10);  }
-
-/* CONTAINERS */
-  .app__container { position: fixed; top: 0; left: 0; width: 100% ; height: 100%; }
+  .color-cta-reg { background-color: rgb(10,140,10); color: rgb(190,190,190);  }
 
 /* RESPONSIVE SIZING */
   /* portrait window (default design) - dynamic size to vw*/
@@ -40,10 +36,12 @@
     font-size: 1%; /* fallback value : test me */
     font-size: 1vw;
   }
-  main { width: 100vw; height: calc(100vh - 18vw); }
-  nav { position: fixed; top: calc(100vh - 18vw); left: 0; width: 100vw; height: 18vw; }
-  .nav-mobile { opacity:1; pointer-events:auto; height: auto; }
-  .nav-main { opacity:0; pointer-events:none; overflow:hidden; height: 1px; }
+  .app__container { position: absolute; top: 0; left: 0; width: 100% ; height:100%; }
+  main { position: absolute; top: 0; left: 0; width: 100%; height: calc(100vh - 18vw); z-index: 1; }
+  nav { position: fixed; top: calc(100vh - 18vw); left: 0; width: 100vw; height: 18vw; z-index: 2; }
+  .nav-mobile { position: absolute; top: 0; left: 0; padding-top: 1rem; }
+  .nav-main { opacity:0; pointer-events:none; overflow:hidden; height: 1px; width: 100vh; }
+  .nav-mobile { opacity:1; pointer-events:auto;                height: 100%; width: 95%; }
   
 
   /*landscape window - dynamic size to vh*/
@@ -52,20 +50,34 @@
       font-size: 1%; /* fallback value : test me*/
       font-size: 1vh; 
     } 
-    main { width: 100vw; height: 82vh; }
-    nav { position: fixed; top: 82vh; left: calc(50vw - 50vh) ; width: 100vh; height: 18vh; }
-    .nav-mobile { opacity:0; pointer-events:none; overflow:hidden; height: 1px; }
-    .nav-main { opacity:1; pointer-events:auto; height: auto; }
+    .app__container { position: absolute; top: 0; left: 0; width: 100% ; height: 100%; }
+    main { position: absolute; top: 0; left: 0; width: 100%; height: 82vh; z-index: 1; }
+    nav { position: fixed; top: 82vh; left: 0; width: 100%; height: 18vh; z-index: 2; }
+    .nav-main { position: absolute; top: 0; left: calc(50vw - 50vh); padding-top: 1rem; }
+    .nav-mobile { opacity:0; pointer-events:none; overflow:hidden; height: 1px; width: 95%; }
+    .nav-main { opacity:1; pointer-events:auto;                   height: 100%; width: 100vh; }
   }
 
-/* FONT SIZING */
-  .home__fname, .home__lname, .home__symbol { font-size: 7rem; letter-spacing: 2.8rem; }
-  .home__description, .home__temp { font-size: 2.5rem; letter-spacing: 0.78rem; }
-  
+/* APP-LIKE SECTIONS (show/hide) */
+  section { 
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    overflow:hidden;
+    transition: opacity 0.3s ease-in-out 0s; 
+    opacity:0; pointer-events:none; height: 1px; 
+  }
+  .section--show { 
+    opacity:1; pointer-events:auto; height: auto;
+  }
+
+/* FONT SIZING */  
   .nav-main__icon-base, .nav-mobile__icon-base { font-size: 7rem !important; }
   .nav-main__icon-middle, .nav-mobile__icon-middle { font-size: 7.2rem !important; }
   .nav-main__icon-top, .nav-mobile__icon-top { font-size: 3rem !important; margin-top: 0.5rem; margin-left: 0.1rem; }
-  .nav-main__icon-text, .nav-mobile__icon-text { font-size: 2.0rem; font-weight: bold; }
+  .nav-main__icon-text, .nav-mobile__icon-text { font-size: 2.5rem; letter-spacing: 0.1rem; } 
+  .home__fname, .home__lname, .home__symbol { font-size: 7rem; letter-spacing: 2.8rem; }
+  .home__description, .home__temp { font-size: 2.5rem; letter-spacing: 0.78rem; }
+  .card-title { font-size: 4rem; }
+  .card-text { font-size: 2.5rem; }
   
   /* TRANSITIONS */
   .nav-main__button, .nav-mobile__button, .nav-main__button *, .nav-mobile__button * { 
@@ -96,12 +108,24 @@
   /* OTHER RULES */
   .nav-main__button, .nav-mobile__button  { border: none; }
   .nav-main__linkline { 
-    position: absolute; top:40%; left: 10%; 
-    height: 0.5rem; width: 80rem;
+    position: absolute; top:25%; left: 10%; 
+    height: 0.4rem; width: 80rem;
     background-color: rgb(190,190,190);
   }
   .nav-mobile__linkline { 
-    position: absolute; top:20%; left: 10%; 
-    height: 0.5rem; width: 80rem;
+    position: absolute; top:25%; left: 10%; 
+    height: 0.4rem; width: 77rem;
     background-color: rgb(190,190,190);
   }
+  .about__container { margin: 5rem 5rem 25rem 5rem; }
+  .about__card { 
+    padding: 1rem; margin: 2.5rem;
+    border: 0.25rem solid rgb(190,190,190);
+    border-radius: 1rem;
+  }
+  .about__mainimage { 
+    /*max-width: 40rem; max-height: 40rem; */
+    border-radius: 1rem;
+  }
+
+
