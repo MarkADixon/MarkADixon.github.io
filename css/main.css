@@ -72,12 +72,14 @@
   }
 
 /* FONT SIZING */  
+  .section__title-text { font-size: 7rem; letter-spacing: 2.1rem; }
+  .section__subtitle { font-size: 3rem; letter-spacing: 0.6rem; }
   .nav-main__icon-base, .nav-mobile__icon-base { font-size: 7rem !important; }
   .nav-main__icon-middle, .nav-mobile__icon-middle { font-size: 7.2rem !important; }
   .nav-main__icon-top, .nav-mobile__icon-top { font-size: 3rem !important; margin-top: 0.5rem; margin-left: 0.1rem; }
   .nav-main__icon-text, .nav-mobile__icon-text { font-size: 2.5rem; letter-spacing: 0.1rem; } 
-  .home__fname, .home__lname, .home__symbol { font-size: 7rem; letter-spacing: 2.8rem; }
-  .home__description, .home__temp { font-size: 2.5rem; letter-spacing: 0.78rem; }
+  .home__fname, .home__lname, .home__symbol { font-size: 8rem; letter-spacing: 2.4rem; }
+  .home__description, .home__temp { font-size: 3rem; letter-spacing: 0.6rem; }
   .home__contact { font-size: 2.5em; }
   .home__hire { font-size: 2.5rem; letter-spacing: 0.1rem; } 
   .card-title { font-size: 4rem; }
@@ -110,6 +112,34 @@
   } 
 
   /* OTHER RULES */
+  .section__container { margin: 4rem 4rem 20rem 4rem; }
+  .section__title { 
+    position: relative; top: 0; left: 0;
+    max-width: 100rem;
+    margin: 4rem auto; padding: 0.1rem;
+    border-bottom: 0.25rem solid rgb(190,190,190);
+    border-top: 0.25rem solid rgb(190,190,190);
+    border-radius: 2rem; 
+  }
+  .section__title-text { 
+    position:relative; top: 0; left: 0; z-index: 2;
+    display: inline-block;
+    padding-left: 2.1rem; 
+  }
+  .section__title-outer-decor { 
+    position: absolute; top:26%; left: 10%; z-index: 1;
+    height: 48%; width: 80%;
+    border-bottom: 0.2rem solid rgb(190,190,190);
+    border-top: 0.2rem solid rgb(190,190,190);
+    border-radius: 1rem; 
+  }
+  .section__title-inner-decor { 
+    position: absolute; top:42%; left: 5%; z-index: 1;
+    height: 16%; width: 90%;
+    background-color: rgb(190,190,190);
+    border-radius: 1rem; 
+  }
+
   .nav-main__button, .nav-mobile__button  { border: none; }
   .nav-main__linkline { 
     position: absolute; top:25%; left: 10%; 
@@ -145,7 +175,6 @@
     cursor: pointer;
   }
   .home__link { color: rgb(190,190,190); text-decoration: none; margin: 1rem 0 }
-  .about__container { margin: 5rem 5rem 25rem 5rem; }
   .about__card { 
     padding: 1rem; margin: 2.5rem;
     border: 0.25rem solid rgb(190,190,190);
