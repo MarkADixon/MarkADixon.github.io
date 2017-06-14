@@ -28,8 +28,8 @@
   .color-page--invert { background-color: rgb(190,190,190); color: rgb(30,30,60); }
   .color-button { background-color: transparent; color: rgb(190,190,190); }
   .color-button--invert { background-color: transparent; color: rgb(30,30,60); }
-  .color-cta { background-color: transparent; color: rgb(156,142,99);  }
-  .color-cta-reg { background-color: rgb(98,88,59); color: rgb(190,190,190);  }
+  .color-cta { background-color: transparent; color: rgb(158,85,2);  }
+  .color-cta-reg { background-color: rgb(158,85,2); color: rgb(190,190,190);  }
 
 /* RESPONSIVE SIZING */
   /* portrait window (default design) - dynamic size to vw*/
