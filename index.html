@@ -48,8 +48,8 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-<div class="app__container color-page">
+<body class="color-page">
+<div class="app__container">
   <header></header>
   
   <nav class="color-page">
@@ -145,12 +145,10 @@
   </nav>
 
   <main>
-    <section id="home" class="color-page section--show">
-      <div class="home__container color-page">
-        <div class="home__title">
-          <span class="home__fname">MARK</span><span class="home__symbol">&imof;</span><span class="home__lname"><b>DIXON</b></span><br>
-          <span class="home__description">APP/WEB DEV <b>+</b> DATA/STATS PRO</span>
-        </div>
+    <section id="home" class="section--show">
+      <div class="section__container">
+        <span class="home__fname">MARK</span><span class="home__symbol">&imof;</span><span class="home__lname"><b>DIXON</b></span><br>
+        <span class="home__description">APP/WEB DEV <b>+</b> DATA/STATS PRO</span>
         <div class="home__divider"></div>
         <div class="row home__contact">
           <div class="col text-right">
@@ -170,11 +168,14 @@
       </div>
     </section> <!--Section: Home-->
 
-    <section id="about" class="color-page">
-      <div class="section__container color-page">
+    <section id="about">
+      <div class="section__container">
         <div class="section__title">
           <div class="section__title-outer-decor"></div>
+          <div class="section__title-mid-decor"></div>
           <div class="section__title-inner-decor"></div>
+          <div class="section__title-negative-line-decor"></div>
+          <div class="section__title-line-decor"></div>
           <div class="section__title-text color-page">ABOUT</div>
         </div>
         <div class="d-flex flex-row flex-wrap justify-content-center align-items-center">
@@ -253,11 +254,14 @@
       </div>
     </section> <!--Section: About me-->
 
-    <section id="resume" class="color-page">
-      <div class="section__container color-page">
+    <section id="resume">
+      <div class="section__container">
         <div class="section__title">
           <div class="section__title-outer-decor"></div>
+          <div class="section__title-mid-decor"></div>
           <div class="section__title-inner-decor"></div>
+          <div class="section__title-negative-line-decor"></div>
+          <div class="section__title-line-decor"></div>
           <div class="section__title-text color-page">RESUME</div>
         </div>
         <div class="resume__download">
@@ -270,9 +274,7 @@
               <i class="fa fa-linkedin"></i>
             </div>
             <div class="col-10">
-              <p>lorem</p>
-              <p>dorem</p>
-              <p>decum</p>
+
             </div>
           </div>
         </div>
@@ -283,9 +285,7 @@
               <i class="fa fa-linkedin"></i>
             </div>
             <div class="col-10">
-              <p>lorem</p>
-              <p>dorem</p>
-              <p>decum</p>
+
             </div>
           </div>
         </div>
@@ -330,34 +330,94 @@
         </div>
     </section> <!--Section: Resume-->
 
-    <section id="portfolio" class="color-page">
-      <div class="section__container color-page">
+    <section id="portfolio">
+      <div class="section__container">
         <div class="section__title">
           <div class="section__title-outer-decor"></div>
+          <div class="section__title-mid-decor"></div>
           <div class="section__title-inner-decor"></div>
+          <div class="section__title-negative-line-decor"></div>
+          <div class="section__title-line-decor"></div>
           <div class="section__title-text color-page">PORTFOLIO</div>
         </div>
         <h2 class="section__subtitle">Professional Work Samples</h2>
         <div class="portfolio__professional row">
-          <div class="portfolio__item col-4">projectum</div>
-          <div class="portfolio__item col-4">projectum</div>
-          <div class="portfolio__item col-4">projectum</div>
+          <div class="portfolio__item col-4">              
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item col-4">              
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item col-4">              
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
         </div>
         <h2 class="section__subtitle">Personal Project Samples</h2>
         <div class="portfolio__personal row">
-          <div class="portfolio__item col-4">projectum</div>
-          <div class="portfolio__item col-4">projectum</div>
-          <div class="portfolio__item col-4">projectum</div>
+          <div class="portfolio__item col-4">              
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item col-4">              
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item col-4">              
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section> <!--Section: Portfolio-->
 
 
-    <section id="hire" class="color-page">
-      <div class="section__container color-page">
+    <section id="hire">
+      <div class="section__container">
         <div class="section__title">
           <div class="section__title-outer-decor"></div>
+          <div class="section__title-mid-decor"></div>
           <div class="section__title-inner-decor"></div>
+          <div class="section__title-negative-line-decor"></div>
+          <div class="section__title-line-decor"></div>
           <div class="section__title-text color-page">CONTACT</div>
         </div>
         <h2 class="section__subtitle">Say Hello!</h2>
