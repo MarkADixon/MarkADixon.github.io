@@ -75,6 +75,7 @@
     
     /*dynamic styles -- mobile (differs from portrait)*/
     .hire__link, .hire__form, .hire__form * { font-size: 3.2rem; }
+    .btn { font-size: 3.2rem; }
 
   /* end portrait styles */
 
@@ -99,16 +100,13 @@
 
     /*dynamic styles -- landscape (differs from portrait) */ 
     .hire__link, .hire__form, .hire__form * { font-size: 2.4rem; }
+    .btn { font-size: 2.4rem; }
   }
   /* end landscape styles */
 /* END RESPONSIVE STYLING SETUP */
 
+ 
 
-/* FONT SIZING */  
-  .home__fname, .home__lname, .home__symbol { font-size: 8rem; letter-spacing: 2.4rem; }
-  .home__description, .home__temp { font-size: 3rem; letter-spacing: 0.6rem; }
-  .home__contact { font-size: 2.5em; }
-  .home__hire { font-size: 2.5rem; letter-spacing: 0.1rem; } 
 
   
 
@@ -116,7 +114,6 @@
 /* styles unchanged between portrait/landscape */
   .badge{ font-size: 2.4rem; margin: 0.5rem; }
   .btn { 
-    font-size: 2.4rem;
     margin: 1rem; 
     border-top: 0.2rem solid rgb(190,190,190); border-left: 0.2rem solid rgb(190,190,190);
     border-bottom: 0.4rem solid rgb(80,80,80); border-right: 0.4rem solid rgb(80,80,80);
@@ -179,7 +176,11 @@
     border-radius: 2rem; 
   }
 
-  .nav-main__button, .nav-mobile__button  { border: none; }
+  .nav-main__button, .nav-mobile__button  {
+     border: none;
+     cursor: pointer;
+     text-shadow: 0.3rem 0.3rem 0.15rem rgb(80,80,80);
+  }
   .nav-main__linkline { 
     position: absolute; top:25%; left: 10%; 
     height: 0.5rem; width: 80rem;
@@ -190,30 +191,24 @@
     height: 0.5rem; width: 77rem;
     background-color: rgb(190,190,190);
   }
-  .home__container {
-    position:absolute; top:33%; left: calc(50% - 50rem);
-    height: 34%; width: 100rem;
-    max-width: 100%;
+
+  .home__container { margin: 25rem 1rem; }
+  .home__title { 
+    font-size: 8rem; letter-spacing: 2.4rem; 
+    /*to align symbol to center = 2.4 letter space + 0.6(8) extra char + 2.4 extra char spacing + fudge*/
+    padding-left: 8.6rem;
   }
-  .home__divider {  
-    position: relative; left: 20rem; 
-    margin: 2rem 0;
-    height: 0.2rem; width: 60rem;
-    min-height: 1px;
-    background-color: rgb(190,190,190);
+  .home__description { 
+    font-size: 3rem; letter-spacing: 0.6rem;
+    /*to align symbol to center = 0.6 letter space + 0.6(3)*3 extra chars + 0.6 extra char spacing +fudge*/
+    padding-left: 7rem; 
   }
   .home__contact { 
-    position: relative; top: 0; left: -4rem;
-    padding: 0; margin: 0;
-    height: auto; width: 100rem;
+    margin: 5rem auto;
+    padding-top: 2rem;
+    max-width: 80rem;
   }
-  .home__hire { 
-    height: 75%; 
-    padding: 0; margin: 1rem 0 0 0;
-    border: 0.25rem solid rgb(190,190,190); border-radius: 1rem;
-    cursor: pointer;
-  }
-  .home__link { color: rgb(190,190,190); text-decoration: none; margin: 1rem 0 }
+
   .about__card { 
     margin: 2rem auto; 
     border-top: 0.2rem solid rgb(190,190,190); border-left: 0.2rem solid rgb(190,190,190);
@@ -221,8 +216,8 @@
     border-radius: 1rem;
   }
 
-  .portfolio__card { 
-    max-width: 200px;
+  .resume__card, .portfolio__card { 
+    max-width: 192px;
     margin: 2rem auto; 
     border-top: 0.2rem solid rgb(190,190,190); border-left: 0.2rem solid rgb(190,190,190);
     border-bottom: 0.4rem solid rgb(80,80,80); border-right: 0.4rem solid rgb(80,80,80);
@@ -246,7 +241,7 @@
                 background-color 0.5s ease-in-out 0s;
   }
   .nav-main__button--selected, .nav-mobile__button--selected { 
-    margin-top: 0.5rem; 
+    text-shadow: 0.4rem 0.4rem 0.2rem rgb(80,80,80);
     -webkit-transform: scale(1.25); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
     -ms-transform: scale(1.25); /* IE 9 */
     transform: scale(1.25); /* IE 10, Fx 16+, Op 12.1+ */
