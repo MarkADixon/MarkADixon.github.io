@@ -215,7 +215,7 @@
     border-bottom: 0.4rem solid rgb(80,80,80); border-right: 0.4rem solid rgb(80,80,80);
     border-radius: 1rem;
   }
-
+  .resume__download, .resume__download .btn { font-size: 4rem; }
   .resume__card, .portfolio__card { 
     max-width: 192px;
     margin: 2rem auto; 
@@ -247,9 +247,9 @@
     transform: scale(1.25); /* IE 10, Fx 16+, Op 12.1+ */
   }
   .nav-main__icon-top--selected, .nav-mobile__icon-top--selected { 
-    -webkit-transform: scale(1.4); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-    -ms-transform: scale(1.4); /* IE 9 */
-    transform: scale(1.4); /* IE 10, Fx 16+, Op 12.1+ */
+    -webkit-transform: scale(1.33); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: scale(1.33); /* IE 9 */
+    transform: scale(1.33); /* IE 10, Fx 16+, Op 12.1+ */
   }
   .spin {
     -webkit-transform: rotatey(360deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
