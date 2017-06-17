@@ -121,8 +121,7 @@
   }
   .card-title { font-size: 3.2rem; }
   .card-text { font-size: 2.4rem; }
-  .section__title-text { font-size: 7rem; letter-spacing: 2rem; }
-  .section__subtitle { font-size: 4rem; letter-spacing: 0.4rem; }
+
   .section__container { margin: 4rem 4rem 20rem 4rem; }
   .section__title { 
     position: relative; top: 0; left: 0;
@@ -132,9 +131,6 @@
     border-top: 0.25rem solid rgb(190,190,190);
     border-radius: 4rem; 
   }
-  .section__subtitle {
-   margin: 2rem;
-  }
   .section__title-outer-decor { 
     position: absolute; top:15%; left: 20%; z-index: 1;
     height: 70%; width: 60%;
@@ -142,14 +138,14 @@
     border-top: 0.2rem solid rgb(190,190,190);
     border-radius: 2rem; 
   }
-  .section__title-mid-decor { 
+  .section__title-mid-decor, .section__subtitle-mid-decor  { 
     position: absolute; top:29%; left: 10%; z-index: 2;
     height: 42%; width: 80%;
     border-bottom: 0.2rem solid rgb(190,190,190);
     border-top: 0.2rem solid rgb(190,190,190);
     border-radius: 2rem; 
   }
-  .section__title-inner-decor { 
+  .section__title-inner-decor, .section__subtitle-inner-decor  { 
     position: absolute; top:38%; left: 14%; z-index: 3;
     height: 24%; width: 72%;
     border-bottom: 0.2rem solid rgb(190,190,190);
@@ -162,16 +158,30 @@
     background-color: rgb(30,30,60);
     border-radius: 2rem; 
   }
-  .section__title-line-decor { 
-    position: absolute; top:47.5%; left: 2%; z-index: 5;
-    height: 5%; width: 96%;
+  .section__title-line-decor, .section__subtitle-line-decor { 
+    position: absolute; top:48.5%; left: 2%; z-index: 5;
+    height: 3%; width: 96%;
     background-color: rgb(190,190,190);
     border-radius: 2rem; 
   }
   .section__title-text { 
+    font-size: 7rem; letter-spacing: 2rem;
     position:relative; top: 0; left: 0; z-index: 6;
     display: inline-block;
     padding-left: 2rem; 
+    border: 0.2rem solid rgb(190,190,190);
+    border-radius: 2rem; 
+  }
+  .section__subtitle { 
+    position: relative; top: 0; left: 0;
+    max-width: 70rem;
+    margin: 3rem auto; padding: 1rem;
+  }
+  .section__subtitle-text { 
+    font-size: 4rem; letter-spacing: 0.4rem;
+    position:relative; top: 0; left: 0; z-index: 6;
+    display: inline-block;
+    padding: 0 1rem 0 1.4rem; 
     border: 0.2rem solid rgb(190,190,190);
     border-radius: 2rem; 
   }
@@ -192,14 +202,14 @@
     background-color: rgb(190,190,190);
   }
 
-  .home__container { margin: 25rem 1rem; }
+  .home__container { margin: 25vh 4rem 20rem 4rem; }
   .home__title { 
     font-size: 8rem; letter-spacing: 2.4rem; 
     /*to align symbol to center = 2.4 letter space + 0.6(8) extra char + 2.4 extra char spacing + fudge*/
     padding-left: 8.6rem;
   }
   .home__description { 
-    font-size: 3rem; letter-spacing: 0.6rem;
+    font-size: 3.2rem; letter-spacing: 0.6rem;
     /*to align symbol to center = 0.6 letter space + 0.6(3)*3 extra chars + 0.6 extra char spacing +fudge*/
     padding-left: 7rem; 
   }
@@ -225,7 +235,7 @@
   }
   .portfolio__card .card-img-top { border-top-left-radius: 1rem; border-top-right-radius: 1rem; }
   
-  .hire__link a { color: rgb(190,190,190); text-decoration: none; margin-top: 1rem; }
+  .hire__link a { margin-top: 1rem; }
   .hire__cartoon { max-width: 50rem; margin-top: 4rem; }
   .hire__form { max-width: 66rem; margin-top: 4rem; }
   .hire__form-heading { margin: 2rem auto 1rem auto; }
