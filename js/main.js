@@ -26,6 +26,8 @@ $(document).ready( function (){
     viewSection = selectSection;
     $("section").removeClass("section--show");
     $(selectSection).addClass("section--show");
+    if(viewSection === "#home") $("header").removeClass("section--show");
+    else $("header").addClass("section--show");
     //nav menu deselect class changes
     $(".nav-main__button--selected, .nav-mobile__button--selected").removeClass("nav-main__button--selected nav-mobile__button--selected");
     $(".nav-main__icon-top, .nav-mobile__icon-top").removeClass("color-button--invert nav-main__icon-top--selected nav-mobile__icon-top--selected");
