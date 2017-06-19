@@ -1,11 +1,12 @@
 
 /* FONTS */
-  @import url('https://fonts.googleapis.com/css?family=Lato|Limelight|Poiret+One|Voltaire');
+  @import url('https://fonts.googleapis.com/css?family=Lato|Voltaire');
   /* 
   font-family: 'Lato', sans-serif;
   font-family: 'Voltaire', sans-serif;
   */
   * { font-family: 'Voltaire', sans-serif; text-align: center; }
+
 
 /* RESET (not needed in Bootstrap)
   *, html, body {
@@ -35,14 +36,18 @@
   .colorbg-b { background-color: rgb(120,104,55); }
 */
 
-  .color-page { background-color: rgb(30,30,60); color: rgb(190,190,190); }
-  .color-page--invert { background-color: rgb(190,190,190); color: rgb(30,30,60); }
-  .color-button { background-color: transparent; color: rgb(190,190,190); }
+  .color-page { background-color: rgb(30,30,60); color: rgb(200,200,200); }
+  .color-page--invert { background-color: rgb(200,200,200);; color: rgb(30,30,60); }
+  .color-button { background-color: transparent; color: rgb(200,200,200); }
   .color-button--invert { background-color: transparent; color: rgb(30,30,60); }
   .color-cta { background-color: transparent; color: rgb(158,85,2);  }
-  .color-cta-reg { background-color: rgb(158,85,2); color: rgb(190,190,190);  }
+  .color-cta-reg { background-color: rgb(158,85,2); color: rgb(200,200,200); }
   
 /* APP-LIKE SECTIONS (show/hide) */
+  .app__container { 
+    position: absolute; top: 0; left: 0;
+    width: 100%; height:100%;
+  }
   section { 
     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
     transition: opacity 0.3s ease-in-out 0s; 
@@ -62,8 +67,8 @@
     }
 
     /* viewport containers */
-    .app__container { position: absolute; top: 0; left: 0; width: 100%; height:100%; }
-    main { position: absolute; top: 0; left: 0; width: 100%; height: calc(100% - 18rem); z-index: 0; }
+    header { position: fixed; top: 0; left: 0; width: 100%; height: 12rem; z-index: 10; background-color: blue;}
+    main { position: fixed; top: 12rem; left: 0; width: 100%; height: calc(100% - 30rem); z-index: 0; }
     nav { position: fixed; top: calc(100% - 18rem); left: 0; width: 100%; height: 18rem; z-index: 10; }
     .nav-mobile { position: absolute; top: 0; left: 0; padding-top: 1rem; }
     .nav-main { opacity:0; pointer-events:none; overflow:hidden; height: 1px; width: 1px; }
@@ -71,11 +76,14 @@
     .nav-mobile__icon-base { font-size: 7rem !important; }
     .nav-mobile__icon-middle { font-size: 7rem !important; }
     .nav-mobile__icon-top { font-size: 3rem !important; margin-top: 0.5rem; margin-left: 0.1rem; }
-    .nav-mobile__icon-text { font-size: 3.2rem; letter-spacing: 0.1rem; }  
+    .nav-mobile__icon-text { font-size: 3.6rem; letter-spacing: 0.15rem; }  
     
     /*dynamic styles -- mobile (differs from portrait)*/
-    .hire__link, .hire__form, .hire__form * { font-size: 3.2rem; }
-    .btn { font-size: 3.2rem; }
+    .hire__link, .hire__form, .hire__form * { font-size: 3.6rem; }
+    .btn { font-size: 3.6rem; }
+    .section__tab { font-size: 4.8rem; line-height: 4.8rem; }
+    .home__title { font-size: 12rem; letter-spacing: 2.4rem; padding-left: 1rem; line-height: 12rem;}
+    .home__description { font-size: 4.8rem; letter-spacing: 0.6rem; padding-left: 4rem; }
 
   /* end portrait styles */
 
@@ -87,9 +95,9 @@
     } 
 
     /* viewport containers */
-    .app__container { position: absolute; top: 0; left: 0; width: 100%; height:100%; }
-    main { position: absolute; top: 0; left: 0; width: 100%; height: 82%; z-index: 0; }
-    nav { position: fixed; top: 82rem; left: 0; width: 100%; height: 18%; z-index: 10; }
+    header { position: fixed; top: 0; left: 0; width: 100%; height: 12rem; z-index: 10; background-color: blue}
+    main { position: fixed; top: 12rem; left: 0; width: 100%; height: calc(100% - 30rem); z-index: 0; }
+    nav { position: fixed; top: 82rem; left: 0; width: 100%; height: 18rem; z-index: 10; }
     .nav-main { position: absolute; top: 0; left: calc(50% - 50rem); padding-top: 1rem; }
     .nav-mobile { opacity:0; pointer-events:none; overflow:hidden; height: 1px; width: 1px; }
     .nav-main { opacity:1; pointer-events:auto; overflow:visible; height: 100%; width: 100rem; }
@@ -101,6 +109,9 @@
     /*dynamic styles -- landscape (differs from portrait) */ 
     .hire__link, .hire__form, .hire__form * { font-size: 2.4rem; }
     .btn { font-size: 2.4rem; }
+    .section__tab { font-size: 3.2rem; line-height: 3.2rem; }
+    .home__title { font-size: 8rem; letter-spacing: 2.4rem; padding-left: 6rem; line-height: 8rem; }
+    .home__description { font-size: 3.2rem; letter-spacing: 0.6rem; padding-left: 3.2rem; }
   }
   /* end landscape styles */
 /* END RESPONSIVE STYLING SETUP */
@@ -115,122 +126,89 @@
   .badge{ font-size: 2.4rem; margin: 0.5rem; }
   .btn { 
     margin: 1rem; 
-    border-top: 0.2rem solid rgb(190,190,190); border-left: 0.2rem solid rgb(190,190,190);
-    border-bottom: 0.4rem solid rgb(80,80,80); border-right: 0.4rem solid rgb(80,80,80);
+    border-top: 0.2rem solid rgb(200,200,200); border-left: 0.2rem solid rgb(200,200,200);
+    border-bottom: 0.4rem solid rgb(100,100,100); border-right: 0.4rem solid rgb(100,100,100);
     border-radius: 1rem;  
   }
+  
+
   .card-title { font-size: 3.2rem; }
   .card-text { font-size: 2.4rem; }
+  .card-img-top { padding: 0 4rem; } 
+  .card-header, .card-footer { background-color: transparent; }
 
-  .section__container { margin: 4rem 4rem 20rem 4rem; }
-  .section__title { 
-    position: relative; top: 0; left: 0;
+  .section__container { 
     max-width: 100rem;
-    margin: 0 auto 4rem auto; padding: 1rem;
-    border-bottom: 0.25rem solid rgb(190,190,190);
-    border-top: 0.25rem solid rgb(190,190,190);
-    border-radius: 4rem; 
-  }
-  .section__title-outer-decor { 
-    position: absolute; top:15%; left: 20%; z-index: 1;
-    height: 70%; width: 60%;
-    border-bottom: 0.2rem solid rgb(190,190,190);
-    border-top: 0.2rem solid rgb(190,190,190);
-    border-radius: 2rem; 
-  }
-  .section__title-mid-decor, .section__subtitle-mid-decor  { 
-    position: absolute; top:29%; left: 10%; z-index: 2;
-    height: 42%; width: 80%;
-    border-bottom: 0.2rem solid rgb(190,190,190);
-    border-top: 0.2rem solid rgb(190,190,190);
-    border-radius: 2rem; 
-  }
-  .section__title-inner-decor, .section__subtitle-inner-decor  { 
-    position: absolute; top:38%; left: 14%; z-index: 3;
-    height: 24%; width: 72%;
-    border-bottom: 0.2rem solid rgb(190,190,190);
-    border-top: 0.2rem solid rgb(190,190,190);
-    border-radius: 2rem; 
-  }
-  .section__title-negative-line-decor { 
-    position: absolute; top:44%; left: 2%; z-index: 4;
-    height: 12%; width: 96%;
-    background-color: rgb(30,30,60);
-    border-radius: 2rem; 
-  }
-  .section__title-line-decor, .section__subtitle-line-decor { 
-    position: absolute; top:48.5%; left: 2%; z-index: 5;
-    height: 3%; width: 96%;
-    background-color: rgb(190,190,190);
-    border-radius: 2rem; 
-  }
-  .section__title-text { 
-    font-size: 7rem; letter-spacing: 2rem;
-    position:relative; top: 0; left: 0; z-index: 6;
-    display: inline-block;
-    padding-left: 2rem; 
-    border: 0.2rem solid rgb(190,190,190);
-    border-radius: 2rem; 
-  }
-  .section__subtitle { 
-    position: relative; top: 0; left: 0;
-    max-width: 70rem;
-    margin: 3rem auto; padding: 1rem;
-  }
-  .section__subtitle-text { 
-    font-size: 4rem; letter-spacing: 0.4rem;
-    position:relative; top: 0; left: 0; z-index: 6;
-    display: inline-block;
-    padding: 0 1rem 0 1.4rem; 
-    border: 0.2rem solid rgb(190,190,190);
-    border-radius: 2rem; 
+    margin: 0 auto;
   }
 
+  ul.nav-tabs { 
+    box-sizing: border-box; 
+    border-bottom: 0.4rem solid rgb(200,200,200);
+    margin: 2rem auto;
+  }
+  ul.nav-tabs > li { 
+    box-sizing: border-box; 
+    width: 22%;   
+    background-color: transparent !important;
+  }
+  ul.nav-tabs > li > a {
+    position: relative;
+    box-sizing: border-box; 
+    background-color: transparent; color: rgb(200,200,200); 
+  }
+  ul.nav-tabs > li > a.active {  
+    top: 0.25rem;
+    background-color: rgb(30,30,60) !important; color: rgb(200,200,200) !important; 
+    border-top: 0.4rem solid rgb(200,200,200) !important; border-left: 0.4rem solid rgb(200,200,200) !important;
+    border-bottom: 0.4rem solid rgb(30,30,60) !important; border-right: 0.4rem solid rgb(200,200,200) !important;
+   }
+   ul.nav-tabs > li > a:hover { 
+    background-color: transparent !important; color: rgb(158,85,2) !important; 
+   }
+  .section__tab { padding: 1rem; }
+
+  nav {background-color: rgba(30,30,60,0.75);}
   .nav-main__button, .nav-mobile__button  {
-     border: none;
-     cursor: pointer;
-     text-shadow: 0.3rem 0.3rem 0.15rem rgb(80,80,80);
+    position: relative; top: 0; right: 0;
+    border: none;
+    cursor: pointer;
+  }
+  .nav-main__button:focus, .nav-mobile__button:focus {
+    outline: none;
+  }  
+  .nav-main__icon, .nav-mobile__icon {
+    text-shadow: 0.3rem 0.3rem 0.15rem rgb(100,100,100);
   }
   .nav-main__linkline { 
     position: absolute; top:25%; left: 10%; 
     height: 0.5rem; width: 80rem;
-    background-color: rgb(190,190,190);
+    background-color: rgb(200,200,200);
   }
   .nav-mobile__linkline { 
     position: absolute; top:25%; left: 10%; 
     height: 0.5rem; width: 77rem;
-    background-color: rgb(190,190,190);
+    background-color: rgb(200,200,200);
   }
 
-  .home__container { margin: 25vh 4rem 20rem 4rem; }
-  .home__title { 
-    font-size: 8rem; letter-spacing: 2.4rem; 
-    /*to align symbol to center = 2.4 letter space + 0.6(8) extra char + 2.4 extra char spacing + fudge*/
-    padding-left: 8.6rem;
-  }
-  .home__description { 
-    font-size: 3.2rem; letter-spacing: 0.6rem;
-    /*to align symbol to center = 0.6 letter space + 0.6(3)*3 extra chars + 0.6 extra char spacing +fudge*/
-    padding-left: 7rem; 
-  }
-  .home__contact { 
-    margin: 5rem auto;
-    padding-top: 2rem;
-    max-width: 80rem;
-  }
+  .home__title { margin-top: 20vh; }
+  .home__title, .home__description, .home__contact .btn { margin-bottom: 2rem; }
 
-  .about__card { 
-    margin: 2rem auto; 
-    border-top: 0.2rem solid rgb(190,190,190); border-left: 0.2rem solid rgb(190,190,190);
-    border-bottom: 0.4rem solid rgb(80,80,80); border-right: 0.4rem solid rgb(80,80,80);
-    border-radius: 1rem;
+  .about__card { height: 30rem; }
+  .about__card .card-img-left { height: 25rem; width: 25rem; border-radius: 1rem; }
+
+  .resume__download, .resume__download .btn { 
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    margin: 1rem auto;
   }
-  .resume__download, .resume__download .btn { font-size: 4rem; }
-  .resume__card, .portfolio__card { 
-    max-width: 192px;
-    margin: 2rem auto; 
-    border-top: 0.2rem solid rgb(190,190,190); border-left: 0.2rem solid rgb(190,190,190);
-    border-bottom: 0.4rem solid rgb(80,80,80); border-right: 0.4rem solid rgb(80,80,80);
+    
+  .resume__card { height: 18rem; }
+  .resume__card .card-img-left { height: 16rem; width: 16rem; border-radius: 1rem; }
+  .portfolio__card { 
+    max-width: 200px;
+    margin: 2rem; 
+    border: 1rem solid rgb(200,200,200);
     border-radius: 1rem;
   }
   .portfolio__card .card-img-top { border-top-left-radius: 1rem; border-top-right-radius: 1rem; }
@@ -245,21 +223,29 @@
   .nav-main__button, .nav-mobile__button, .nav-main__button *, .nav-mobile__button * { 
     -webkit-transition: -webkit-transform 0.5s ease-in-out 0s,
                 color 0.5s ease-in-out 0s, 
-                background-color 0.5s ease-in-out 0s;
+                background-color 0.5s ease-in-out 0s,
+                top 0.5s ease-in-out 0s;
     transition: transform 0.5s ease-in-out 0s,
                 color 0.5s ease-in-out 0s, 
-                background-color 0.5s ease-in-out 0s;
+                background-color 0.5s ease-in-out 0s,
+                top 0.5s ease-in-out 0s;
   }
-  .nav-main__button--selected, .nav-mobile__button--selected { 
-    text-shadow: 0.4rem 0.4rem 0.2rem rgb(80,80,80);
-    -webkit-transform: scale(1.25); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-    -ms-transform: scale(1.25); /* IE 9 */
-    transform: scale(1.25); /* IE 10, Fx 16+, Op 12.1+ */
-  }
-  .nav-main__icon-top--selected, .nav-mobile__icon-top--selected { 
+  .nav-main__button--selected, .nav-mobile__button--selected,
+  .nav-main__button:hover, .nav-mobile__button:hover { 
+    top: 0.66rem; 
     -webkit-transform: scale(1.33); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
     -ms-transform: scale(1.33); /* IE 9 */
     transform: scale(1.33); /* IE 10, Fx 16+, Op 12.1+ */
+  }
+  .nav-main__button--selected .nav-main__icon, .nav-mobile__button--selected .nav-mobile__icon, 
+  .nav-main__button:hover .nav-main__icon, .nav-mobile__button:hover .nav-mobile__icon { 
+    text-shadow: 0.4rem 0.4rem 0.2rem rgb(100,100,100);
+  }
+  .nav-main__icon-top--selected, .nav-mobile__icon-top--selected,
+  .nav-main__button:hover .nav-main__icon-top, .nav-mobile__button:hover .nav-mobile__icon-top { 
+    -webkit-transform: scale(1.25); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: scale(1.25); /* IE 9 */
+    transform: scale(1.25); /* IE 10, Fx 16+, Op 12.1+ */
   }
   .spin {
     -webkit-transform: rotatey(360deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */

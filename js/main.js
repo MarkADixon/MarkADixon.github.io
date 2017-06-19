@@ -5,18 +5,16 @@ var viewSection = "#home";
 
 $(document).ready( function (){
   var homeSymbol = $(".home__symbol");  
-  var homeContainer = $(".home__container")
   var navButton = $(".nav__button");
-  var cards = $(".card")
+  var buttons = $(".btn");
   
   
-  homeSymbol.on('click', function(event) { 
-    homeContainer.toggleClass("color-page color-page--invert");
+  buttons.on('hover', function(event) { 
+
   });
 
-  cards.on('click', function(event) { 
-    cards.toggleClass("color-page color-page--invert");
-  });
+
+
 
   //view changes on navigation click
   navButton.on('click', function(event) { 
