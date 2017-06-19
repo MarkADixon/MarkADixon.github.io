@@ -67,7 +67,7 @@
     }
 
     /* viewport containers */
-    header { position: fixed; top: 0; left: 0; width: 100%; height: 12rem; z-index: 10; background-color: blue;}
+    header { position: fixed; top: 0; left: 0; width: 100%; height: 12rem; z-index: 10; }
     main { position: fixed; top: 12rem; left: 0; width: 100%; height: calc(100% - 30rem); z-index: 0; }
     nav { position: fixed; top: calc(100% - 18rem); left: 0; width: 100%; height: 18rem; z-index: 10; }
     .nav-mobile { position: absolute; top: 0; left: 0; padding-top: 1rem; }
@@ -95,7 +95,7 @@
     } 
 
     /* viewport containers */
-    header { position: fixed; top: 0; left: 0; width: 100%; height: 12rem; z-index: 10; background-color: blue}
+    header { position: fixed; top: 0; left: 0; width: 100%; height: 12rem; z-index: 10; }
     main { position: fixed; top: 12rem; left: 0; width: 100%; height: calc(100% - 30rem); z-index: 0; }
     nav { position: fixed; top: 82rem; left: 0; width: 100%; height: 18rem; z-index: 10; }
     .nav-main { position: absolute; top: 0; left: calc(50% - 50rem); padding-top: 1rem; }
@@ -156,8 +156,9 @@
     position: relative;
     box-sizing: border-box; 
     background-color: transparent; color: rgb(200,200,200); 
+    outline: none;
   }
-  ul.nav-tabs > li > a.active {  
+  ul.nav-tabs > li > a.active, ul.nav-tabs > li > a:active {  
     top: 0.25rem;
     background-color: rgb(30,30,60) !important; color: rgb(200,200,200) !important; 
     border-top: 0.4rem solid rgb(200,200,200) !important; border-left: 0.4rem solid rgb(200,200,200) !important;
@@ -168,7 +169,6 @@
    }
   .section__tab { padding: 1rem; }
 
-  nav {background-color: rgba(30,30,60,0.75);}
   .nav-main__button, .nav-mobile__button  {
     position: relative; top: 0; right: 0;
     border: none;
@@ -214,8 +214,8 @@
   .portfolio__card .card-img-top { border-top-left-radius: 1rem; border-top-right-radius: 1rem; }
   
   .hire__link a { margin-top: 1rem; }
-  .hire__cartoon { max-width: 50rem; margin-top: 4rem; }
-  .hire__form { max-width: 66rem; margin-top: 4rem; }
+  .hire__cartoon { max-width: 30rem; }
+  .hire__form { max-width: 66rem; }
   .hire__form-heading { margin: 2rem auto 1rem auto; }
   .hire__form-button { margin: 1rem; padding: 0.25rem 2rem; }
 
