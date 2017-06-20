@@ -41,7 +41,7 @@
   .color-button { background-color: transparent; color: rgb(200,200,200); }
   .color-button--invert { background-color: transparent; color: rgb(30,30,60); }
   .color-cta { background-color: transparent; color: rgb(158,85,2);  }
-  .color-cta-reg { background-color: rgb(158,85,2); color: rgb(200,200,200); }
+  .color-cta-reg { background-color: rgb(158,85,2); color: rgb(250,250,250); }
   
 /* APP-LIKE SECTIONS (show/hide) */
   .app__container { 
@@ -177,6 +177,8 @@
     margin-right: -100%;
     text-align: center;
   }
+  textarea { resize: none; }
+
   /* tab keyboard selector style */
   :link:focus, :visited:focus {
     outline: none;
@@ -288,6 +290,16 @@
   }  
   .resume__card { height: 17rem; }
   .resume__card .card-img-left { height: 26rem; width: 26rem; }
+  .resume__skill { 
+    font-size: 2.4rem; line-height: 2.4rem;
+    height: 9rem; width: 9rem; 
+    margin: 1rem; 
+    border-radius: 50%;
+    border: 0.4rem solid rgb(200,200,200);
+    text-shadow: 0.3rem 0.3rem 0.15rem rgb(79,43,1);
+    box-shadow: 0.4rem 0.4rem 0 rgb(100,100,100);
+  }
+  .resume__skillicon { width: 23%; padding: 1%; }
 
 /*portfolio styles */
   .portfolio__card { 
@@ -301,7 +313,7 @@
 /* hire styles */
   .hire__link a { margin-top: 1rem; }
   .hire__cartoon { max-width: 33rem; }
-  .hire__form { width: 50rem; max-width: 90%; }
+  .hire__form { width: 50rem; height:50rem; max-width: 90%; }
   .hire__form-heading { margin: 2rem auto 1rem auto; }
   .hire__form-button { margin: 1rem; padding: 0.5rem 1rem; }
 
