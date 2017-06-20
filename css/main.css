@@ -162,8 +162,8 @@
 /* general styles */  
   .app__containter { position: relative; top: 0; right: 0; }
   .head__title { 
-    position: relative; top: 2rem;
-    font-size: 8rem; letter-spacing: 2.4rem; line-height: 8rem;
+    position: relative; top: 3rem;
+    font-size: 6rem; letter-spacing: 1.8rem; line-height: 6rem;
   }
   .section__container { 
     position: relative; top: 0; left: 0;
@@ -287,7 +287,7 @@
     margin: 1rem auto;
   }  
   .resume__card { height: 17rem; }
-  .resume__card .card-img-left { height: 15rem; width: 15rem; }
+  .resume__card .card-img-left { height: 26rem; width: 26rem; }
 
 /*portfolio styles */
   .portfolio__card { 
