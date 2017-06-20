@@ -92,25 +92,19 @@
     .nav-main { opacity:1; pointer-events:auto; overflow:visible; height: 100%; width: 100rem; }
     
     /*dynamic styles -- landscape (differs from portrait) */ 
-    #home .section__container, .head__title { position:relative; left: 3.2rem; }
+    #home .section__container, .head__title { position:relative; left: 1.8rem; }
 
   }
   /* end landscape styles */
 /* END RESPONSIVE STYLING SETUP */
-
-/* font sizing */
- 
-  .hire__link, .hire__form, .hire__form * { font-size: 2.4rem; }
-  .btn { font-size: 2.4rem; }
-  .section__tab { font-size: 3.2rem; line-height: 3.2rem; }
-
-
 
 
 /* bootstrap overrides */
   .badge{ font-size: 2.4rem; margin: 0.5rem; }
   .btn { 
     box-sizing: border-box;
+    font-size: 3rem;
+    line-height: 3rem;
     margin: 1rem; 
     border-top: 0.4rem solid rgb(200,200,200); border-left: 0.4rem solid rgb(200,200,200);
     border-bottom: 0.4rem solid rgb(100,100,100); border-right: 0.4rem solid rgb(100,100,100);
@@ -124,18 +118,19 @@
   }
   .card-title { font-size: 3.2rem; }
   .card-text { font-size: 2.4rem; }
-  .card-img-top { padding: 0 4rem; } 
+  .card-img-top { width:100%; height:auto; } 
   .card-header, .card-footer { background-color: transparent; }
   ul.nav-tabs { 
     box-sizing: border-box; 
     border-bottom: 0.4rem solid rgb(200,200,200);
-    margin: 2rem auto;
+    margin: 0 auto 2rem auto;
+    padding: 0;
   }
   ul.nav-tabs > li { 
-    box-sizing: border-box; 
-    width: 22%;   
+    box-sizing: border-box;   
     background-color: transparent !important;
     outline: none;
+    margin: 0; padding: 0;
   }
   ul.nav-tabs > li > a {
     position: relative; 
@@ -171,7 +166,7 @@
     margin: 0 auto;
     padding: 0;
   }
-  .section__tab { padding: 1rem; }
+  .section__tab { font-size: 3.3rem; line-height: 3.3rem; padding: 1rem 0; }
   .text-overflow-center {
     margin-left: -100%;
     margin-right: -100%;
@@ -189,15 +184,15 @@
 /* nav styles */
   nav {background-color: rgba(30,30,60,0.6);}
   .nav-main__icon-base, .nav-mobile__icon-base, .nav-main__icon-middle, .nav-mobile__icon-middle {
-     font-size: 7rem !important;
+     font-size: 8rem !important;
   }
   .nav-main__icon-top, .nav-mobile__icon-top { 
-    position: relative; top: 0.5rem; left: 0.1rem;
-    font-size: 3rem !important; 
+    position: relative; top: 1rem; left: 0.5rem;
+    font-size: 3.3rem !important; 
   }
   .nav-main__icon-text, .nav-mobile__icon-text { 
-    position: relative; top: 0.5rem; left: 0;
-    font-size: 2.4rem; letter-spacing: 0.1rem;
+    position: relative; top: 1rem; left: 0.5rem;
+    font-size: 3rem; letter-spacing: 0.1rem;
   } 
   .nav-main__button, .nav-mobile__button  {
     position: relative; top: 0; right: 0;
@@ -210,12 +205,12 @@
   }  
   .nav-main__linkline { 
     position: absolute; top:25%; left: 10%; 
-    height: 0.5rem; width: 80%;
+    height: 0.6rem; width: 80%;
     background-color: rgb(200,200,200);
   }
   .nav-mobile__linkline { 
     position: absolute; top:25%; left: 10%; 
-    height: 0.5rem; width: 77%;
+    height: 0.6rem; width: 77%;
     background-color: rgb(200,200,200);
   }
 /* nav transitons */
@@ -271,51 +266,58 @@
   }
   .home__description {
     position: relative; top: 0; left: -1.6rem;
-    font-size: 3.2rem; letter-spacing: 0.6rem; line-height: 3.2rem;
+    font-size: 3.3rem; letter-spacing: 0.6rem; line-height: 3.3rem;
   }
   .home__contact {
     position: relative; top: 0; left: -3.2rem;
   }
+  .home__contact .btn { font-size: 2.4rem; line-height: 2.4rem;}
   .home__title, .home__description, .home__contact .btn { margin-bottom: 2rem; }
 
 /* about styles */
   .about__card { height: auto; }
   .about__card .card-img-left { height: 25rem; width: 25rem; border-radius: 1rem; }
+  #about .nav-item { width: 30%; }
 
 /*resume styles */
-  .resume__download, .resume__download .btn { 
-    font-size: 3.2rem;
-    line-height: 3.2rem;
-    margin: 1rem auto;
+  .resume__download { 
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 2rem; margin-top: -1rem;
   }  
   .resume__card { height: 17rem; }
   .resume__card .card-img-left { height: 26rem; width: 26rem; }
   .resume__skill { 
-    font-size: 2.4rem; line-height: 2.4rem;
+    font-size: 2.7rem; line-height: 2.66rem;
     height: 9rem; width: 9rem; 
     margin: 1rem; 
     border-radius: 50%;
-    border: 0.4rem solid rgb(200,200,200);
+    border: 0.6rem solid rgb(200,200,200);
     text-shadow: 0.3rem 0.3rem 0.15rem rgb(79,43,1);
-    box-shadow: 0.4rem 0.4rem 0 rgb(100,100,100);
+    box-shadow: 0.3rem 0.3rem 0 rgb(100,100,100);
   }
   .resume__skillicon { width: 23%; padding: 1%; }
+  #resume .nav-item { width: 22.5%; }
 
 /*portfolio styles */
   .portfolio__card { 
-    max-width: 200px;
-    margin: 2rem; 
-    border: 1rem solid rgb(200,200,200);
-    border-radius: 1rem;
+    width: 33%;
   }
   .portfolio__card .card-img-top { border-top-left-radius: 1rem; border-top-right-radius: 1rem; }
+  #portfolio .nav-item { width: 30%; }
   
 /* hire styles */
-  .hire__link a { margin-top: 1rem; }
-  .hire__cartoon { max-width: 33rem; }
-  .hire__form { width: 50rem; height:50rem; max-width: 90%; }
+  .hire__link a { font-size: 2.4rem; margin-top: 1rem; }
+  .hire__cartoon { transform: rotateY(180deg); }
+  .hire__form {
+     margin: 0 auto 2rem auto; 
+     font-size: 2.4rem; 
+     width: 66rem; max-width: 90%;
+  }
+  .hire__form form input, .hire__form form textarea { font-size: 2.4rem; }
+  .hire__form form h4 { font-size: 3rem; }
   .hire__form-heading { margin: 2rem auto 1rem auto; }
-  .hire__form-button { margin: 1rem; padding: 0.5rem 1rem; }
+
 
 
 
