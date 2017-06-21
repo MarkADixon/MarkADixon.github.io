@@ -116,6 +116,7 @@
     border-bottom: 0.4rem solid rgb(79,43,1); border-right: 0.4rem solid rgb(79,43,1);
     outline: none;
   }
+  .card { border:none; }
   .card-title { font-size: 3.2rem; }
   .card-text { font-size: 2.4rem; }
   .card-img-top { width:100%; height:auto; } 
@@ -287,10 +288,11 @@
   }  
   .resume__card { height: 17rem; }
   .resume__card .card-img-left { height: 26rem; width: 26rem; }
+  #skills{  }
   .resume__skill { 
-    font-size: 2.7rem; line-height: 2.66rem;
-    height: 9rem; width: 9rem; 
-    margin: 1rem; 
+    font-size: 2.7rem; line-height: 2.7rem;
+    height: 10rem; width: 10rem; 
+    margin: 1.6rem 2.56rem; 
     border-radius: 50%;
     border: 0.6rem solid rgb(200,200,200);
     text-shadow: 0.3rem 0.3rem 0.15rem rgb(79,43,1);
