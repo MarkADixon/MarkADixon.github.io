@@ -26,22 +26,32 @@
   .color-github { color: black; }
 
   
-  .color-text { color: rgb(190,190,190); }
-  .colorbg-text { background-color: rgb(190,190,190); }
-  .color-base { color:rgb(55,55,120) }
-  .colorbg-base { background-color: rgb(55,55,120); }
-  .color-a { color: rgb(120,71,55); }
-  .colorbg-a { background-color: rgb(120,71,55); }
-  .color-b { color: rgb(120,104,55); }
-  .colorbg-b { background-color: rgb(120,104,55); }
+
 */
 
-  .color-page { background-color: rgb(1,20,40); color: rgb(188,198,204); }
-  .color-page--invert { background-color: rgb(188,198,204); color: rgb(10,7,45); }
-  .color-button { background-color: transparent; color: rgb(188,198,204); }
-  .color-button--invert { background-color: transparent; color: rgb(10,7,45); }
-  .color-cta { background-color: transparent; color: rgb(158,85,2);  }
-  .color-cta-reg { background-color: rgb(158,85,2); color: rgb(188,198,204); }
+/* for sass conversion todo
+  .color-text { color: rgb(208,214,219); }
+  .colorbg-text { background-color: rgb(208,214,219); }
+  .color-text-dark { color: rgb(130,134,137); }
+  .colorbg-text-dark { background-color: rgb(130,134,137); }
+  .color-hover { color: rgb(207,184,124); }
+  .colorbg-hover { background-color: rgb(207,184,124); }
+  .color-hover-dark { color: rgb(129,115,77); }
+  .colorbg-hover-dark { background-color: rgb(129,115,77); }
+  .color-light { color:rgb(3,33,133)}
+  .colorbg-light { background-color: rgb(3,33,133); }
+  .color-base { color:rgb(2,21,83)}
+  .colorbg-base { background-color: rgb(2,21,83); }
+  .color-base-dark { color: rgb(1,13,52); }
+  .colorbg-base-dark { background-color: rgb(1,13,52); }
+*/
+
+  .color-page { background-color: rgb(1,13,52); color:rgb(208,214,219); }
+  .color-page--invert { background-color: rgb(208,214,219); color: rgb(1,13,52); }
+  .color-button { background-color: transparent; color: rgb(208,214,219); }
+  .color-button--invert { background-color: transparent; color: rgb(1,13,52); }
+  .color-cta { background-color: transparent; color: rgb(3,33,133);  }
+  .color-cta-reg { background-color: rgb(3,33,133); color: rgb(208,214,219); }
   
 /* APP-LIKE SECTIONS (show/hide) */
   .app__container { 
@@ -106,24 +116,25 @@
     font-size: 3rem;
     line-height: 3rem;
     margin: 1rem; 
-    border-top: 0.4rem solid rgb(188,198,204); border-left: 0.4rem solid rgb(188,198,204);
-    border-bottom: 0.4rem solid rgb(100,100,100); border-right: 0.4rem solid rgb(100,100,100);
+    border-top: 0.4rem solid rgb(208,214,219); border-left: 0.4rem solid rgb(208,214,219);
+    border-bottom: 0.4rem solid rgb(130,134,137); border-right: 0.4rem solid rgb(130,134,137);
   }
   .btn:hover {
     transition: color 0.2s ease-in-out 0s, border 0.2s ease-in-out 0s;
-    color: rgb(158,85,2); 
-    border-top: 0.4rem solid rgb(158,85,2); border-left: 0.4rem solid rgb(158,85,2);
-    border-bottom: 0.4rem solid rgb(79,43,1); border-right: 0.4rem solid rgb(79,43,1);
+    color: rgb(207,184,124); 
+    background-color: rgb(2,21,83);
+    border-top: 0.4rem solid rgb(207,184,124); border-left: 0.4rem solid rgb(207,184,124);
+    border-bottom: 0.4rem solid rgb(129,115,77); border-right: 0.4rem solid  rgb(129,115,77);
     outline: none;
   }
   .card { border:none; }
   .card-title { font-size: 3.2rem; line-height: 4rem; }
   .card-text { font-size: 2.4rem; line-height: 3rem; }
-  .card-img-top { width:100%; height:auto; } 
+  .card-img-top, .card-img-left { width:100%; height:auto; } 
   .card-header, .card-footer { background-color: transparent; }
   ul.nav-tabs { 
     box-sizing: border-box; 
-    border-bottom: 0.4rem solid rgb(188,198,204);
+    border-bottom: 0.4rem solid rgb(208,214,219);
     margin: 0 auto 2rem auto;
     padding: 0;
   }
@@ -136,21 +147,21 @@
   ul.nav-tabs > li > a {
     position: relative; 
     box-sizing: border-box; 
-    background-color: transparent; color: rgb(188,198,204); 
+    background-color: transparent; color: rgb(208,214,219); 
     outline: none;
   }
   ul.nav-tabs > li > a.active, ul.nav-tabs > li > a:active {  
     top: 0.25rem;
-    background-color: rgb(10,7,45) !important; color: rgb(188,198,204) !important; 
-    border-top: 0.4rem solid rgb(188,198,204) !important; border-left: 0.4rem solid rgb(188,198,204) !important;
-    border-bottom: 0.4rem solid rgb(10,7,45) !important; border-right: 0.4rem solid rgb(188,198,204) !important;
+    background-color: rgb(1,13,52) !important; color: rgb(208,214,219) !important; 
+    border-top: 0.4rem solid rgb(208,214,219) !important; border-left: 0.4rem solid rgb(208,214,219) !important;
+    border-bottom: 0.4rem solid rgb(1,13,52) !important; border-right: 0.4rem solid rgb(208,214,219) !important;
    }
    ul.nav-tabs > li > a:hover:not(.active) { 
     top: -0.15rem;
     transition: color 0.2s ease-in-out 0s, border 0.2s ease-in-out 0s;
-    background-color: rgb(10,7,45) !important; color: rgb(158,85,2) !important; 
-    border-top: 0.4rem solid rgb(158,85,2) !important; border-left: 0.4rem solid rgb(158,85,2) !important;
-    border-bottom: 0.4rem solid rgb(10,7,45) !important; border-right: 0.4rem solid rgb(158,85,2) !important;
+    background-color: rgb(2,21,83) !important; color: rgb(207,184,124) !important; 
+    border-top: 0.4rem solid rgb(207,184,124) !important; border-left: 0.4rem solid rgb(207,184,124)!important;
+    border-bottom: 0.4rem solid rgb(2,21,83) !important; border-right: 0.4rem solid rgb(207,184,124) !important;
     outline: none;
    }
   /* end bootstrap overrides */
@@ -178,12 +189,11 @@
   /* tab keyboard selector style */
   :link:focus, :visited:focus {
     outline: none;
-    background-color: rgba(255,255,255,0.33);
-    color: white;
+    background-color: rgb(2,21,83);
+    color: rgb(207,184,124);
   }
 
 /* nav styles */
-  nav {background-color: rgb(10,7,45);}
   .nav-main__icon-base, .nav-mobile__icon-base, .nav-main__icon-middle, .nav-mobile__icon-middle {
      font-size: 8rem !important;
   }
@@ -207,12 +217,12 @@
   .nav-main__linkline { 
     position: absolute; top:25%; left: 10%; 
     height: 0.6rem; width: 80%;
-    background-color: rgb(188,198,204);
+    background-color: rgb(208,214,219);
   }
   .nav-mobile__linkline { 
     position: absolute; top:25%; left: 10%; 
     height: 0.6rem; width: 77%;
-    background-color: rgb(188,198,204);
+    background-color: rgb(208,214,219);
   }
 /* nav transitons */
   .nav-main__button, .nav-mobile__button, .nav-main__button *, .nav-mobile__button * { 
@@ -231,23 +241,31 @@
     -ms-transform: scale(1.33); /* IE 9 */
     transform: scale(1.33); /* IE 10, Fx 16+, Op 12.1+ */
   }
+  .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-base,
+  .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-base {
+    transition: color 0.2s ease-in-out 0s;
+    color: rgb(2,21,83);
+  }
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-top,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-top,
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-middle,
-  .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-middle,
+  .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-middle {
+    transition: color 0.2s ease-in-out 0s;
+    color: rgb(207,184,124) !important; 
+    text-shadow: 0.3rem 0.3rem 0.15rem rgb(129,115,77);
+  }
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-text,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-text {
     transition: color 0.2s ease-in-out 0s;
-    color: rgb(158,85,2) !important; 
-    text-shadow: 0.3rem 0.3rem 0.15rem rgb(79,43,1);
+    color: rgb(207,184,124) !important; 
   }
 
   .nav-main__icon, .nav-mobile__icon {
-    text-shadow: 0.2rem 0.2rem 0.1rem rgb(100,100,100);
+    text-shadow: 0.2rem 0.2rem 0.1rem rgb(130,134,137);
   }
   .nav-main__button--selected .nav-main__icon, .nav-mobile__button--selected .nav-mobile__icon, 
   .nav-main__button:hover .nav-main__icon, .nav-mobile__button:hover .nav-mobile__icon { 
-    text-shadow: 0.3rem 0.3rem 0.15rem rgb(100,100,100);
+    text-shadow: 0.3rem 0.3rem 0.15rem rgb(130,134,137);
   }
   .nav-main__icon-top--selected, .nav-mobile__icon-top--selected { 
     -webkit-transform: scale(1.25); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
@@ -276,11 +294,13 @@
   .home__title, .home__description, .home__contact .btn { margin-bottom: 2rem; }
 
 /* about styles */
-  .about__card { height: auto; }
-  .about__title { margin-bottom: 2rem; }
+  .about__title { font-size: 3.2rem; line-height: 3.2rem; margin-bottom: 2rem; }
+  .about__img {
+    position: relative; left: -5%;
+    width: 95%; height: auto;
+  }
   .about__row { margin-top: 1rem; margin-bottom: 1rem; }
   .about__icon { font-size: 3.6rem; margin-top: 1rem; margin-bottom: 0.5rem; }
-  .about__card .card-img-left { height: 24rem; width: 24rem; margin-right: 2.4rem; border-radius: 1rem; }
   #about .nav-item { width: 30%; }
 
 /*resume styles */
@@ -296,9 +316,7 @@
     height: 10rem; width: 10rem; 
     margin: 1.6rem 2.56rem; 
     border-radius: 50%;
-    border: 0.6rem solid rgb(188,198,204);
-    text-shadow: 0.3rem 0.3rem 0.15rem rgb(79,43,1);
-    box-shadow: 0.3rem 0.3rem 0 rgb(100,100,100);
+    border: 0.6rem solid rgb(208,214,219);
   }
   .resume__skillicon { width: 23%; padding: 1%; }
   #resume .nav-item { width: 22.5%; }
