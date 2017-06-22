@@ -43,7 +43,7 @@
   <!-- basic favicon 
   <link rel="shortcut icon" href="image url">
   -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -178,23 +178,35 @@
         <!-- Tab panes -->
         <div class="tab-content">
           <div class="tab-pane fade show active" id="summary" role="tabpanel">
-            <div class="card flex-row align-items-start about__card color-page">
+            <div class="card flex-row align-items-center about__card color-page">
               <img class="card-img-left img-fluid" src="img/about_pic_512.jpg" alt="Picture of Mark Dixon">
               <div class="card-block">
-                <h4 class="card-title text-left">Hi, I'm Mark. Welcome&nbspto&nbspmy&nbspportfolio&nbsppage.</h4>
-                <p class="card-text text-left">  
-                  I build apps and web pages and have expertise with data and statistics.
-                  My university background includes Economics, Computer Science, and Physics.
-                  I have almost 5 years experience working as an Economist for the U.S. Bureau of Labor Statistics.
-                  I also have 5 years of experience working as a programmer (C#/Python/Web).
-                  I've won several prestigious awards for my programming, business entreprenuership, and public service.
-                  For more details on my professional achievements, please head over to my resume section.
-                </p>
+                <h4 class="card-title about__title text-left">Hi, I'm Mark. Welcome&nbspto&nbspmy&nbspportfolio&nbsppage.</h4>
+                  <div class="row about__row align-items-center">
+                    <div class="col-1"><i class="fa fa-star about__icon" aria-hidden="true"></i></div>
+                    <div class="col-11 card-text text-left">I build apps and web pages and have expertise in data and statistics.</div>
+                  </div>
+                  <div class="row about__row align-items-center">
+                    <div class="col-1"><i class="fa fa-graduation-cap about__icon" aria-hidden="true"></i></div>
+                    <div class="col-11 card-text text-left">My university background spans Economics, Computer Science, and Physics.</div>
+                  </div>
+                  <div class="row about__row align-items-center">
+                    <div class="col-1"><i class="fa fa-line-chart about__icon" aria-hidden="true"></i></div>
+                    <div class="col-11 card-text text-left">I have 10 years combined experience working as an Economist and Software Developer (C#/Python/Web).</div>               
+                  </div>
+                  <div class="row about__row align-items-center">
+                    <div class="col-1"><i class="fa fa-trophy about__icon" aria-hidden="true"></i></div>
+                    <div class="col-11 card-text text-left">I've won several prestigious awards for programming, business entreprenuership, and public service.</div>
+                  </div>
+                  <div class="row about__row align-items-center">
+                    <div class="col-1"><i class="fa fa-file-text about__icon" aria-hidden="true"></i></div>
+                    <div class="col-11 card-text text-left">For more details on my professional achievements, please head over to my resume section.</div>                    
+                  </div>
               </div>
             </div>   
           </div>
-          <div class="tab-pane fade" id="profile" role="tabpanel">...</div>
-          <div class="tab-pane fade" id="messages" role="tabpanel">...</div>
+          <div class="tab-pane fade" id="profile" role="tabpanel"><span style="font-size: 4rem;">Coming Soon</span></div>
+          <div class="tab-pane fade" id="messages" role="tabpanel"><span style="font-size: 4rem;">Coming Soon</span></div>
         </div>
 
                    
@@ -370,123 +382,105 @@
         <!-- Tab panes -->
         <div class="tab-content">
           <div class="tab-pane fade show active" id="professional" role="tabpanel">
-            <div class="row no-gutters">             
+            <div class="row no-gutters justify-content-between">             
               <div class="card portfolio__card color-page">
                 <img class="card-img-top" src="img/pw_450x300.png" alt="Produce Wars box art">
                 <div class="card-block">
                   <h4 class="card-title">Produce Wars<br>(XBOX 360 / PC Game)</h4>
-                  <span class="badge badge-pill badge-primary">C#</span>
-                  <span class="badge badge-pill badge-info">.NET</span>
-                  <span class="badge badge-pill badge-info">XNA</span>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <span class="badge badge-pill color-cta-reg">C#</span>
+                  <span class="badge badge-pill color-cta-reg">.NET</span>
+                  <span class="badge badge-pill color-cta-reg">XNA</span>
+                  <p class="card-text text-left">Role: Sole programmer.<br>Project: A physics-based puzzle platformer game.<br>Award: National Winner, Best Game, U.S. Imagine Cup 2013</p>
                   <div>
-                    <a href="http://www.gigaloth.com/produce-wars/" class="btn color-page" target="_blank"><i class="fa fa-link"></i>&nbsp&nbspView</a>
-                    <a href="#" class="btn color-page"><i class="fa fa-github"></i>&nbsp&nbspCode</a>
+                    <a href="http://www.gigaloth.com/produce-wars/" target="_blank" class="btn color-page" ><i class="fa fa-link"></i>&nbsp&nbspView</a>
+                    <a href="https://github.com/MarkADixon/Game-Produce-Wars" target="_blank" class="btn color-page"><i class="fa fa-github"></i>&nbsp&nbspCode</a>
                   </div>
                 </div>
               </div>              
               <div class="card portfolio__card color-page">
-                <img class="card-img-top img-fluid" src="" alt="Card image cap">
+                <img class="card-img-top img-fluid" src="img/editor_450x300.png" alt="Card image cap">
                 <div class="card-block">
                   <h4 class="card-title">Gigaloth Map Editor<br>(Windows Application)</h4>
-                  <span class="badge badge-pill badge-primary">C#</span>
-                  <span class="badge badge-pill badge-info">.NET</span>
-                  <span class="badge badge-pill badge-info">XNA</span>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <span class="badge badge-pill color-cta-reg">C#</span>
+                  <span class="badge badge-pill color-cta-reg">.NET</span>
+                  <span class="badge badge-pill color-cta-reg">XNA</span>
+                  <p class="card-text text-left">Role: Sole programmer.<br>Project: A map/level editor tool for building 2D games.</p>
                   <div>
-                    <a href="#" class="btn color-page"><i class="fa fa-link"></i>&nbsp&nbspView</a>
-                    <a href="#" class="btn color-page"><i class="fa fa-github"></i>&nbsp&nbspCode</a>
+                    <a href="http://www.gigaloth.com/2012/04/10/produce-wars-is-official/" target="_blank" class="btn color-page"><i class="fa fa-link"></i>&nbsp&nbspView</a>
+                    <a href="https://github.com/MarkADixon/App-Gigaloth-Map-Editor" target="_blank" class="btn color-page"><i class="fa fa-github"></i>&nbsp&nbspCode</a>
                   </div>
                 </div>
               </div>              
               <div class="card portfolio__card color-page">
-                <img class="card-img-top img-fluid" src="" alt="Card image cap">
+                <img class="card-img-top img-fluid" src="img/vh_450x300.png" alt="Card image cap">
                 <div class="card-block">
-                  <h4 class="card-title">Vivian's House Dog Rescue<br>(Website)</h4>
-                  <span class="badge badge-pill badge-primary">HTML5</span>
-                  <span class="badge badge-pill badge-primary">CSS3</span>
-                  <span class="badge badge-pill badge-primary">JS</span>
-                  <span class="badge badge-pill badge-info">Bootstrap</span>
-                  <span class="badge badge-pill badge-info">JQuery</span>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h4 class="card-title">V.H. Dog Rescue<br>(Client Website)</h4>
+                  <span class="badge badge-pill color-cta-reg">HTML5</span>
+                  <span class="badge badge-pill color-cta-reg">CSS3</span>
+                  <span class="badge badge-pill color-cta-reg">JS</span>
+                  <span class="badge badge-pill color-cta-reg">Bootstrap</span>
+                  <span class="badge badge-pill color-cta-reg">JQuery</span>
+                  <p class="card-text text-left">Role: Sole programmer + designer.<br>Project: Coming Soon. Under construction as of 6/21/2017.</p>
                   <div>
-                    <a href="#" class="btn color-page"><i class="fa fa-link"></i>&nbsp&nbspView</a>
-                    <a href="#" class="btn color-page"><i class="fa fa-github"></i>&nbsp&nbspCode</a>
+                    <a href="#" class="btn color-page disabled"><i class="fa fa-link"></i>&nbsp&nbspView</a>
+                    <a href="#" class="btn color-page disabled"><i class="fa fa-github"></i>&nbsp&nbspCode</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="tab-pane fade" id="individual" role="tabpanel">
-            <span style="font-size: 4rem;">Coming Soon</span>
+            <div class="row no-gutters justify-content-between">             
+              <div class="card portfolio__card color-page">
+                <img class="card-img-top" src="img/pw_450x300.png" alt="Produce Wars box art">
+                <div class="card-block">
+                  <h4 class="card-title">Produce Wars<br>(XBOX 360 / PC Game)</h4>
+                  <span class="badge badge-pill color-cta-reg">C#</span>
+                  <span class="badge badge-pill color-cta-reg">.NET</span>
+                  <span class="badge badge-pill color-cta-reg">XNA</span>
+                  <p class="card-text text-left">Role: Sole programmer.<br>Project: A physics-based puzzle platformer game.<br>Award: National Winner, Best Game, U.S. Imagine Cup 2013</p>
+                  <div>
+                    <a href="http://www.gigaloth.com/produce-wars/" target="_blank" class="btn color-page" ><i class="fa fa-link"></i>&nbsp&nbspView</a>
+                    <a href="https://github.com/MarkADixon/Game-Produce-Wars" target="_blank" class="btn color-page"><i class="fa fa-github"></i>&nbsp&nbspCode</a>
+                  </div>
+                </div>
+              </div>              
+              <div class="card portfolio__card color-page">
+                <img class="card-img-top img-fluid" src="img/editor_450x300.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Gigaloth Map Editor<br>(Windows Application)</h4>
+                  <span class="badge badge-pill color-cta-reg">C#</span>
+                  <span class="badge badge-pill color-cta-reg">.NET</span>
+                  <span class="badge badge-pill color-cta-reg">XNA</span>
+                  <p class="card-text text-left">Role: Sole programmer.<br>Project: A map/level editor tool for building 2D games.</p>
+                  <div>
+                    <a href="http://www.gigaloth.com/2012/04/10/produce-wars-is-official/" target="_blank" class="btn color-page"><i class="fa fa-link"></i>&nbsp&nbspView</a>
+                    <a href="https://github.com/MarkADixon/App-Gigaloth-Map-Editor" target="_blank" class="btn color-page"><i class="fa fa-github"></i>&nbsp&nbspCode</a>
+                  </div>
+                </div>
+              </div>              
+              <div class="card portfolio__card color-page">
+                <img class="card-img-top img-fluid" src="img/this_450x300.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Mark Dixon Portfolio Site<br>(This Website)</h4>
+                  <span class="badge badge-pill color-cta-reg">HTML5</span>
+                  <span class="badge badge-pill color-cta-reg">CSS3</span>
+                  <span class="badge badge-pill color-cta-reg">JS</span>
+                  <span class="badge badge-pill color-cta-reg">Bootstrap</span>
+                  <span class="badge badge-pill color-cta-reg">JQuery</span>
+                  <p class="card-text text-left">Role: Sole programmer + designer.<br></p>
+                  <div>
+                    <a href="#" class="btn color-page disabled"><i class="fa fa-link"></i>&nbsp&nbspView</a>
+                    <a href="https://github.com/MarkADixon/MarkADixon.github.io" target="_blank" class="btn color-page"><i class="fa fa-github"></i>&nbsp&nbspCode</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="tab-pane fade" id="testimonials" role="tabpanel">
             <span style="font-size: 4rem;">Coming Soon</span>
           </div>
         </div>
-
-<!--
-
-
-        <div class="container-fluid">
-          <div class="row">   
-            <div class="col-md-4 col-sm-6 col-xs-8">           
-              <div class="card portfolio__card color-page">
-                <img class="card-img-top img-fluid" src="img/about_pic_512.jpg" alt="Card image cap">
-                <div class="card-block">
-                  <h4 class="card-title">This Portfolio (Website)</h4>
-                  <span class="badge badge-pill badge-primary">HTML5</span>
-                  <span class="badge badge-pill badge-primary">CSS3</span>
-                  <span class="badge badge-pill badge-primary">JS</span>
-                  <span class="badge badge-pill badge-info">Bootstrap</span>
-                  <span class="badge badge-pill badge-info">JQuery</span>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <div>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-link"></i>&nbsp&nbspView</a>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-github"></i>&nbsp&nbspCode</a>
-                  </div>
-                </div>
-              </div>  
-            </div>             
-            <div class="col-md-4 col-sm-6 col-xs-8">              
-              <div class="card portfolio__card color-page">
-                <img class="card-img-top img-fluid" src="img/about_pic_512.jpg" alt="Card image cap">
-                <div class="card-block">
-                  <h4 class="card-title">Simon Game (FreeCodeCamp Project)</h4>
-                  <span class="badge badge-pill badge-primary">HTML5</span>
-                  <span class="badge badge-pill badge-primary">CSS3</span>
-                  <span class="badge badge-pill badge-primary">JS</span>
-                  <span class="badge badge-pill badge-info">Bootstrap</span>
-                  <span class="badge badge-pill badge-info">JQuery</span>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <div>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-link"></i>&nbsp&nbspView</a>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-github"></i>&nbsp&nbspCode</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-8">              
-              <div class="card portfolio__card color-page">
-                <img class="card-img-top img-fluid" src="img/about_pic_512.jpg" alt="Card image cap">
-                <div class="card-block">
-                  <h4 class="card-title">Calculator (FreeCodeCamp Project)</h4>
-                  <span class="badge badge-pill badge-default">HTML5</span>
-                  <span class="badge badge-pill badge-default">CSS3</span>
-                  <span class="badge badge-pill badge-default">JS</span>
-                  <span class="badge badge-pill badge-default">Bootstrap</span>
-                  <span class="badge badge-pill badge-default">JQuery</span>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <div>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-link"></i>&nbsp&nbspView</a>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-github"></i>&nbsp&nbspCode</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
--->
       </div>
     </section> <!--Section: Portfolio-->
 
@@ -509,8 +503,7 @@
           <div class="col-2"></div>
           <div class= "hire__link col-4 text-left">
             <a class="btn color-page" href="mailto:MarkDixonDev@gmail.com"><i class="fa fa-envelope"></i>&nbsp&nbspMarkDixonDev@gmail.com</a>
-            <a class="btn color-page" href="http:\\www.linkedin.com/in/madix" target="_blank"><i class="fa fa-linkedin"></i>&nbsp&nbspContact by LinkedIn</a><br>
-            <a class="btn color-page" href="http:\\www.github.com/markadixon" target="_blank"><i class="fa fa-github"></i>&nbsp&nbspContact by Github</a><br>
+            <a class="btn color-page" href="http:\\www.linkedin.com/in/madix" target="_blank"><i class="fa fa-linkedin"></i>&nbsp&nbspContact via LinkedIn</a><br>
             <a class="btn color-page" href="tel:+19709803015"><i class="fa fa-phone"></i>&nbsp&nbsp970.980.3015</a><br>  
           </div>
           <div class="hire__cartoon col-4 float-left">

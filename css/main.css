@@ -67,7 +67,7 @@
     }
 
     /* viewport containers */
-    header { position: fixed; top: 0; left: 0; width: 100%; height: 12rem; z-index: 10; }
+    header { position: fixed; top: 0; left: 0; width: 100%; height: 12rem; z-index: -1; }
     main {  position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 12rem 0 18rem 0; z-index: 0; }
     nav { position: fixed; top: calc(100% - 18rem); left: 0; width: 100%; height: 18rem; z-index: 10; }
     .nav-mobile { position: absolute; top: 0; left: 0; padding-top: 1rem; }
@@ -84,7 +84,7 @@
     } 
 
     /* viewport containers */
-    header { position: fixed; top: 0; left: 0; width: 100%; height: 12rem; z-index: 10; }
+    header { position: fixed; top: 0; left: 0; width: 100%; height: 12rem; z-index: -1; }
     main { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; }
     nav { position: fixed; top: 82rem; left: 0; width: 100%; height: 18rem; z-index: 10; }
     .nav-main { position: absolute; top: 0; left: calc(50% - 50rem); padding-top: 1rem; }
@@ -117,8 +117,8 @@
     outline: none;
   }
   .card { border:none; }
-  .card-title { font-size: 3.2rem; }
-  .card-text { font-size: 2.4rem; }
+  .card-title { font-size: 3.2rem; line-height: 4rem; }
+  .card-text { font-size: 2.4rem; line-height: 3rem; }
   .card-img-top { width:100%; height:auto; } 
   .card-header, .card-footer { background-color: transparent; }
   ul.nav-tabs { 
@@ -277,7 +277,10 @@
 
 /* about styles */
   .about__card { height: auto; }
-  .about__card .card-img-left { height: 25rem; width: 25rem; border-radius: 1rem; }
+  .about__title { margin-bottom: 2rem; }
+  .about__row { margin-top: 1rem; margin-bottom: 1rem; }
+  .about__icon { font-size: 3.6rem; margin-top: 1rem; margin-bottom: 0.5rem; }
+  .about__card .card-img-left { height: 24rem; width: 24rem; margin-right: 2.4rem; border-radius: 1rem; }
   #about .nav-item { width: 30%; }
 
 /*resume styles */
@@ -288,7 +291,6 @@
   }  
   .resume__card { height: 17rem; }
   .resume__card .card-img-left { height: 26rem; width: 26rem; }
-  #skills{  }
   .resume__skill { 
     font-size: 2.7rem; line-height: 2.7rem;
     height: 10rem; width: 10rem; 
@@ -303,14 +305,14 @@
 
 /*portfolio styles */
   .portfolio__card { 
-    width: 33%;
+    width: 32%;
   }
   .portfolio__card .card-img-top { border-top-left-radius: 1rem; border-top-right-radius: 1rem; }
   #portfolio .nav-item { width: 30%; }
   
 /* hire styles */
   .hire__link a { font-size: 2.4rem; margin-top: 1rem; }
-  .hire__cartoon { transform: rotateY(180deg); }
+  .hire__cartoon {  }
   .hire__form {
      margin: 0 auto 2rem auto; 
      font-size: 2.4rem; 
