@@ -32,8 +32,8 @@
 /* for sass conversion todo
   .color-text { color: rgb(208,214,219); }
   .colorbg-text { background-color: rgb(208,214,219); }
-  .color-text-dark { color: rgb(130,134,137); }
-  .colorbg-text-dark { background-color: rgb(130,134,137); }
+  .color-text-dark { color: rgb(96,96,100); }
+  .colorbg-text-dark { background-color: rgb(96,96,100); }
   .color-hover { color: rgb(207,184,124); }
   .colorbg-hover { background-color: rgb(207,184,124); }
   .color-hover-dark { color: rgb(129,115,77); }
@@ -42,16 +42,16 @@
   .colorbg-light { background-color: rgb(3,33,133); }
   .color-base { color:rgb(2,21,83)}
   .colorbg-base { background-color: rgb(2,21,83); }
-  .color-base-dark { color: rgb(1,13,52); }
-  .colorbg-base-dark { background-color: rgb(1,13,52); }
+  .color-base-dark { color: rgb(6,17,53); }
+  .colorbg-base-dark { background-color: rgb(6,17,53); }
 */
 
-  .color-page { background-color: rgb(1,13,52); color:rgb(208,214,219); }
-  .color-page--invert { background-color: rgb(208,214,219); color: rgb(1,13,52); }
-  .color-button { background-color: transparent; color: rgb(208,214,219); }
-  .color-button--invert { background-color: transparent; color: rgb(1,13,52); }
-  .color-cta { background-color: transparent; color: rgb(224,95,22);  }
-  .color-cta-reg { background-color: rgb(224,95,22); color: rgb(208,214,219); }
+  .color-page { background-color: rgb(6,17,53); color:rgb(192,192,200); }
+  .color-page--invert { background-color: rgb(192,192,200); color: rgb(6,17,53); }
+  .color-button { background-color: transparent; color: rgb(192,192,200); }
+  .color-button--invert { background-color: transparent; color: rgb(6,17,53); }
+  .color-cta { background-color: transparent; color: rgb(247,109,4);  }
+  .color-cta-reg { background-color: rgb(247,109,4); color: rgb(192,192,200); }
   
 /* APP-LIKE SECTIONS (show/hide) */
   .app__container { 
@@ -116,15 +116,14 @@
     font-size: 3rem;
     line-height: 3rem;
     margin: 1rem; 
-    border-top: 0.4rem solid rgb(208,214,219); border-left: 0.4rem solid rgb(208,214,219);
-    border-bottom: 0.4rem solid rgb(130,134,137); border-right: 0.4rem solid rgb(130,134,137);
+    border-top: 0.4rem solid rgb(192,192,200); border-left: 0.4rem solid rgb(192,192,200);
+    border-bottom: 0.4rem solid rgb(96,96,100); border-right: 0.4rem solid rgb(96,96,100);
   }
   .btn:hover {
     transition: color 0.2s ease-in-out 0s, border 0.2s ease-in-out 0s;
-    color: rgb(224,95,22); 
-    background-color: rgb(2,21,83);
-    border-top: 0.4rem solid rgb(224,95,22); border-left: 0.4rem solid rgb(224,95,22);
-    border-bottom: 0.4rem solid rgb(112,50,11); border-right: 0.4rem solid  rgb(112,50,11);
+    color: rgb(247,109,4); 
+    border-top: 0.4rem solid rgb(247,109,4); border-left: 0.4rem solid rgb(247,109,4);
+    border-bottom: 0.4rem solid rgb(124,55,2); border-right: 0.4rem solid  rgb(124,55,2);
     outline: none;
   }
   .card { border:none; }
@@ -134,7 +133,7 @@
   .card-header, .card-footer { background-color: transparent; }
   ul.nav-tabs { 
     box-sizing: border-box; 
-    border-bottom: 0.4rem solid rgb(208,214,219);
+    border-bottom: 0.4rem solid rgb(192,192,200);
     margin: 0 auto 2rem auto;
     padding: 0;
   }
@@ -147,21 +146,21 @@
   ul.nav-tabs > li > a {
     position: relative; 
     box-sizing: border-box; 
-    background-color: transparent; color: rgb(208,214,219); 
+    background-color: transparent; color: rgb(192,192,200); 
     outline: none;
   }
   ul.nav-tabs > li > a.active, ul.nav-tabs > li > a:active {  
     top: 0.25rem;
-    background-color: rgb(1,13,52) !important; color: rgb(208,214,219) !important; 
-    border-top: 0.4rem solid rgb(208,214,219) !important; border-left: 0.4rem solid rgb(208,214,219) !important;
-    border-bottom: 0.4rem solid rgb(1,13,52) !important; border-right: 0.4rem solid rgb(208,214,219) !important;
+    background-color: rgb(6,17,53) !important; color: rgb(192,192,200) !important; 
+    border-top: 0.4rem solid rgb(192,192,200) !important; border-left: 0.4rem solid rgb(192,192,200) !important;
+    border-bottom: 0.4rem solid rgb(6,17,53) !important; border-right: 0.4rem solid rgb(192,192,200) !important;
    }
    ul.nav-tabs > li > a:hover:not(.active) { 
     top: -0.15rem;
     transition: color 0.2s ease-in-out 0s, border 0.2s ease-in-out 0s;
-    background-color: rgb(2,21,83) !important; color: rgb(224,95,22) !important; 
-    border-top: 0.4rem solid rgb(224,95,22) !important; border-left: 0.4rem solid rgb(224,95,22)!important;
-    border-bottom: 0.4rem solid rgb(2,21,83) !important; border-right: 0.4rem solid rgb(224,95,22) !important;
+    background-color: rgb(6,17,53) !important; color: rgb(247,109,4) !important; 
+    border-top: 0.4rem solid rgb(247,109,4) !important; border-left: 0.4rem solid rgb(247,109,4)!important;
+    border-bottom: 0.4rem solid rgb(6,17,53) !important; border-right: 0.4rem solid rgb(247,109,4) !important;
     outline: none;
    }
   /* end bootstrap overrides */
@@ -184,8 +183,7 @@
   /* tab keyboard selector style */
   :link:focus, :visited:focus {
     outline: none;
-    background-color: rgb(2,21,83);
-    color: rgb(224,95,22);
+    color: rgb(247,109,4);
   }
 
 /* nav styles */
@@ -212,12 +210,12 @@
   .nav-main__linkline { 
     position: absolute; top:25%; left: 10%; z-index: 11; 
     height: 0.6rem; width: 80%;
-    background-color: rgb(208,214,219);
+    background-color: rgb(192,192,200);
   }
   .nav-mobile__linkline { 
     position: absolute; top:25%; left: 10%; z-index: 11; 
     height: 0.6rem; width: 80%;
-    background-color: rgb(208,214,219);
+    background-color: rgb(192,192,200);
   }
 /* nav transitons */
   .nav-main__button, .nav-mobile__button, .nav-main__button *, .nav-mobile__button * { 
@@ -239,28 +237,28 @@
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-base,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-base {
     transition: color 0.2s ease-in-out 0s;
-    color: rgb(2,21,83);
+    color: rgb(6,17,53);
   }
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-top,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-top,
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-middle,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-middle {
     transition: color 0.2s ease-in-out 0s;
-    color: rgb(224,95,22) !important; 
-    text-shadow: 0.3rem 0.3rem 0.15rem rgb(112,50,11);
+    color: rgb(247,109,4) !important; 
+    text-shadow: 0.3rem 0.3rem 0.15rem rgb(124,55,2);
   }
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-text,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-text {
     transition: color 0.2s ease-in-out 0s;
-    color: rgb(224,95,22) !important; 
+    color: rgb(247,109,4) !important; 
   }
 
   .nav-main__icon, .nav-mobile__icon {
-    text-shadow: 0.2rem 0.2rem 0.1rem rgb(130,134,137);
+    text-shadow: 0.2rem 0.2rem 0.1rem rgb(96,96,100);
   }
   .nav-main__button--selected .nav-main__icon, .nav-mobile__button--selected .nav-mobile__icon, 
   .nav-main__button:hover .nav-main__icon, .nav-mobile__button:hover .nav-mobile__icon { 
-    text-shadow: 0.3rem 0.3rem 0.15rem rgb(130,134,137);
+    text-shadow: 0.3rem 0.3rem 0.15rem rgb(96,96,100);
   }
   .nav-main__icon-top--selected, .nav-mobile__icon-top--selected { 
     -webkit-transform: scale(1.25); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
