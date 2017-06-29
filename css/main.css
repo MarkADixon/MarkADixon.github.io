@@ -50,8 +50,8 @@
   .color-page--invert { background-color: rgb(208,214,219); color: rgb(1,13,52); }
   .color-button { background-color: transparent; color: rgb(208,214,219); }
   .color-button--invert { background-color: transparent; color: rgb(1,13,52); }
-  .color-cta { background-color: transparent; color: rgb(3,33,133);  }
-  .color-cta-reg { background-color: rgb(3,33,133); color: rgb(208,214,219); }
+  .color-cta { background-color: transparent; color: rgb(224,95,22);  }
+  .color-cta-reg { background-color: rgb(224,95,22); color: rgb(208,214,219); }
   
 /* APP-LIKE SECTIONS (show/hide) */
   .app__container { 
@@ -77,8 +77,8 @@
     }
 
     /* viewport containers */
-    header { position: fixed; top: 0; left: 0; width: 100%; height: 12rem; z-index: -1; }
-    main {  position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 12rem 0 18rem 0; z-index: 0; }
+    header { position: fixed; top: 0; left: 0; width: 100%; height: 12rem; z-index: 1; }
+    main {  position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 12rem 0 18rem 0; z-index: 2; }
     nav { position: fixed; top: calc(100% - 18rem); left: 0; width: 100%; height: 18rem; z-index: 10; }
     .nav-mobile { position: absolute; top: 0; left: 0; padding-top: 1rem; }
     .nav-main { opacity:0; pointer-events:none; overflow:hidden; height: 1px; width: 1px; }
@@ -94,8 +94,8 @@
     } 
 
     /* viewport containers */
-    header { position: fixed; top: 0; left: 0; width: 100%; height: 12rem; z-index: -1; }
-    main { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; }
+    header { position: fixed; top: 0; left: 0; width: 100%; height: 12rem; z-index: 1; }
+    main { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; }
     nav { position: fixed; top: 82rem; left: 0; width: 100%; height: 18rem; z-index: 10; }
     .nav-main { position: absolute; top: 0; left: calc(50% - 50rem); padding-top: 1rem; }
     .nav-mobile { opacity:0; pointer-events:none; overflow:hidden; height: 1px; width: 1px; }
@@ -121,10 +121,10 @@
   }
   .btn:hover {
     transition: color 0.2s ease-in-out 0s, border 0.2s ease-in-out 0s;
-    color: rgb(207,184,124); 
+    color: rgb(224,95,22); 
     background-color: rgb(2,21,83);
-    border-top: 0.4rem solid rgb(207,184,124); border-left: 0.4rem solid rgb(207,184,124);
-    border-bottom: 0.4rem solid rgb(129,115,77); border-right: 0.4rem solid  rgb(129,115,77);
+    border-top: 0.4rem solid rgb(224,95,22); border-left: 0.4rem solid rgb(224,95,22);
+    border-bottom: 0.4rem solid rgb(112,50,11); border-right: 0.4rem solid  rgb(112,50,11);
     outline: none;
   }
   .card { border:none; }
@@ -159,9 +159,9 @@
    ul.nav-tabs > li > a:hover:not(.active) { 
     top: -0.15rem;
     transition: color 0.2s ease-in-out 0s, border 0.2s ease-in-out 0s;
-    background-color: rgb(2,21,83) !important; color: rgb(207,184,124) !important; 
-    border-top: 0.4rem solid rgb(207,184,124) !important; border-left: 0.4rem solid rgb(207,184,124)!important;
-    border-bottom: 0.4rem solid rgb(2,21,83) !important; border-right: 0.4rem solid rgb(207,184,124) !important;
+    background-color: rgb(2,21,83) !important; color: rgb(224,95,22) !important; 
+    border-top: 0.4rem solid rgb(224,95,22) !important; border-left: 0.4rem solid rgb(224,95,22)!important;
+    border-bottom: 0.4rem solid rgb(2,21,83) !important; border-right: 0.4rem solid rgb(224,95,22) !important;
     outline: none;
    }
   /* end bootstrap overrides */
@@ -179,18 +179,13 @@
     padding: 0;
   }
   .section__tab { font-size: 3.3rem; line-height: 3.3rem; padding: 1rem 0; }
-  .text-overflow-center {
-    margin-left: -100%;
-    margin-right: -100%;
-    text-align: center;
-  }
   textarea { resize: none; }
 
   /* tab keyboard selector style */
   :link:focus, :visited:focus {
     outline: none;
     background-color: rgb(2,21,83);
-    color: rgb(207,184,124);
+    color: rgb(224,95,22);
   }
 
 /* nav styles */
@@ -206,7 +201,7 @@
     font-size: 3rem; letter-spacing: 0.1rem;
   } 
   .nav-main__button, .nav-mobile__button  {
-    position: relative; top: 0; right: 0;
+    position: relative; top: 0; right: 0; z-index: 12; 
     width: 20%;
     border: none;
     cursor: pointer;
@@ -215,13 +210,13 @@
     outline: none;
   }  
   .nav-main__linkline { 
-    position: absolute; top:25%; left: 10%; 
+    position: absolute; top:25%; left: 10%; z-index: 11; 
     height: 0.6rem; width: 80%;
     background-color: rgb(208,214,219);
   }
   .nav-mobile__linkline { 
-    position: absolute; top:25%; left: 10%; 
-    height: 0.6rem; width: 77%;
+    position: absolute; top:25%; left: 10%; z-index: 11; 
+    height: 0.6rem; width: 80%;
     background-color: rgb(208,214,219);
   }
 /* nav transitons */
@@ -251,13 +246,13 @@
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-middle,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-middle {
     transition: color 0.2s ease-in-out 0s;
-    color: rgb(207,184,124) !important; 
-    text-shadow: 0.3rem 0.3rem 0.15rem rgb(129,115,77);
+    color: rgb(224,95,22) !important; 
+    text-shadow: 0.3rem 0.3rem 0.15rem rgb(112,50,11);
   }
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-text,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-text {
     transition: color 0.2s ease-in-out 0s;
-    color: rgb(207,184,124) !important; 
+    color: rgb(224,95,22) !important; 
   }
 
   .nav-main__icon, .nav-mobile__icon {
@@ -312,11 +307,10 @@
   .resume__card { height: 17rem; }
   .resume__card .card-img-left { height: 26rem; width: 26rem; }
   .resume__skill { 
-    font-size: 2.7rem; line-height: 2.7rem;
+    font-size: 3rem; line-height: 3rem; font-weight: 900;
     height: 10rem; width: 10rem; 
     margin: 1.6rem 2.56rem; 
     border-radius: 50%;
-    border: 0.6rem solid rgb(208,214,219);
   }
   .resume__skillicon { width: 23%; padding: 1%; }
   #resume .nav-item { width: 22.5%; }
@@ -330,16 +324,13 @@
   
 /* hire styles */
   .hire__link a { font-size: 2.4rem; margin-top: 1rem; }
-  .hire__cartoon {  }
   .hire__form {
      margin: 0 auto 2rem auto; 
      font-size: 2.4rem; 
-     width: 66rem; max-width: 90%;
+     width: 66rem; max-width: 80%;
   }
   .hire__form form input, .hire__form form textarea { font-size: 2.4rem; }
-  .hire__form form h4 { font-size: 3rem; }
+  .hire__form form h4, .hire__link h4 { font-size: 3rem; }
   .hire__form-heading { margin: 2rem auto 1rem auto; }
-
-
 
 
