@@ -42,17 +42,19 @@
   .colorbg-light { background-color: rgb(3,33,133); }
   .color-base { color:rgb(2,21,83)}
   .colorbg-base { background-color: rgb(2,21,83); }
-  .color-base-dark { color: rgb(5,0,55); }
-  .colorbg-base-dark { background-color: rgb(5,0,55); }
-  rgb(158,85,2) salmon
+  .color-base-dark { color: rgb(19,39,46); }
+  .colorbg-base-dark { background-color: rgb(19,39,46); }
+  rgb(158,85,2) steves pumpkin
+  rgb(207,93,52) salmon
+  rgb(230,84,37) golden gate rgb(45,32,30) golden gate shadowed
 */
 
-  .color-page { background-color: rgb(5,0,55); color:rgb(192,192,200); }
-  .color-page--invert { background-color: rgb(192,192,200); color: rgb(5,0,55); }
+  .color-page { background-color: rgb(19,39,46); color:rgb(192,192,200); }
+  .color-page--invert { background-color: rgb(192,192,200); color: rgb(19,39,46); }
   .color-button { background-color: transparent; color: rgb(192,192,200); }
-  .color-button--invert { background-color: transparent; color: rgb(5,0,55); }
-  .color-cta { background-color: transparent; color: rgb(158,85,2);  }
-  .color-cta-reg { background-color: rgb(158,85,2); color: rgb(192,192,200); }
+  .color-button--invert { background-color: transparent; color: rgb(19,39,46); }
+  .color-cta { background-color: transparent; color: rgb(230,84,37);  }
+  .color-cta-reg { background-color: rgb(230,84,37); color: rgb(192,192,200); }
   
 /* APP-LIKE SECTIONS (show/hide) */
   .app__container { 
@@ -122,8 +124,8 @@
   }
   .btn:hover {
     transition: color 0.2s ease-in-out 0s, border 0.2s ease-in-out 0s;
-    color: rgb(158,85,2); 
-    border-top: 0.4rem solid rgb(158,85,2); border-left: 0.4rem solid rgb(158,85,2);
+    color: rgb(230,84,37); 
+    border-top: 0.4rem solid rgb(230,84,37); border-left: 0.4rem solid rgb(230,84,37);
     border-bottom: 0.4rem solid rgb(104,47,26); border-right: 0.4rem solid  rgb(104,47,26);
     outline: none;
   }
@@ -152,16 +154,16 @@
   }
   ul.nav-tabs > li > a.active, ul.nav-tabs > li > a:active {  
     top: 0.25rem;
-    background-color: rgb(5,0,55) !important; color: rgb(192,192,200) !important; 
+    background-color: rgb(19,39,46) !important; color: rgb(192,192,200) !important; 
     border-top: 0.4rem solid rgb(192,192,200) !important; border-left: 0.4rem solid rgb(192,192,200) !important;
-    border-bottom: 0.4rem solid rgb(5,0,55) !important; border-right: 0.4rem solid rgb(192,192,200) !important;
+    border-bottom: 0.4rem solid rgb(19,39,46) !important; border-right: 0.4rem solid rgb(192,192,200) !important;
    }
    ul.nav-tabs > li > a:hover:not(.active) { 
     top: -0.15rem;
     transition: color 0.2s ease-in-out 0s, border 0.2s ease-in-out 0s;
-    background-color: rgb(5,0,55) !important; color: rgb(158,85,2) !important; 
-    border-top: 0.4rem solid rgb(158,85,2) !important; border-left: 0.4rem solid rgb(158,85,2) !important;
-    border-bottom: 0.4rem solid rgb(5,0,55) !important; border-right: 0.4rem solid rgb(158,85,2) !important;
+    background-color: rgb(19,39,46) !important; color: rgb(230,84,37) !important; 
+    border-top: 0.4rem solid rgb(230,84,37) !important; border-left: 0.4rem solid rgb(230,84,37) !important;
+    border-bottom: 0.4rem solid rgb(19,39,46) !important; border-right: 0.4rem solid rgb(230,84,37) !important;
     outline: none;
    }
   /* end bootstrap overrides */
@@ -184,7 +186,7 @@
   /* tab keyboard selector style */
   :link:focus, :visited:focus {
     outline: none;
-    color: rgb(158,85,2);
+    color: rgb(230,84,37);
   }
 
 /* nav styles */
@@ -238,20 +240,20 @@
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-base,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-base {
     transition: color 0.2s ease-in-out 0s;
-    color: rgb(5,0,55);
+    color: rgb(19,39,46);
   }
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-top,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-top,
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-middle,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-middle {
     transition: color 0.2s ease-in-out 0s;
-    color: rgb(158,85,2) !important; 
+    color: rgb(230,84,37) !important; 
     text-shadow: 0.3rem 0.3rem 0.15rem rgb(104,47,26);
   }
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-text,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-text {
     transition: color 0.2s ease-in-out 0s;
-    color: rgb(158,85,2) !important; 
+    color: rgb(230,84,37) !important; 
   }
 
   .nav-main__icon, .nav-mobile__icon {
