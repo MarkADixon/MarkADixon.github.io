@@ -42,16 +42,16 @@
   .colorbg-light { background-color: rgb(3,33,133); }
   .color-base { color:rgb(2,21,83)}
   .colorbg-base { background-color: rgb(2,21,83); }
-  .color-base-dark { color: rgb(6,17,53); }
-  .colorbg-base-dark { background-color: rgb(6,17,53); }
+  .color-base-dark { color: rgb(5,0,55); }
+  .colorbg-base-dark { background-color: rgb(5,0,55); }
 */
 
-  .color-page { background-color: rgb(6,17,53); color:rgb(192,192,200); }
-  .color-page--invert { background-color: rgb(192,192,200); color: rgb(6,17,53); }
+  .color-page { background-color: rgb(5,0,55); color:rgb(192,192,200); }
+  .color-page--invert { background-color: rgb(192,192,200); color: rgb(5,0,55); }
   .color-button { background-color: transparent; color: rgb(192,192,200); }
-  .color-button--invert { background-color: transparent; color: rgb(6,17,53); }
-  .color-cta { background-color: transparent; color: rgb(184,115,51);  }
-  .color-cta-reg { background-color: rgb(184,115,51); color: rgb(192,192,200); }
+  .color-button--invert { background-color: transparent; color: rgb(5,0,55); }
+  .color-cta { background-color: transparent; color: rgb(207,93,52);  }
+  .color-cta-reg { background-color: rgb(207,93,52); color: rgb(192,192,200); }
   
 /* APP-LIKE SECTIONS (show/hide) */
   .app__container { 
@@ -121,9 +121,9 @@
   }
   .btn:hover {
     transition: color 0.2s ease-in-out 0s, border 0.2s ease-in-out 0s;
-    color: rgb(184,115,51); 
-    border-top: 0.4rem solid rgb(184,115,51); border-left: 0.4rem solid rgb(184,115,51);
-    border-bottom: 0.4rem solid rgb(92,58,25); border-right: 0.4rem solid  rgb(92,58,25);
+    color: rgb(207,93,52); 
+    border-top: 0.4rem solid rgb(207,93,52); border-left: 0.4rem solid rgb(207,93,52);
+    border-bottom: 0.4rem solid rgb(104,47,26); border-right: 0.4rem solid  rgb(104,47,26);
     outline: none;
   }
   .card { border:none; }
@@ -151,16 +151,16 @@
   }
   ul.nav-tabs > li > a.active, ul.nav-tabs > li > a:active {  
     top: 0.25rem;
-    background-color: rgb(6,17,53) !important; color: rgb(192,192,200) !important; 
+    background-color: rgb(5,0,55) !important; color: rgb(192,192,200) !important; 
     border-top: 0.4rem solid rgb(192,192,200) !important; border-left: 0.4rem solid rgb(192,192,200) !important;
-    border-bottom: 0.4rem solid rgb(6,17,53) !important; border-right: 0.4rem solid rgb(192,192,200) !important;
+    border-bottom: 0.4rem solid rgb(5,0,55) !important; border-right: 0.4rem solid rgb(192,192,200) !important;
    }
    ul.nav-tabs > li > a:hover:not(.active) { 
     top: -0.15rem;
     transition: color 0.2s ease-in-out 0s, border 0.2s ease-in-out 0s;
-    background-color: rgb(6,17,53) !important; color: rgb(184,115,51) !important; 
-    border-top: 0.4rem solid rgb(184,115,51) !important; border-left: 0.4rem solid rgb(184,115,51) !important;
-    border-bottom: 0.4rem solid rgb(6,17,53) !important; border-right: 0.4rem solid rgb(184,115,51) !important;
+    background-color: rgb(5,0,55) !important; color: rgb(207,93,52) !important; 
+    border-top: 0.4rem solid rgb(207,93,52) !important; border-left: 0.4rem solid rgb(207,93,52) !important;
+    border-bottom: 0.4rem solid rgb(5,0,55) !important; border-right: 0.4rem solid rgb(207,93,52) !important;
     outline: none;
    }
   /* end bootstrap overrides */
@@ -183,7 +183,7 @@
   /* tab keyboard selector style */
   :link:focus, :visited:focus {
     outline: none;
-    color: rgb(184,115,51);
+    color: rgb(207,93,52);
   }
 
 /* nav styles */
@@ -237,20 +237,20 @@
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-base,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-base {
     transition: color 0.2s ease-in-out 0s;
-    color: rgb(6,17,53);
+    color: rgb(5,0,55);
   }
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-top,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-top,
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-middle,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-middle {
     transition: color 0.2s ease-in-out 0s;
-    color: rgb(184,115,51) !important; 
-    text-shadow: 0.3rem 0.3rem 0.15rem rgb(92,58,25);
+    color: rgb(207,93,52) !important; 
+    text-shadow: 0.3rem 0.3rem 0.15rem rgb(104,47,26);
   }
   .nav-main__button:hover:not(.nav-main__button--selected) .nav-main__icon-text,
   .nav-mobile__button:hover:not(.nav-mobile__button--selected) .nav-mobile__icon-text {
     transition: color 0.2s ease-in-out 0s;
-    color: rgb(184,115,51) !important; 
+    color: rgb(207,93,52) !important; 
   }
 
   .nav-main__icon, .nav-mobile__icon {
@@ -305,7 +305,7 @@
   .resume__card { height: 17rem; }
   .resume__card .card-img-left { height: 26rem; width: 26rem; }
   .resume__skill { 
-    font-size: 3rem; line-height: 3rem; font-weight: 900;
+    font-size: 3rem; line-height: 3rem; font-weight: 700;
     height: 10rem; width: 10rem; 
     margin: 1.6rem 2.56rem; 
     border-radius: 50%;
@@ -315,9 +315,12 @@
 
 /*portfolio styles */
   .portfolio__card { 
-    width: 32%;
+    width: 31%;
   }
-  .portfolio__card .card-img-top { border-top-left-radius: 1rem; border-top-right-radius: 1rem; }
+  .portfolio__card .card-img-top { 
+    height: 20rem; width: 30rem;
+    border-top-left-radius: 0rem; border-top-right-radius: 0rem;
+  }
   #portfolio .nav-item { width: 30%; }
   
 /* hire styles */
