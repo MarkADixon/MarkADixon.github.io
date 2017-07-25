@@ -114,10 +114,10 @@
 
 
 /* bootstrap overrides */
-  .badge{ font-size: 2.4rem; margin: 0.5rem; }
+  .badge{ font-size: 2rem; margin: 0.5rem; }
   .btn { 
     box-sizing: border-box;
-    font-size: 3rem;
+    font-size: 2.66rem;
     line-height: 3rem;
     margin: 1rem; 
     border-top: 0.4rem solid rgb(192,192,200); border-left: 0.4rem solid rgb(192,192,200);
@@ -131,8 +131,8 @@
     outline: none;
   }
   .card { border:none; }
-  .card-title { font-size: 3.2rem; line-height: 4rem; }
-  .card-text { font-size: 2.4rem; line-height: 3rem; }
+  .card-title { font-size: 3rem; line-height: 3.33rem; }
+  .card-text { font-size: 2rem; line-height: 2.33rem; }
   .card-img-top, .card-img-left { width:100%; height:auto; } 
   .card-header, .card-footer { background-color: transparent; }
   ul.nav-tabs { 
@@ -200,7 +200,7 @@
   }
   .nav-main__icon-text, .nav-mobile__icon-text { 
     position: relative; top: 1rem; left: 0.5rem;
-    font-size: 3rem; letter-spacing: 0.1rem;
+    font-size: 2.66rem; letter-spacing: 0.1rem;
   } 
   .nav-main__button, .nav-mobile__button  {
     position: relative; top: 0; right: 0; z-index: 12; 
@@ -282,22 +282,22 @@
   }
   .home__description {
     position: relative; top: 0; left: -1.6rem;
-    font-size: 3.3rem; letter-spacing: 0.6rem; line-height: 3.3rem;
+    font-size: 3.33rem; letter-spacing: 0.6rem; line-height: 3.3rem;
   }
   .home__contact {
     position: relative; top: 0; left: -3.2rem;
   }
-  .home__contact .btn { font-size: 2.4rem; line-height: 2.4rem;}
+  .home__contact .btn { font-size: 2.33rem; line-height: 2.4rem;}
   .home__title, .home__description, .home__contact .btn { margin-bottom: 2rem; }
 
 /* about styles */
-  .about__title { font-size: 3.2rem; line-height: 3.2rem; margin-bottom: 2rem; }
+  .about__title { font-size: 3rem; line-height: 3.2rem; margin-bottom: 2rem; }
   .about__img {
     position: relative; left: -5%;
     width: 95%; height: auto;
   }
   .about__row { margin-top: 1rem; margin-bottom: 1rem; }
-  .about__icon { font-size: 3.6rem; margin-top: 1rem; margin-bottom: 0.5rem; }
+  .about__icon { font-size: 3.33rem; margin-top: 1rem; margin-bottom: 0.5rem; }
   #about .nav-item { width: 30%; }
 
 /*resume styles */
@@ -309,7 +309,7 @@
   .resume__card { height: 17rem; }
   .resume__card .card-img-left { height: 26rem; width: 26rem; }
   .resume__skill { 
-    font-size: 3rem; line-height: 3rem; font-weight: 700;
+    font-size: 2.66rem; line-height: 2.8rem; font-weight: 700;
     height: 10rem; width: 10rem; 
     margin: 1.6rem 2.56rem; 
     border-radius: 50%;
@@ -328,13 +328,13 @@
   #portfolio .nav-item { width: 30%; }
   
 /* hire styles */
-  .hire__link a { font-size: 2.4rem; margin-top: 1rem; }
+  .hire__link a { font-size: 2.33rem; margin-top: 1rem; }
   .hire__form {
      margin: 0 auto 2rem auto; 
-     font-size: 2.4rem; 
+     font-size: 2.33rem; 
      width: 66rem; max-width: 80%;
   }
-  .hire__form form input, .hire__form form textarea { font-size: 2.4rem; }
+  .hire__form form input, .hire__form form textarea { font-size: 2.33rem; }
   .hire__form form h4, .hire__link h4 { font-size: 3rem; }
   .hire__form-heading { margin: 2rem auto 1rem auto; }
 
